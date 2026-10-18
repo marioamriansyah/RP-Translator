@@ -1,0 +1,5150 @@
+{
+  "ignore_words": [
+    "Los Santos",
+    "LSPD",
+    "Vagos",
+    "EMS",
+    "Ballas",
+    "FIB",
+    "LSSD",
+    "BCSO",
+    "SASP"
+  ],
+  "styles": {
+    "American Formal": {
+      "halo": {
+        "1": "Hello.",
+        "2": "Hi there.",
+        "3": "Greetings."
+      },
+      "apa kabar?": {
+        "1": "How are you?",
+        "2": "How are you doing?",
+        "3": "How have you been?"
+      },
+      "ada apa?": {
+        "1": "What is it?",
+        "2": "Is there a problem?",
+        "3": "How can I assist you?"
+      },
+      "lama tidak berjumpa": {
+        "1": "It has been a while.",
+        "2": "Long time no see.",
+        "3": "It's been quite some time."
+      },
+      "selamat pagi": {
+        "1": "Good morning.",
+        "2": "Morning.",
+        "3": "I hope you are having a good morning."
+      },
+      "iya / oke": {
+        "1": "Yes.",
+        "2": "Okay.",
+        "3": "Affirmative."
+      },
+      "aku setuju": {
+        "1": "I agree.",
+        "2": "That sounds right.",
+        "3": "I am in agreement."
+      },
+      "tentu saja": {
+        "1": "Of course.",
+        "2": "Certainly.",
+        "3": "Absolutely."
+      },
+      "baiklah": {
+        "1": "Alright.",
+        "2": "Very well.",
+        "3": "Understood."
+      },
+      "aku mengerti": {
+        "1": "I understand.",
+        "2": "I see.",
+        "3": "I comprehend."
+      },
+      "tidak": {
+        "1": "No.",
+        "2": "Negative.",
+        "3": "I decline."
+      },
+      "aku tidak setuju": {
+        "1": "I disagree.",
+        "2": "I don't agree.",
+        "3": "I cannot agree to that."
+      },
+      "tidak mungkin": {
+        "1": "Impossible.",
+        "2": "That is not possible.",
+        "3": "Out of the question."
+      },
+      "aku tidak mau": {
+        "1": "I don't want to.",
+        "2": "I would rather not.",
+        "3": "I refuse."
+      },
+      "itu salah": {
+        "1": "That is wrong.",
+        "2": "That is incorrect.",
+        "3": "You are mistaken."
+      },
+      "apa maksudmu?": {
+        "1": "What do you mean?",
+        "2": "Could you clarify that?",
+        "3": "What exactly are you implying?"
+      },
+      "aku tidak mengerti": {
+        "1": "I do not understand.",
+        "2": "I don't get it.",
+        "3": "I am failing to see your point."
+      },
+      "apa?": {
+        "1": "What?",
+        "2": "Excuse me?",
+        "3": "Pardon?"
+      },
+      "aku bingung": {
+        "1": "I am confused.",
+        "2": "This is confusing.",
+        "3": "I am completely perplexed."
+      },
+      "coba ulangi": {
+        "1": "Please repeat that.",
+        "2": "Could you say that again?",
+        "3": "Run that by me one more time."
+      },
+      "astaga": {
+        "1": "Oh my.",
+        "2": "Goodness.",
+        "3": "My goodness."
+      },
+      "yang benar saja?": {
+        "1": "Are you serious?",
+        "2": "Really?",
+        "3": "Are you being serious right now?"
+      },
+      "aku tidak percaya ini": {
+        "1": "I cannot believe this.",
+        "2": "I don't believe it.",
+        "3": "This is unbelievable."
+      },
+      "apa-apaan ini?": {
+        "1": "What is this?",
+        "2": "What is going on here?",
+        "3": "What on earth is this?"
+      },
+      "ini gila": {
+        "1": "This is crazy.",
+        "2": "This is madness.",
+        "3": "This is absolutely absurd."
+      },
+      "tutup mulutmu": {
+        "1": "Be quiet.",
+        "2": "Quiet down.",
+        "3": "Hold your tongue."
+      },
+      "aku sudah muak": {
+        "1": "I have had enough.",
+        "2": "I am tired of this.",
+        "3": "I am completely fed up."
+      },
+      "jangan main-main denganku": {
+        "1": "Do not toy with me.",
+        "2": "Do not push me.",
+        "3": "Do not test my patience."
+      },
+      "pergi dari sini": {
+        "1": "Leave this place.",
+        "2": "Please leave.",
+        "3": "Get out of here."
+      },
+      "kau cari mati?": {
+        "1": "Are you looking for trouble?",
+        "2": "Do you want a problem?",
+        "3": "Are you out of your mind?"
+      },
+      "pecundang": {
+        "1": "Loser.",
+        "2": "Failure.",
+        "3": "Underachiever."
+      },
+      "kau bodoh": {
+        "1": "You are foolish.",
+        "2": "You are being ridiculous.",
+        "3": "You lack intelligence."
+      },
+      "pengecut": {
+        "1": "Coward.",
+        "2": "Craven.",
+        "3": "Faint-hearted."
+      },
+      "kau payah": {
+        "1": "You are pathetic.",
+        "2": "You are inept.",
+        "3": "You are incompetent."
+      },
+      "bukan levelku": {
+        "1": "Not on my level.",
+        "2": "Below my standards.",
+        "3": "Beneath me."
+      },
+      "aku yang berkuasa di sini": {
+        "1": "I am in charge here.",
+        "2": "I call the shots here.",
+        "3": "I am the one in control."
+      },
+      "kau tidak bisa mengalahkanku": {
+        "1": "You cannot defeat me.",
+        "2": "You can't beat me.",
+        "3": "You are no match for me."
+      },
+      "aku yang terbaik": {
+        "1": "I am the best.",
+        "2": "I am at the top.",
+        "3": "I am unparalleled."
+      },
+      "lihat saja nanti": {
+        "1": "We will see.",
+        "2": "Just you wait.",
+        "3": "Time will tell."
+      },
+      "jangan remehkan aku": {
+        "1": "Do not underestimate me.",
+        "2": "Do not take me lightly.",
+        "3": "You would be wise not to underestimate me."
+      },
+      "aku takut": {
+        "1": "I am afraid.",
+        "2": "I am scared.",
+        "3": "I am absolutely terrified."
+      },
+      "tolong jangan sakiti aku": {
+        "1": "Please do not hurt me.",
+        "2": "Please don't harm me.",
+        "3": "I beg you not to hurt me."
+      },
+      "aku menyerah": {
+        "1": "I surrender.",
+        "2": "I give up.",
+        "3": "I yield to you."
+      },
+      "aku tidak tahu apa-apa": {
+        "1": "I do not know anything.",
+        "2": "I have no information.",
+        "3": "I am completely in the dark."
+      },
+      "biarkan aku pergi": {
+        "1": "Let me go.",
+        "2": "Please release me.",
+        "3": "I demand that you let me leave."
+      },
+      "ini luar biasa": {
+        "1": "This is amazing.",
+        "2": "This is incredible.",
+        "3": "This is absolutely wonderful."
+      },
+      "aku sangat senang": {
+        "1": "I am very happy.",
+        "2": "I am thrilled.",
+        "3": "I am overjoyed."
+      },
+      "bagus sekali": {
+        "1": "Very good.",
+        "2": "Great job.",
+        "3": "Excellent work."
+      },
+      "aku tidak sabar": {
+        "1": "I cannot wait.",
+        "2": "I am looking forward to it.",
+        "3": "I am eagerly anticipating it."
+      },
+      "ini hari terbaik": {
+        "1": "This is the best day.",
+        "2": "Today is wonderful.",
+        "3": "This day could not be better."
+      },
+      "sialan": {
+        "1": "Darn it.",
+        "2": "Damn it.",
+        "3": "Goddamn it."
+      },
+      "aku sangat kecewa": {
+        "1": "I am very disappointed.",
+        "2": "I am let down.",
+        "3": "This is highly disappointing."
+      },
+      "ini membuang waktu": {
+        "1": "This is a waste of time.",
+        "2": "We are wasting time here.",
+        "3": "This is an absolute waste of time."
+      },
+      "semuanya hancur": {
+        "1": "Everything is ruined.",
+        "2": "Everything is falling apart.",
+        "3": "It is all completely ruined."
+      },
+      "ini sangat menyebalkan": {
+        "1": "This is very annoying.",
+        "2": "This is frustrating.",
+        "3": "This is highly exasperating."
+      },
+      "tolong aku": {
+        "1": "Please help me.",
+        "2": "I need some help.",
+        "3": "I require assistance."
+      },
+      "aku mohon": {
+        "1": "I am begging you.",
+        "2": "Please, I ask of you.",
+        "3": "I implore you."
+      },
+      "berikan itu padaku": {
+        "1": "Give that to me.",
+        "2": "Please hand that over.",
+        "3": "I need you to hand that to me."
+      },
+      "bantu aku": {
+        "1": "Assist me.",
+        "2": "I need your support.",
+        "3": "I require backup."
+      },
+      "beri aku satu kesempatan lagi": {
+        "1": "Give me one more chance.",
+        "2": "Please give me another opportunity.",
+        "3": "Allow me one final chance."
+      },
+      "ikut aku": {
+        "1": "Follow me.",
+        "2": "Come with me.",
+        "3": "Step this way."
+      },
+      "tunggu di sini": {
+        "1": "Wait here.",
+        "2": "Stay here.",
+        "3": "Remain in this location."
+      },
+      "cepatlah": {
+        "1": "Hurry up.",
+        "2": "Make it quick.",
+        "3": "Please expedite this."
+      },
+      "lakukan sekarang": {
+        "1": "Do it now.",
+        "2": "Handle it now.",
+        "3": "Execute this immediately."
+      },
+      "dengarkan aku": {
+        "1": "Listen to me.",
+        "2": "Hear me out.",
+        "3": "Pay attention."
+      },
+      "apa kau mau ikut?": {
+        "1": "Do you want to come?",
+        "2": "Would you like to join me?",
+        "3": "Are you coming with us?"
+      },
+      "biar aku yang urus": {
+        "1": "Let me handle it.",
+        "2": "I will take care of this.",
+        "3": "Allow me to manage this."
+      },
+      "bagaimana menurutmu?": {
+        "1": "What do you think?",
+        "2": "How does that sound?",
+        "3": "What are your thoughts on this?"
+      },
+      "ayo pergi": {
+        "1": "Let's go.",
+        "2": "We should leave.",
+        "3": "It is time to depart."
+      },
+      "ambil ini": {
+        "1": "Take this.",
+        "2": "Please have this.",
+        "3": "I would like you to take this."
+      },
+      "kerja bagus": {
+        "1": "Good job.",
+        "2": "Well done.",
+        "3": "Excellent work."
+      },
+      "kau hebat": {
+        "1": "You are great.",
+        "2": "You are impressive.",
+        "3": "You are outstanding."
+      },
+      "aku menghargainya": {
+        "1": "I appreciate it.",
+        "2": "I value your help.",
+        "3": "I am grateful for this."
+      },
+      "terima kasih banyak": {
+        "1": "Thank you very much.",
+        "2": "Thanks a lot.",
+        "3": "I offer my deepest thanks."
+      },
+      "ini sempurna": {
+        "1": "This is perfect.",
+        "2": "This is flawless.",
+        "3": "This is exactly what was needed."
+      },
+      "aku minta maaf": {
+        "1": "I am sorry.",
+        "2": "I apologize.",
+        "3": "My sincere apologies."
+      },
+      "itu salahku": {
+        "1": "That is my fault.",
+        "2": "I am to blame.",
+        "3": "I take full responsibility."
+      },
+      "aku menyesal": {
+        "1": "I regret it.",
+        "2": "I am regretful.",
+        "3": "I deeply regret my actions."
+      },
+      "maafkan aku": {
+        "1": "Please forgive me.",
+        "2": "I ask for your forgiveness.",
+        "3": "I hope you can forgive me."
+      },
+      "aku tidak sengaja": {
+        "1": "I did not mean to.",
+        "2": "It was an accident.",
+        "3": "It was completely unintentional."
+      },
+      "sedang apa?": {
+        "1": "What are you doing?",
+        "2": "What are you up to?",
+        "3": "How are you occupying your time?"
+      },
+      "cuacanya bagus": {
+        "1": "The weather is nice.",
+        "2": "It's a nice day out.",
+        "3": "The weather is quite pleasant today."
+      },
+      "dari mana saja?": {
+        "1": "Where have you been?",
+        "2": "Where were you?",
+        "3": "Where have you been hiding?"
+      },
+      "bagaimana harimu?": {
+        "1": "How is your day?",
+        "2": "How is your day going?",
+        "3": "Has your day been productive?"
+      },
+      "sampai jumpa nanti": {
+        "1": "See you later.",
+        "2": "Catch you later.",
+        "3": "Until next time."
+      },
+      "kau temanku": {
+        "1": "You are my friend.",
+        "2": "You are a good friend.",
+        "3": "I value our friendship."
+      },
+      "aku percaya padamu": {
+        "1": "I trust you.",
+        "2": "I have faith in you.",
+        "3": "You have my complete trust."
+      },
+      "kita ini saudara": {
+        "1": "We are family.",
+        "2": "We are like brothers.",
+        "3": "I consider you family."
+      },
+      "aku akan melindungimu": {
+        "1": "I will protect you.",
+        "2": "I have your back.",
+        "3": "I will ensure your safety."
+      },
+      "jaga dirimu": {
+        "1": "Take care of yourself.",
+        "2": "Stay safe.",
+        "3": "Please be careful out there."
+      },
+      "berapa harganya?": {
+        "1": "How much is it?",
+        "2": "How much does this cost?",
+        "3": "What is the asking price?"
+      },
+      "aku akan membayarnya": {
+        "1": "I will pay for it.",
+        "2": "I can cover this.",
+        "3": "Allow me to handle the bill."
+      },
+      "ini uangnya": {
+        "1": "Here is the money.",
+        "2": "Here is the payment.",
+        "3": "The funds are all here."
+      },
+      "terlalu mahal": {
+        "1": "It is too expensive.",
+        "2": "That is quite costly.",
+        "3": "The price is exorbitant."
+      },
+      "aku tidak punya uang": {
+        "1": "I do not have money.",
+        "2": "I am short on funds.",
+        "3": "I am currently without financial means."
+      },
+      "aku sedang bekerja": {
+        "1": "I am working.",
+        "2": "I am currently on duty.",
+        "3": "I am presently occupied with my work."
+      },
+      "apa pekerjaanmu?": {
+        "1": "What is your job?",
+        "2": "What do you do for a living?",
+        "3": "What is your profession?"
+      },
+      "aku sibuk": {
+        "1": "I am busy.",
+        "2": "I am tied up at the moment.",
+        "3": "My schedule is currently full."
+      },
+      "ini tugasmu": {
+        "1": "This is your task.",
+        "2": "This is your responsibility.",
+        "3": "This assignment falls to you."
+      },
+      "pekerjaan selesai": {
+        "1": "The job is done.",
+        "2": "The task is complete.",
+        "3": "The objective has been achieved."
+      },
+      "masuk ke mobil": {
+        "1": "Get in the car.",
+        "2": "Please get in the vehicle.",
+        "3": "Enter the vehicle immediately."
+      },
+      "nyalakan mesinnya": {
+        "1": "Start the engine.",
+        "2": "Start the car.",
+        "3": "Turn the ignition on."
+      },
+      "ikuti mobil itu": {
+        "1": "Follow that car.",
+        "2": "Stay behind that vehicle.",
+        "3": "Maintain visual on that vehicle and follow it."
+      },
+      "injak gasnya": {
+        "1": "Accelerate.",
+        "2": "Speed up, please.",
+        "3": "Increase our speed immediately."
+      },
+      "menepi sekarang": {
+        "1": "Pull over now.",
+        "2": "Please pull to the side of the road.",
+        "3": "Stop the vehicle on the shoulder immediately."
+      },
+      "angkat tanganmu": {
+        "1": "Raise your hands.",
+        "2": "Put your hands up.",
+        "3": "Keep your hands where I can see them."
+      },
+      "aku tidak bersalah": {
+        "1": "I am innocent.",
+        "2": "I did not do anything wrong.",
+        "3": "I am entirely blameless in this matter."
+      },
+      "turunkan senjatamu": {
+        "1": "Put the weapon down.",
+        "2": "Drop your weapon.",
+        "3": "Lower your firearm immediately."
+      },
+      "ada polisi": {
+        "1": "The police are here.",
+        "2": "Law enforcement has arrived.",
+        "3": "The authorities are present."
+      },
+      "aku minta pengacara": {
+        "1": "I want a lawyer.",
+        "2": "I am requesting legal counsel.",
+        "3": "I will not speak without my attorney present."
+      },
+      "maju sini": {
+        "1": "Step forward.",
+        "2": "Come here.",
+        "3": "Bring it on."
+      },
+      "aku akan menghajarmu": {
+        "1": "I will fight you.",
+        "2": "I am going to beat you.",
+        "3": "I will thrash you."
+      },
+      "jangan lari": {
+        "1": "Do not run.",
+        "2": "Stop running.",
+        "3": "Do not attempt to flee."
+      },
+      "habisi dia": {
+        "1": "Defeat him.",
+        "2": "Take him out.",
+        "3": "Finish him off."
+      },
+      "berdiri": {
+        "1": "Stand up.",
+        "2": "Get to your feet.",
+        "3": "Get up."
+      },
+      "ini perampokan": {
+        "1": "This is a robbery.",
+        "2": "We are robbing you.",
+        "3": "This is a stick-up."
+      },
+      "serahkan semua uangmu": {
+        "1": "Hand over all your money.",
+        "2": "Give me your money.",
+        "3": "Surrender all your cash immediately."
+      },
+      "sembunyikan barang buktinya": {
+        "1": "Hide the evidence.",
+        "2": "Conceal the proof.",
+        "3": "Make sure nothing is found."
+      },
+      "kita ketahuan": {
+        "1": "We have been spotted.",
+        "2": "We are compromised.",
+        "3": "They know we are here."
+      },
+      "jangan beri tahu polisi": {
+        "1": "Do not tell the police.",
+        "2": "Do not call the authorities.",
+        "3": "Keep law enforcement out of this."
+      },
+      "ayo minum": {
+        "1": "Let us have a drink.",
+        "2": "Let's get a drink.",
+        "3": "Shall we have a beverage?"
+      },
+      "aku mabuk": {
+        "1": "I am intoxicated.",
+        "2": "I am drunk.",
+        "3": "I have had too much to drink."
+      },
+      "tuangkan aku minuman": {
+        "1": "Pour me a drink.",
+        "2": "Please pour me a glass.",
+        "3": "I would like another drink, please."
+      },
+      "pestanya luar biasa": {
+        "1": "The party is wonderful.",
+        "2": "This is a great party.",
+        "3": "This gathering is quite remarkable."
+      },
+      "bersulang": {
+        "1": "Cheers.",
+        "2": "A toast.",
+        "3": "Here is to us."
+      },
+      "kamu sangat cantik/tampan": {
+        "1": "You are very attractive.",
+        "2": "You look incredibly beautiful.",
+        "3": "You are absolutely stunning."
+      },
+      "aku menyukaimu": {
+        "1": "I like you.",
+        "2": "I am quite fond of you.",
+        "3": "I have developed strong feelings for you."
+      },
+      "maukah kau pergi denganku?": {
+        "1": "Will you go out with me?",
+        "2": "Would you like to go on a date?",
+        "3": "May I have the pleasure of taking you out?"
+      },
+      "kau milikku": {
+        "1": "You are mine.",
+        "2": "You belong to me.",
+        "3": "You are exclusively mine."
+      },
+      "aku merindukanmu": {
+        "1": "I miss you.",
+        "2": "I have missed you.",
+        "3": "I deeply yearn for your presence."
+      },
+      "aku terluka": {
+        "1": "I am hurt.",
+        "2": "I am injured.",
+        "3": "I have sustained an injury."
+      },
+      "panggil ambulans": {
+        "1": "Call an ambulance.",
+        "2": "Please summon an ambulance.",
+        "3": "Contact emergency medical services immediately."
+      },
+      "aku butuh dokter": {
+        "1": "I need a doctor.",
+        "2": "I require medical attention.",
+        "3": "I need to see a physician immediately."
+      },
+      "bertahanlah": {
+        "1": "Hold on.",
+        "2": "Please hold on.",
+        "3": "Stay with us, do not give up."
+      },
+      "dia tidak bernapas": {
+        "1": "He is not breathing.",
+        "2": "They are not breathing.",
+        "3": "The individual has stopped breathing."
+      },
+      "aku sangat sedih": {
+        "1": "I am very sad.",
+        "2": "I am deeply saddened.",
+        "3": "I am overwhelmed with grief."
+      },
+      "dia sudah tiada": {
+        "1": "He is gone.",
+        "2": "They have passed away.",
+        "3": "They are no longer with us."
+      },
+      "aku tidak bisa tanpa dia": {
+        "1": "I cannot go on without them.",
+        "2": "I am lost without them.",
+        "3": "I cannot imagine my life without them."
+      },
+      "ini semua salahku": {
+        "1": "This is all my fault.",
+        "2": "I am entirely to blame.",
+        "3": "I take full responsibility for this tragedy."
+      },
+      "aku kehilangan segalanya": {
+        "1": "I have lost everything.",
+        "2": "Everything is gone.",
+        "3": "I have been stripped of all I held dear."
+      },
+      "siapa yang menyuruhmu?": {
+        "1": "Who sent you?",
+        "2": "On whose authority are you acting?",
+        "3": "Tell me exactly who gave you these orders."
+      },
+      "katakan yang sebenarnya": {
+        "1": "Tell the truth.",
+        "2": "Speak truthfully.",
+        "3": "I need you to tell me the absolute truth."
+      },
+      "aku tidak akan bicara": {
+        "1": "I will not speak.",
+        "2": "I refuse to answer.",
+        "3": "I will not divulge any information."
+      },
+      "lepaskan ikatannya": {
+        "1": "Untie him.",
+        "2": "Release his bonds.",
+        "3": "Remove the restraints immediately."
+      },
+      "kau akan menyesal": {
+        "1": "You will regret this.",
+        "2": "You are making a grave mistake.",
+        "3": "You will be held accountable for this."
+      },
+      "matikan kameranya": {
+        "1": "Turn off the cameras.",
+        "2": "Disable the surveillance.",
+        "3": "Deactivate the security cameras."
+      },
+      "buka brankasnya": {
+        "1": "Open the safe.",
+        "2": "Unlock the vault.",
+        "3": "Bypass the safe's lock."
+      },
+      "sistem berhasil diretas": {
+        "1": "The system is hacked.",
+        "2": "The mainframe is breached.",
+        "3": "I have successfully bypassed their security."
+      },
+      "waktu kita hampir habis": {
+        "1": "We are running out of time.",
+        "2": "Time is short.",
+        "3": "We must hurry, our window is closing."
+      },
+      "kita harus keluar dari sini": {
+        "1": "We need to get out of here.",
+        "2": "We must leave now.",
+        "3": "It is imperative that we evacuate."
+      },
+      "aku tahu rahasiamu": {
+        "1": "I know your secret.",
+        "2": "I am aware of your secret.",
+        "3": "I know exactly what you are hiding."
+      },
+      "bayar utangmu": {
+        "1": "Pay your debt.",
+        "2": "Pay what you owe.",
+        "3": "You need to settle your outstanding debt."
+      },
+      "jangan bertingkah": {
+        "1": "Do not play games.",
+        "2": "Do not misbehave.",
+        "3": "I strongly advise you not to act foolishly."
+      },
+      "kau tidak punya pilihan": {
+        "1": "You have no choice.",
+        "2": "You do not have an option.",
+        "3": "You are left with no other alternatives."
+      },
+      "ini peringatan terakhir": {
+        "1": "This is your last warning.",
+        "2": "Consider this your final warning.",
+        "3": "I will not warn you again."
+      },
+      "jangan bersuara": {
+        "1": "Do not make a sound.",
+        "2": "Remain perfectly quiet.",
+        "3": "Maintain absolute silence."
+      },
+      "menunduklah": {
+        "1": "Get down.",
+        "2": "Stay low.",
+        "3": "Keep your head down."
+      },
+      "tetap dalam penyamaran": {
+        "1": "Maintain your cover.",
+        "2": "Stay in character.",
+        "3": "Do not break your cover."
+      },
+      "apakah jalannya aman?": {
+        "1": "Is it clear?",
+        "2": "Is the path clear?",
+        "3": "Is the perimeter secure?"
+      },
+      "aku akan mengalihkan perhatian mereka": {
+        "1": "I will distract them.",
+        "2": "I will cause a diversion.",
+        "3": "I will draw their attention."
+      },
+      "pegangan yang erat": {
+        "1": "Hold on.",
+        "2": "Hold on tightly.",
+        "3": "Brace yourself."
+      },
+      "aku akan menyalipnya": {
+        "1": "I will pass him.",
+        "2": "I am going to overtake them.",
+        "3": "I will maneuver past him."
+      },
+      "awas di depan": {
+        "1": "Watch out ahead.",
+        "2": "Look out in front of you.",
+        "3": "Caution, obstacle ahead."
+      },
+      "kita kehilangan dia": {
+        "1": "We are losing him.",
+        "2": "We have lost visual.",
+        "3": "He is getting away from us."
+      },
+      "aku menang": {
+        "1": "I won.",
+        "2": "I am the winner.",
+        "3": "I have achieved victory."
+      },
+      "mari kita mulai rapatnya": {
+        "1": "Let us begin the meeting.",
+        "2": "Let's start the meeting.",
+        "3": "I call this meeting to order."
+      },
+      "apa laporanmu?": {
+        "1": "What is your report?",
+        "2": "What do you have to report?",
+        "3": "Provide me with your status report."
+      },
+      "keuntungannya menurun": {
+        "1": "Profits are down.",
+        "2": "The profits are decreasing.",
+        "3": "Our revenue has seen a significant decline."
+      },
+      "kita butuh wilayah baru": {
+        "1": "We need new territory.",
+        "2": "We must expand our territory.",
+        "3": "We require new zones of operation."
+      },
+      "rapat dibubarkan": {
+        "1": "The meeting is dismissed.",
+        "2": "The meeting is adjourned.",
+        "3": "This meeting is now concluded."
+      },
+      "maju sekarang": {
+        "1": "Move forward.",
+        "2": "Advance now.",
+        "3": "Initiate the advance immediately."
+      },
+      "lindungi aku": {
+        "1": "Cover me.",
+        "2": "Provide cover fire.",
+        "3": "I require covering fire."
+      },
+      "target terlihat": {
+        "1": "Target spotted.",
+        "2": "I have visual on the target.",
+        "3": "Target is acquired and in sight."
+      },
+      "tahan tembakan": {
+        "1": "Hold fire.",
+        "2": "Cease fire.",
+        "3": "Hold your fire immediately."
+      },
+      "mundur": {
+        "1": "Fall back.",
+        "2": "Retreat.",
+        "3": "Initiate an immediate withdrawal."
+      },
+      "brengsek": {
+        "1": "Jerk.",
+        "2": "Bastard.",
+        "3": "Absolute bastard."
+      },
+      "bajingan": {
+        "1": "Scum.",
+        "2": "Son of a bitch.",
+        "3": "You wretched son of a bitch."
+      },
+      "persetan denganmu": {
+        "1": "Screw you.",
+        "2": "Damn you.",
+        "3": "To hell with you."
+      },
+      "pergi ke neraka": {
+        "1": "Go to hell.",
+        "2": "Burn in hell.",
+        "3": "I hope you burn in hell."
+      },
+      "omong kosong": {
+        "1": "Nonsense.",
+        "2": "That is garbage.",
+        "3": "Absolute bullshit."
+      },
+      "kau jelek sekali": {
+        "1": "You are unattractive.",
+        "2": "You are quite hideous.",
+        "3": "You are absolutely repulsive."
+      },
+      "dasar babi gemuk": {
+        "1": "You glutton.",
+        "2": "You overweight swine.",
+        "3": "You disgusting, fat pig."
+      },
+      "kau sangat lemah": {
+        "1": "You are weak.",
+        "2": "You are incredibly feeble.",
+        "3": "You are a pathetic weakling."
+      },
+      "tutup mulut baumu": {
+        "1": "Close your mouth.",
+        "2": "Shut your foul mouth.",
+        "3": "Keep your foul-smelling mouth shut."
+      },
+      "kau tidak berguna": {
+        "1": "You are useless.",
+        "2": "You serve no purpose.",
+        "3": "You are utterly worthless."
+      },
+      "serahkan dompetmu": {
+        "1": "Hand over your wallet.",
+        "2": "Give me your wallet now.",
+        "3": "Surrender your wallet immediately."
+      },
+      "apa kau mau berkelahi?": {
+        "1": "Do you want to fight?",
+        "2": "Are you looking for a physical altercation?",
+        "3": "Are you trying to start a brawl?"
+      },
+      "aku akan membunuhmu": {
+        "1": "I will kill you.",
+        "2": "I will end your life.",
+        "3": "I am going to murder you."
+      },
+      "tutup mulutmu atau kau mati": {
+        "1": "Be quiet or you will die.",
+        "2": "Keep your mouth shut or I will kill you.",
+        "3": "Silence yourself or forfeit your life."
+      },
+      "kau cari masalah dengan orang yang salah": {
+        "1": "You are causing trouble with the wrong person.",
+        "2": "You have crossed the wrong individual.",
+        "3": "You are making a grave enemy today."
+      },
+      "warna bajumu salah": {
+        "1": "You are wearing the wrong colors.",
+        "2": "Your attire is inappropriate here.",
+        "3": "Your gang colors are not welcome in this area."
+      },
+      "kembali ke wilayahmu": {
+        "1": "Go back to your territory.",
+        "2": "Return to your own neighborhood.",
+        "3": "You need to leave and go back to where you belong."
+      },
+      "kelompokmu adalah sampah": {
+        "1": "Your group is garbage.",
+        "2": "Your faction is completely worthless.",
+        "3": "Your entire organization is nothing but trash."
+      },
+      "pengkhianat": {
+        "1": "Traitor.",
+        "2": "You are a turncoat.",
+        "3": "You are a treacherous individual."
+      },
+      "aku membenci orang-orang sepertimu": {
+        "1": "I despise people like you.",
+        "2": "I have a strong distaste for your kind.",
+        "3": "I absolutely loathe individuals of your association."
+      },
+      "jatuhkan senjatamu": {
+        "1": "Drop your weapon.",
+        "2": "Put the gun down.",
+        "3": "Relinquish your firearm immediately."
+      },
+      "aku akan menembakmu": {
+        "1": "I will shoot you.",
+        "2": "I am going to fire.",
+        "3": "I will discharge my weapon at you."
+      },
+      "jangan bergerak atau kutembak": {
+        "1": "Do not move or I will shoot.",
+        "2": "Stay still or I will fire.",
+        "3": "Freeze, or I will use lethal force."
+      },
+      "bidik kepalanya": {
+        "1": "Aim for the head.",
+        "2": "Target the head.",
+        "3": "Focus your aim on his head."
+      },
+      "tarik pelatuknya": {
+        "1": "Pull the trigger.",
+        "2": "Squeeze the trigger.",
+        "3": "Discharge the weapon."
+      },
+      "apakah barangnya aman?": {
+        "1": "Is the product safe?",
+        "2": "Is the merchandise secure?",
+        "3": "Have you verified the integrity of the contraband?"
+      },
+      "jangan coba menipuku": {
+        "1": "Do not attempt to cheat me.",
+        "2": "Do not try to deceive me.",
+        "3": "I strongly advise against attempting to defraud me."
+      },
+      "ini kualitas terbaik": {
+        "1": "This is of the best quality.",
+        "2": "This is a top-tier product.",
+        "3": "This merchandise is of the highest possible grade."
+      },
+      "transaksi selesai": {
+        "1": "The transaction is complete.",
+        "2": "The exchange is done.",
+        "3": "Our business here is officially concluded."
+      },
+      "polisi sedang berpatroli": {
+        "1": "The police are patrolling.",
+        "2": "Law enforcement is in the area.",
+        "3": "Police units are actively patrolling this vicinity."
+      }
+    },
+    "LA Street": {
+      "halo": {
+        "1": "Hey.",
+        "2": "Yo.",
+        "3": "What's good?"
+      },
+      "apa kabar?": {
+        "1": "How's it going?",
+        "2": "How you livin'?",
+        "3": "What's the word?"
+      },
+      "ada apa?": {
+        "1": "What's up?",
+        "2": "What's crackin'?",
+        "3": "What's good with it?"
+      },
+      "lama tidak berjumpa": {
+        "1": "Been a minute.",
+        "2": "Ain't seen you in a minute.",
+        "3": "Where you been hiding?"
+      },
+      "selamat pagi": {
+        "1": "'Morning.",
+        "2": "Mornin'.",
+        "3": "Wake up and grind."
+      },
+      "iya / oke": {
+        "1": "Yeah.",
+        "2": "Aight.",
+        "3": "Bet."
+      },
+      "aku setuju": {
+        "1": "I'm with it.",
+        "2": "I feel you.",
+        "3": "We on the same page."
+      },
+      "tentu saja": {
+        "1": "For sure.",
+        "2": "No doubt.",
+        "3": "Most definitely."
+      },
+      "baiklah": {
+        "1": "Alright.",
+        "2": "Cool.",
+        "3": "Say less."
+      },
+      "aku mengerti": {
+        "1": "I get it.",
+        "2": "Gotcha.",
+        "3": "Loud and clear."
+      },
+      "tidak": {
+        "1": "Nah.",
+        "2": "Nope.",
+        "3": "Hell no."
+      },
+      "aku tidak setuju": {
+        "1": "I ain't with that.",
+        "2": "That ain't it.",
+        "3": "I ain't rockin' with that."
+      },
+      "tidak mungkin": {
+        "1": "No way.",
+        "2": "You trippin'.",
+        "3": "Ain't no way."
+      },
+      "aku tidak mau": {
+        "1": "I ain't doin' that.",
+        "2": "Pass.",
+        "3": "I'm good."
+      },
+      "itu salah": {
+        "1": "That's wrong.",
+        "2": "That ain't right.",
+        "3": "You got it twisted."
+      },
+      "apa maksudmu?": {
+        "1": "What you mean?",
+        "2": "What you talkin' 'bout?",
+        "3": "What you tryin' to say?"
+      },
+      "aku tidak mengerti": {
+        "1": "I don't get it.",
+        "2": "You lost me.",
+        "3": "I ain't catchin' your drift."
+      },
+      "apa?": {
+        "1": "What?",
+        "2": "Huh?",
+        "3": "Say what now?"
+      },
+      "aku bingung": {
+        "1": "I'm confused.",
+        "2": "I'm trippin'.",
+        "3": "This got my head spun."
+      },
+      "coba ulangi": {
+        "1": "Say that again.",
+        "2": "Come again?",
+        "3": "Run that back."
+      },
+      "astaga": {
+        "1": "Damn.",
+        "2": "Oh shit.",
+        "3": "Goddamn."
+      },
+      "yang benar saja?": {
+        "1": "For real?",
+        "2": "You serious?",
+        "3": "You cappin'?"
+      },
+      "aku tidak percaya ini": {
+        "1": "I can't believe this.",
+        "2": "No way.",
+        "3": "Ain't no way, bro."
+      },
+      "apa-apaan ini?": {
+        "1": "What's this?",
+        "2": "What the hell is this?",
+        "3": "What the fuck is going on?"
+      },
+      "ini gila": {
+        "1": "That's crazy.",
+        "2": "That's wild.",
+        "3": "This is insane."
+      },
+      "tutup mulutmu": {
+        "1": "Shut up.",
+        "2": "Shut your mouth.",
+        "3": "Shut the fuck up."
+      },
+      "aku sudah muak": {
+        "1": "I'm done with this.",
+        "2": "I'm sick of this.",
+        "3": "I've had it up to here."
+      },
+      "jangan main-main denganku": {
+        "1": "Don't play with me.",
+        "2": "Don't mess with me.",
+        "3": "Don't fuck with me."
+      },
+      "pergi dari sini": {
+        "1": "Get outta here.",
+        "2": "Beat it.",
+        "3": "Get the fuck out."
+      },
+      "kau cari mati?": {
+        "1": "You lookin' for trouble?",
+        "2": "You want smoke?",
+        "3": "You tryna die today?"
+      },
+      "pecundang": {
+        "1": "Loser.",
+        "2": "Lame.",
+        "3": "Bum."
+      },
+      "kau bodoh": {
+        "1": "You're dumb.",
+        "2": "You stupid.",
+        "3": "You goofy as hell."
+      },
+      "pengecut": {
+        "1": "Coward.",
+        "2": "Soft.",
+        "3": "Buster."
+      },
+      "kau payah": {
+        "1": "You suck.",
+        "2": "You're trash.",
+        "3": "You weak."
+      },
+      "bukan levelku": {
+        "1": "Not my level.",
+        "2": "Out of your league.",
+        "3": "Ain't in my bracket."
+      },
+      "aku yang berkuasa di sini": {
+        "1": "I run this.",
+        "2": "I run these streets.",
+        "3": "I'm the one calling the shots."
+      },
+      "kau tidak bisa mengalahkanku": {
+        "1": "You can't beat me.",
+        "2": "You ain't seeing me.",
+        "3": "You can't touch me, bro."
+      },
+      "aku yang terbaik": {
+        "1": "I'm the best.",
+        "2": "I'm the top dog.",
+        "3": "I'm the greatest out here."
+      },
+      "lihat saja nanti": {
+        "1": "We'll see.",
+        "2": "Just watch.",
+        "3": "Watch how I do it."
+      },
+      "jangan remehkan aku": {
+        "1": "Don't underestimate me.",
+        "2": "Don't sleep on me.",
+        "3": "Stop playing with my name."
+      },
+      "aku takut": {
+        "1": "I'm scared.",
+        "2": "I'm shook.",
+        "3": "I'm terrified, man."
+      },
+      "tolong jangan sakiti aku": {
+        "1": "Please don't hurt me.",
+        "2": "Don't do this to me.",
+        "3": "Please, don't do me like this."
+      },
+      "aku menyerah": {
+        "1": "I give up.",
+        "2": "I'm done, bro.",
+        "3": "I tap out."
+      },
+      "aku tidak tahu apa-apa": {
+        "1": "I don't know nothing.",
+        "2": "I ain't got a clue.",
+        "3": "I swear on my life, I don't know shit."
+      },
+      "biarkan aku pergi": {
+        "1": "Let me go.",
+        "2": "Let me out of here.",
+        "3": "Just let me walk, man."
+      },
+      "ini luar biasa": {
+        "1": "This is amazing.",
+        "2": "This is fire.",
+        "3": "This is lit."
+      },
+      "aku sangat senang": {
+        "1": "I'm very happy.",
+        "2": "I'm hyped.",
+        "3": "I'm geeked."
+      },
+      "bagus sekali": {
+        "1": "Very good.",
+        "2": "Good looks.",
+        "3": "That's what's up."
+      },
+      "aku tidak sabar": {
+        "1": "I can't wait.",
+        "2": "I'm ready for it.",
+        "3": "Say less, I'm ready."
+      },
+      "ini hari terbaik": {
+        "1": "Best day ever.",
+        "2": "Today is a movie.",
+        "3": "We up today."
+      },
+      "sialan": {
+        "1": "Damn.",
+        "2": "Shit.",
+        "3": "Fuck this."
+      },
+      "aku sangat kecewa": {
+        "1": "I'm disappointed.",
+        "2": "This is a letdown.",
+        "3": "This shit is wack."
+      },
+      "ini membuang waktu": {
+        "1": "Waste of time.",
+        "2": "We wasting time.",
+        "3": "I ain't got time for this bullshit."
+      },
+      "semuanya hancur": {
+        "1": "Everything is messed up.",
+        "2": "It's all fucked up.",
+        "3": "Shit went left."
+      },
+      "ini sangat menyebalkan": {
+        "1": "This is annoying.",
+        "2": "This is aggravating.",
+        "3": "This shit got me tight."
+      },
+      "tolong aku": {
+        "1": "Help me out.",
+        "2": "I need a hand, bro.",
+        "3": "Bail me out here."
+      },
+      "aku mohon": {
+        "1": "I'm beggin' you.",
+        "2": "Please, man.",
+        "3": "Come on, bro, please."
+      },
+      "berikan itu padaku": {
+        "1": "Give me that.",
+        "2": "Hand that over.",
+        "3": "Run that."
+      },
+      "bantu aku": {
+        "1": "Back me up.",
+        "2": "Hold me down.",
+        "3": "I need you to ride for me."
+      },
+      "beri aku satu kesempatan lagi": {
+        "1": "Give me one more try.",
+        "2": "Let me get one more shot.",
+        "3": "Just give me one more chance, man."
+      },
+      "ikut aku": {
+        "1": "Follow me.",
+        "2": "Come with me.",
+        "3": "Roll with me."
+      },
+      "tunggu di sini": {
+        "1": "Wait here.",
+        "2": "Hold up right here.",
+        "3": "Stay put."
+      },
+      "cepatlah": {
+        "1": "Hurry up.",
+        "2": "Make it snappy.",
+        "3": "Move your ass."
+      },
+      "lakukan sekarang": {
+        "1": "Do it now.",
+        "2": "Get on it.",
+        "3": "Handle that shit right now."
+      },
+      "dengarkan aku": {
+        "1": "Listen to me.",
+        "2": "Hear me out.",
+        "3": "Listen to what I'm sayin'."
+      },
+      "apa kau mau ikut?": {
+        "1": "You coming?",
+        "2": "You trying to slide?",
+        "3": "You rolling with us?"
+      },
+      "biar aku yang urus": {
+        "1": "I got this.",
+        "2": "Let me handle that.",
+        "3": "Leave that to me."
+      },
+      "bagaimana menurutmu?": {
+        "1": "What you think?",
+        "2": "How that sound?",
+        "3": "You feelin' that?"
+      },
+      "ayo pergi": {
+        "1": "Let's go.",
+        "2": "Let's bounce.",
+        "3": "Let's roll out."
+      },
+      "ambil ini": {
+        "1": "Take this.",
+        "2": "Here, hold this.",
+        "3": "Take this, bro."
+      },
+      "kerja bagus": {
+        "1": "Good job.",
+        "2": "Good looking out.",
+        "3": "Solid work, bro."
+      },
+      "kau hebat": {
+        "1": "You're great.",
+        "2": "You killed that.",
+        "3": "You go crazy, bro."
+      },
+      "aku menghargainya": {
+        "1": "I appreciate it.",
+        "2": "Good looks.",
+        "3": "Much love for that."
+      },
+      "terima kasih banyak": {
+        "1": "Thanks a lot.",
+        "2": "Appreciate you.",
+        "3": "Good looking out, fr."
+      },
+      "ini sempurna": {
+        "1": "This is perfect.",
+        "2": "This is exactly it.",
+        "3": "This is right on the money."
+      },
+      "aku minta maaf": {
+        "1": "My bad.",
+        "2": "I'm sorry, bro.",
+        "3": "My fault, man."
+      },
+      "itu salahku": {
+        "1": "That's on me.",
+        "2": "My fault.",
+        "3": "I'll take the blame for that."
+      },
+      "aku menyesal": {
+        "1": "I messed up.",
+        "2": "I fucked up.",
+        "3": "I shouldn't have done that."
+      },
+      "maafkan aku": {
+        "1": "Forgive me.",
+        "2": "Give me a pass on this.",
+        "3": "Don't hold this against me."
+      },
+      "aku tidak sengaja": {
+        "1": "I didn't mean to.",
+        "2": "It was an accident, bro.",
+        "3": "I ain't mean it like that."
+      },
+      "sedang apa?": {
+        "1": "What you doin'?",
+        "2": "What you up to?",
+        "3": "What's the move?"
+      },
+      "cuacanya bagus": {
+        "1": "Weather's nice.",
+        "2": "It's a good day out.",
+        "3": "Sun's out, it's a vibe."
+      },
+      "dari mana saja?": {
+        "1": "Where you been?",
+        "2": "Where you been at?",
+        "3": "Where you been hiding out?"
+      },
+      "bagaimana harimu?": {
+        "1": "How's your day?",
+        "2": "How's the day treatin' you?",
+        "3": "How your day looking?"
+      },
+      "sampai jumpa nanti": {
+        "1": "See you.",
+        "2": "Catch you later.",
+        "3": "I'mma holla at you."
+      },
+      "kau temanku": {
+        "1": "You my boy.",
+        "2": "You my dog.",
+        "3": "You my day one."
+      },
+      "aku percaya padamu": {
+        "1": "I trust you.",
+        "2": "I got faith in you.",
+        "3": "I trust you with my life, bro."
+      },
+      "kita ini saudara": {
+        "1": "We brothers.",
+        "2": "We family, bro.",
+        "3": "We locked in for life."
+      },
+      "aku akan melindungimu": {
+        "1": "I got your back.",
+        "2": "I'm riding for you.",
+        "3": "I got you covered, bro."
+      },
+      "jaga dirimu": {
+        "1": "Take care.",
+        "2": "Stay dangerous.",
+        "3": "Keep your head on a swivel."
+      },
+      "berapa harganya?": {
+        "1": "How much?",
+        "2": "How much this run for?",
+        "3": "What's the ticket on this?"
+      },
+      "aku akan membayarnya": {
+        "1": "I'll pay it.",
+        "2": "I got this.",
+        "3": "Put it on my tab."
+      },
+      "ini uangnya": {
+        "1": "Here's the cash.",
+        "2": "Here's the bag.",
+        "3": "Count the paper."
+      },
+      "terlalu mahal": {
+        "1": "That's too much.",
+        "2": "That's steep, bro.",
+        "3": "You taxin' crazy right now."
+      },
+      "aku tidak punya uang": {
+        "1": "I don't have money.",
+        "2": "I'm broke.",
+        "3": "My pockets are hurting right now."
+      },
+      "aku sedang bekerja": {
+        "1": "I'm working.",
+        "2": "I'm on the clock.",
+        "3": "I'm grindin' right now."
+      },
+      "apa pekerjaanmu?": {
+        "1": "What do you do?",
+        "2": "How you make your money?",
+        "3": "What's your hustle?"
+      },
+      "aku sibuk": {
+        "1": "I'm busy.",
+        "2": "I'm tied up right now.",
+        "3": "I'm swamped, bro."
+      },
+      "ini tugasmu": {
+        "1": "This is your job.",
+        "2": "This is on you.",
+        "3": "You gotta handle this."
+      },
+      "pekerjaan selesai": {
+        "1": "Job's done.",
+        "2": "We finished up.",
+        "3": "Mission accomplished, bro."
+      },
+      "masuk ke mobil": {
+        "1": "Get in.",
+        "2": "Hop in the whip.",
+        "3": "Get in the fucking ride."
+      },
+      "nyalakan mesinnya": {
+        "1": "Start the car.",
+        "2": "Fire it up.",
+        "3": "Turn the whip on, let's go."
+      },
+      "ikuti mobil itu": {
+        "1": "Follow that car.",
+        "2": "Tail that fool.",
+        "3": "Stay on his bumper, don't lose him."
+      },
+      "injak gasnya": {
+        "1": "Hit the gas.",
+        "2": "Floor it.",
+        "3": "Punch that shit, bro!"
+      },
+      "menepi sekarang": {
+        "1": "Pull over.",
+        "2": "Pull this bitch over.",
+        "3": "Pull the fuck over right now."
+      },
+      "angkat tanganmu": {
+        "1": "Hands up.",
+        "2": "Put 'em up.",
+        "3": "Get your hands up now."
+      },
+      "aku tidak bersalah": {
+        "1": "I didn't do it.",
+        "2": "I'm innocent, bro.",
+        "3": "I ain't do shit."
+      },
+      "turunkan senjatamu": {
+        "1": "Put the gun down.",
+        "2": "Drop the burner.",
+        "3": "Put the strap down now."
+      },
+      "ada polisi": {
+        "1": "Cops are here.",
+        "2": "Five-O.",
+        "3": "Twelve is here."
+      },
+      "aku minta pengacara": {
+        "1": "I need a lawyer.",
+        "2": "Get my lawyer.",
+        "3": "I ain't sayin' shit without my lawyer."
+      },
+      "maju sini": {
+        "1": "Come here.",
+        "2": "Pull up then.",
+        "3": "Square up, bro."
+      },
+      "aku akan menghajarmu": {
+        "1": "I'll beat you up.",
+        "2": "I'm gonna knock you out.",
+        "3": "I'mma beat the brakes off you."
+      },
+      "jangan lari": {
+        "1": "Don't run.",
+        "2": "Stop running.",
+        "3": "Where you runnin' to?"
+      },
+      "habisi dia": {
+        "1": "Get him.",
+        "2": "Drop him.",
+        "3": "Smoke his ass."
+      },
+      "berdiri": {
+        "1": "Get up.",
+        "2": "Stand your ass up.",
+        "3": "Get the fuck up."
+      },
+      "ini perampokan": {
+        "1": "This is a robbery.",
+        "2": "Run your shit.",
+        "3": "This a stick-up, lay down."
+      },
+      "serahkan semua uangmu": {
+        "1": "Give me the money.",
+        "2": "Empty your pockets.",
+        "3": "Run them pockets, right now."
+      },
+      "sembunyikan barang buktinya": {
+        "1": "Hide the evidence.",
+        "2": "Stash the gear.",
+        "3": "Stash the work, bro."
+      },
+      "kita ketahuan": {
+        "1": "We're spotted.",
+        "2": "They on us.",
+        "3": "We blown."
+      },
+      "jangan beri tahu polisi": {
+        "1": "Don't tell the cops.",
+        "2": "Keep your mouth shut.",
+        "3": "No snitching to the feds."
+      },
+      "ayo minum": {
+        "1": "Let's drink.",
+        "2": "Let's grab some drinks.",
+        "3": "Let's get lit."
+      },
+      "aku mabuk": {
+        "1": "I'm drunk.",
+        "2": "I'm faded.",
+        "3": "I'm wasted right now."
+      },
+      "tuangkan aku minuman": {
+        "1": "Pour me a drink.",
+        "2": "Pour me up.",
+        "3": "Hit me with another shot."
+      },
+      "pestanya luar biasa": {
+        "1": "The party is good.",
+        "2": "This party is crazy.",
+        "3": "This party is turnt."
+      },
+      "bersulang": {
+        "1": "Cheers.",
+        "2": "Drink up.",
+        "3": "Bottoms up."
+      },
+      "kamu sangat cantik/tampan": {
+        "1": "You look good.",
+        "2": "You fine as hell.",
+        "3": "You looking like a whole meal, damn."
+      },
+      "aku menyukaimu": {
+        "1": "I like you.",
+        "2": "I'm feelin' you.",
+        "3": "I'm heavy on you, for real."
+      },
+      "maukah kau pergi denganku?": {
+        "1": "You tryna hang?",
+        "2": "Let's go out sometime.",
+        "3": "You tryna slide with me tonight?"
+      },
+      "kau milikku": {
+        "1": "You mine.",
+        "2": "You belong to me now.",
+        "3": "You all mine, ain't no debate."
+      },
+      "aku merindukanmu": {
+        "1": "I miss you.",
+        "2": "Missin' you, fr.",
+        "3": "Been thinkin' 'bout you a lot lately."
+      },
+      "aku terluka": {
+        "1": "I'm hurt.",
+        "2": "I'm hit, bro.",
+        "3": "I'm bleeding out here!"
+      },
+      "panggil ambulans": {
+        "1": "Call an ambulance.",
+        "2": "Call an ambo, quick!",
+        "3": "Dial 911, get a bus down here!"
+      },
+      "aku butuh dokter": {
+        "1": "I need a doctor.",
+        "2": "I need a medic right now.",
+        "3": "Get me a doc, I'm dying here!"
+      },
+      "bertahanlah": {
+        "1": "Hold on.",
+        "2": "Stay with me, bro.",
+        "3": "Keep your eyes open, don't die on me!"
+      },
+      "dia tidak bernapas": {
+        "1": "He's not breathing.",
+        "2": "He ain't breathing, bro.",
+        "3": "He's out cold, no breath!"
+      },
+      "aku sangat sedih": {
+        "1": "I'm hurtin'.",
+        "2": "I'm messed up over this.",
+        "3": "This shit got me fucked up, bro."
+      },
+      "dia sudah tiada": {
+        "1": "He's gone.",
+        "2": "They took him.",
+        "3": "He ain't with us no more."
+      },
+      "aku tidak bisa tanpa dia": {
+        "1": "I can't do this without him.",
+        "2": "I'm lost without my boy.",
+        "3": "I ain't gonna make it without 'em."
+      },
+      "ini semua salahku": {
+        "1": "This is on me.",
+        "2": "It's all my fault.",
+        "3": "I did this to us, man."
+      },
+      "aku kehilangan segalanya": {
+        "1": "I lost it all.",
+        "2": "Everything's gone, bro.",
+        "3": "I ain't got shit left, man."
+      },
+      "siapa yang menyuruhmu?": {
+        "1": "Who sent you?",
+        "2": "Who you working for?",
+        "3": "Who put the hit out on me?"
+      },
+      "katakan yang sebenarnya": {
+        "1": "Tell the truth.",
+        "2": "Keep it a hundred.",
+        "3": "Stop capping and spit the facts."
+      },
+      "aku tidak akan bicara": {
+        "1": "I ain't talking.",
+        "2": "I ain't saying shit.",
+        "3": "My lips are sealed, bro."
+      },
+      "lepaskan ikatannya": {
+        "1": "Untie him.",
+        "2": "Cut him loose.",
+        "3": "Take them zip ties off him."
+      },
+      "kau akan menyesal": {
+        "1": "You gonna regret this.",
+        "2": "You fucked up bad.",
+        "3": "You gonna pay for this shit, watch."
+      },
+      "matikan kameranya": {
+        "1": "Kill the cams.",
+        "2": "Cut the cameras.",
+        "3": "Black out the video feeds."
+      },
+      "buka brankasnya": {
+        "1": "Pop the safe.",
+        "2": "Crack the vault.",
+        "3": "Get that safe open now."
+      },
+      "sistem berhasil diretas": {
+        "1": "System's hacked.",
+        "2": "I'm in the mainframe.",
+        "3": "We bypassed the firewall, we good."
+      },
+      "waktu kita hampir habis": {
+        "1": "Clock's ticking.",
+        "2": "We running out of time.",
+        "3": "Time is up, we gotta move."
+      },
+      "kita harus keluar dari sini": {
+        "1": "We gotta get outta here.",
+        "2": "Let's dip.",
+        "3": "We need to bounce right now."
+      },
+      "aku tahu rahasiamu": {
+        "1": "I know your secret.",
+        "2": "I know what you hiding.",
+        "3": "I got the dirt on you, bro."
+      },
+      "bayar utangmu": {
+        "1": "Pay your debt.",
+        "2": "Run me my money.",
+        "3": "Better have my bread when I see you."
+      },
+      "jangan bertingkah": {
+        "1": "Don't act up.",
+        "2": "Don't play no games with me.",
+        "3": "Stop playing with my money."
+      },
+      "kau tidak punya pilihan": {
+        "1": "You got no choice.",
+        "2": "You ain't got a choice, bro.",
+        "3": "You backed in a corner now."
+      },
+      "ini peringatan terakhir": {
+        "1": "This your last warning.",
+        "2": "Last strike, bro.",
+        "3": "I ain't telling you again."
+      },
+      "jangan bersuara": {
+        "1": "Stay quiet.",
+        "2": "Keep it down.",
+        "3": "Don't make a peep, bro."
+      },
+      "menunduklah": {
+        "1": "Get down.",
+        "2": "Stay low.",
+        "3": "Keep your head down, bro."
+      },
+      "tetap dalam penyamaran": {
+        "1": "Keep your cover.",
+        "2": "Play it cool.",
+        "3": "Act natural, don't blow this."
+      },
+      "apakah jalannya aman?": {
+        "1": "Is it clear?",
+        "2": "Coast clear?",
+        "3": "We good to move?"
+      },
+      "aku akan mengalihkan perhatian mereka": {
+        "1": "I'll distract them.",
+        "2": "I'll draw their heat.",
+        "3": "I'mma cause a scene."
+      },
+      "pegangan yang erat": {
+        "1": "Hold on.",
+        "2": "Hold tight.",
+        "3": "Hold the fuck on, bro."
+      },
+      "aku akan menyalipnya": {
+        "1": "I'm passing him.",
+        "2": "I'm bout to smoke him.",
+        "3": "I'm blowing past this fool."
+      },
+      "awas di depan": {
+        "1": "Watch out.",
+        "2": "Heads up.",
+        "3": "Watch out for that shit ahead!"
+      },
+      "kita kehilangan dia": {
+        "1": "We losing him.",
+        "2": "He's getting away, bro.",
+        "3": "We lost that fool."
+      },
+      "aku menang": {
+        "1": "I won.",
+        "2": "I took that.",
+        "3": "I smoked y'all."
+      },
+      "mari kita mulai rapatnya": {
+        "1": "Let's start.",
+        "2": "Let's talk business.",
+        "3": "Let's get down to business, bro."
+      },
+      "apa laporanmu?": {
+        "1": "What's the report?",
+        "2": "What's the word?",
+        "3": "Give me the rundown, bro."
+      },
+      "keuntungannya menurun": {
+        "1": "Profits are low.",
+        "2": "We ain't making as much.",
+        "3": "The bag is getting light, bro."
+      },
+      "kita butuh wilayah baru": {
+        "1": "We need new territory.",
+        "2": "We need new turf.",
+        "3": "We gotta expand our block."
+      },
+      "rapat dibubarkan": {
+        "1": "Meeting's over.",
+        "2": "We done here.",
+        "3": "Meeting adjourned, let's roll out."
+      },
+      "maju sekarang": {
+        "1": "Move up.",
+        "2": "Push up on 'em.",
+        "3": "Let's push, move out!"
+      },
+      "lindungi aku": {
+        "1": "Cover me.",
+        "2": "Watch my back.",
+        "3": "Lay down some fire, I'm moving!"
+      },
+      "target terlihat": {
+        "1": "I see him.",
+        "2": "Got eyes on the target.",
+        "3": "I see the op, right there."
+      },
+      "tahan tembakan": {
+        "1": "Don't shoot.",
+        "2": "Hold your fire.",
+        "3": "Chill, don't blast yet."
+      },
+      "mundur": {
+        "1": "Fall back.",
+        "2": "Back up.",
+        "3": "Fall the fuck back, let's go!"
+      },
+      "brengsek": {
+        "1": "Asshole.",
+        "2": "Punk.",
+        "3": "Punk ass bitch."
+      },
+      "bajingan": {
+        "1": "Motherfucker.",
+        "2": "Sick motherfucker.",
+        "3": "You a dumb motherfucker."
+      },
+      "persetan denganmu": {
+        "1": "Fuck you.",
+        "2": "Fuck outta here.",
+        "3": "Man, fuck you and your whole crew."
+      },
+      "pergi ke neraka": {
+        "1": "Go to hell.",
+        "2": "Drop dead, bro.",
+        "3": "Burn in hell, motherfucker."
+      },
+      "omong kosong": {
+        "1": "Bullshit.",
+        "2": "That's cap.",
+        "3": "You talking out your ass, bro."
+      },
+      "kau jelek sekali": {
+        "1": "You ugly.",
+        "2": "You ugly as hell.",
+        "3": "You one ugly motherfucker."
+      },
+      "dasar babi gemuk": {
+        "1": "Fat boy.",
+        "2": "Fat ass.",
+        "3": "You a fat ass pig, bro."
+      },
+      "kau sangat lemah": {
+        "1": "You weak.",
+        "2": "You soft as hell.",
+        "3": "You a weak ass bitch."
+      },
+      "tutup mulut baumu": {
+        "1": "Shut up.",
+        "2": "Shut your breath up.",
+        "3": "Shut your stank ass mouth."
+      },
+      "kau tidak berguna": {
+        "1": "You useless.",
+        "2": "You ain't good for shit.",
+        "3": "You a worthless piece of shit."
+      },
+      "serahkan dompetmu": {
+        "1": "Run the wallet.",
+        "2": "Empty your pockets.",
+        "3": "Run them pockets, give me the wallet!"
+      },
+      "apa kau mau berkelahi?": {
+        "1": "You wanna fight?",
+        "2": "You tryna throw hands?",
+        "3": "You want smoke? Let's catch this fade."
+      },
+      "aku akan membunuhmu": {
+        "1": "I'll kill you.",
+        "2": "I'll put you in the dirt.",
+        "3": "I'mma smoke your ass, dead homies."
+      },
+      "tutup mulutmu atau kau mati": {
+        "1": "Shut up or you're dead.",
+        "2": "Keep quiet or get smoked.",
+        "3": "Shut the fuck up or I'll blow your head off."
+      },
+      "kau cari masalah dengan orang yang salah": {
+        "1": "You messing with the wrong guy.",
+        "2": "You fucking with the wrong crew.",
+        "3": "You playing with the wrong gang, homie."
+      },
+      "warna bajumu salah": {
+        "1": "You repping the wrong colors.",
+        "2": "Take that flag off.",
+        "3": "You banging the wrong colors in this hood, bro."
+      },
+      "kembali ke wilayahmu": {
+        "1": "Go back to your hood.",
+        "2": "Take your ass back to your block.",
+        "3": "Get the fuck back to your own turf."
+      },
+      "kelompokmu adalah sampah": {
+        "1": "Your set is trash.",
+        "2": "Your whole gang is a joke.",
+        "3": "Your whole hood is full of bitches."
+      },
+      "pengkhianat": {
+        "1": "Traitor.",
+        "2": "You a snake.",
+        "3": "You a backstabbing rat."
+      },
+      "aku membenci orang-orang sepertimu": {
+        "1": "I hate you fools.",
+        "2": "I can't stand y'all.",
+        "3": "I fucking hate everybody from your side."
+      },
+      "jatuhkan senjatamu": {
+        "1": "Drop the gun.",
+        "2": "Drop the strap.",
+        "3": "Put the burner down, bro."
+      },
+      "aku akan menembakmu": {
+        "1": "I'll shoot you.",
+        "2": "I'mma blast you.",
+        "3": "I'll air your ass out."
+      },
+      "jangan bergerak atau kutembak": {
+        "1": "Don't move or I shoot.",
+        "2": "Freeze or I'm busting.",
+        "3": "Move an inch and I'll smoke you."
+      },
+      "bidik kepalanya": {
+        "1": "Aim for the head.",
+        "2": "Aim for his dome.",
+        "3": "Put it right between his eyes."
+      },
+      "tarik pelatuknya": {
+        "1": "Pull the trigger.",
+        "2": "Squeeze that shit.",
+        "3": "Let it rip, bro."
+      },
+      "apakah barangnya aman?": {
+        "1": "You got the stuff?",
+        "2": "Is the work secure?",
+        "3": "You got the package secured, bro?"
+      },
+      "jangan coba menipuku": {
+        "1": "Don't try to scam me.",
+        "2": "Don't play me, bro.",
+        "3": "Don't try to finesse me, homie."
+      },
+      "ini kualitas terbaik": {
+        "1": "This is good stuff.",
+        "2": "This is that pure.",
+        "3": "This shit is straight gas, bro."
+      },
+      "transaksi selesai": {
+        "1": "Deal is done.",
+        "2": "We good here.",
+        "3": "Bag is secured, let's bounce."
+      },
+      "polisi sedang berpatroli": {
+        "1": "Cops are patrolling.",
+        "2": "The block is hot right now.",
+        "3": "Twelve is heavily patrolling the area."
+      }
+    },
+    "British Formal": {
+      "halo": {
+        "1": "Hello.",
+        "2": "Good day.",
+        "3": "A pleasure."
+      },
+      "apa kabar?": {
+        "1": "How do you do?",
+        "2": "How are things?",
+        "3": "Keeping well, I trust?"
+      },
+      "ada apa?": {
+        "1": "What seems to be the matter?",
+        "2": "Is there an issue?",
+        "3": "Whatever is the matter?"
+      },
+      "lama tidak berjumpa": {
+        "1": "It has been some time.",
+        "2": "I haven't seen you in ages.",
+        "3": "It feels like an eternity."
+      },
+      "selamat pagi": {
+        "1": "Good morning.",
+        "2": "A very good morning to you.",
+        "3": "Grand morning."
+      },
+      "iya / oke": {
+        "1": "Yes.",
+        "2": "Indeed.",
+        "3": "Very well."
+      },
+      "aku setuju": {
+        "1": "I agree.",
+        "2": "I concur.",
+        "3": "I share your view."
+      },
+      "tentu saja": {
+        "1": "Of course.",
+        "2": "By all means.",
+        "3": "Without a doubt."
+      },
+      "baiklah": {
+        "1": "Very well.",
+        "2": "Right then.",
+        "3": "Splendid."
+      },
+      "aku mengerti": {
+        "1": "I understand.",
+        "2": "I follow you.",
+        "3": "Perfectly clear."
+      },
+      "tidak": {
+        "1": "No.",
+        "2": "I think not.",
+        "3": "Certainly not."
+      },
+      "aku tidak setuju": {
+        "1": "I disagree.",
+        "2": "I cannot agree.",
+        "3": "I take a different view."
+      },
+      "tidak mungkin": {
+        "1": "Impossible.",
+        "2": "Highly unlikely.",
+        "3": "Out of the question."
+      },
+      "aku tidak mau": {
+        "1": "I do not want to.",
+        "2": "I would prefer not to.",
+        "3": "I must decline."
+      },
+      "itu salah": {
+        "1": "That is wrong.",
+        "2": "That is inaccurate.",
+        "3": "You are sorely mistaken."
+      },
+      "apa maksudmu?": {
+        "1": "What do you mean?",
+        "2": "Whatever do you mean?",
+        "3": "I beg your pardon, what are you implying?"
+      },
+      "aku tidak mengerti": {
+        "1": "I do not understand.",
+        "2": "I'm afraid I don't follow.",
+        "3": "I am at a loss."
+      },
+      "apa?": {
+        "1": "What?",
+        "2": "I beg your pardon?",
+        "3": "Come again?"
+      },
+      "aku bingung": {
+        "1": "I am confused.",
+        "2": "I find this rather baffling.",
+        "3": "I am utterly bewildered."
+      },
+      "coba ulangi": {
+        "1": "Please repeat that.",
+        "2": "Could you repeat yourself?",
+        "3": "Would you mind going over that again?"
+      },
+      "astaga": {
+        "1": "Good heavens.",
+        "2": "My word.",
+        "3": "Good god."
+      },
+      "yang benar saja?": {
+        "1": "Are you quite serious?",
+        "2": "Really now?",
+        "3": "Are you having a laugh?"
+      },
+      "aku tidak percaya ini": {
+        "1": "I simply cannot believe this.",
+        "2": "I am in disbelief.",
+        "3": "This is beyond belief."
+      },
+      "apa-apaan ini?": {
+        "1": "What is this?",
+        "2": "What on earth is going on?",
+        "3": "What in heaven's name is this?"
+      },
+      "ini gila": {
+        "1": "This is madness.",
+        "2": "This is utterly absurd.",
+        "3": "This is sheer lunacy."
+      },
+      "tutup mulutmu": {
+        "1": "Be quiet.",
+        "2": "Hold your tongue.",
+        "3": "Keep your mouth shut."
+      },
+      "aku sudah muak": {
+        "1": "I have had enough.",
+        "2": "I am thoroughly sick of this.",
+        "3": "I am at the end of my tether."
+      },
+      "jangan main-main denganku": {
+        "1": "Do not toy with me.",
+        "2": "Do not test me.",
+        "3": "I strongly advise you not to cross me."
+      },
+      "pergi dari sini": {
+        "1": "Leave at once.",
+        "2": "Clear out.",
+        "3": "Get out of my sight."
+      },
+      "kau cari mati?": {
+        "1": "Are you looking for trouble?",
+        "2": "Do you have a death wish?",
+        "3": "Are you absolutely mental?"
+      },
+      "pecundang": {
+        "1": "Loser.",
+        "2": "Waste of space.",
+        "3": "Absolute failure."
+      },
+      "kau bodoh": {
+        "1": "You are foolish.",
+        "2": "You are daft.",
+        "3": "You are remarkably dim-witted."
+      },
+      "pengecut": {
+        "1": "Coward.",
+        "2": "Spineless.",
+        "3": "Gutless wonder."
+      },
+      "kau payah": {
+        "1": "You are pitiful.",
+        "2": "You are dreadful.",
+        "3": "You are utterly pathetic."
+      },
+      "bukan levelku": {
+        "1": "Not on my level.",
+        "2": "Out of your depth.",
+        "3": "Simply beneath my dignity."
+      },
+      "aku yang berkuasa di sini": {
+        "1": "I am in charge here.",
+        "2": "I am running things here.",
+        "3": "I dictate the terms here."
+      },
+      "kau tidak bisa mengalahkanku": {
+        "1": "You cannot defeat me.",
+        "2": "You haven't got a chance.",
+        "3": "You are completely outmatched."
+      },
+      "aku yang terbaik": {
+        "1": "I am the best.",
+        "2": "I am second to none.",
+        "3": "I am without equal."
+      },
+      "lihat saja nanti": {
+        "1": "We shall see.",
+        "2": "Just you wait and see.",
+        "3": "Only time will tell."
+      },
+      "jangan remehkan aku": {
+        "1": "Do not underestimate me.",
+        "2": "I wouldn't underestimate me if I were you.",
+        "3": "It would be a grave error to underestimate me."
+      },
+      "aku takut": {
+        "1": "I am afraid.",
+        "2": "I am quite frightened.",
+        "3": "I am thoroughly terrified."
+      },
+      "tolong jangan sakiti aku": {
+        "1": "Please do not hurt me.",
+        "2": "I implore you, do not harm me.",
+        "3": "I beg of you, please do no such thing."
+      },
+      "aku menyerah": {
+        "1": "I surrender.",
+        "2": "I yield.",
+        "3": "I concede defeat entirely."
+      },
+      "aku tidak tahu apa-apa": {
+        "1": "I know nothing.",
+        "2": "I am unaware of anything.",
+        "3": "I haven't the faintest idea."
+      },
+      "biarkan aku pergi": {
+        "1": "Let me go.",
+        "2": "Please let me depart.",
+        "3": "I insist you let me take my leave."
+      },
+      "ini luar biasa": {
+        "1": "This is marvelous.",
+        "2": "This is quite brilliant.",
+        "3": "This is absolutely smashing."
+      },
+      "aku sangat senang": {
+        "1": "I am very pleased.",
+        "2": "I am delighted.",
+        "3": "I am absolutely chuffed."
+      },
+      "bagus sekali": {
+        "1": "Very well done.",
+        "2": "Splendid work.",
+        "3": "Top marks."
+      },
+      "aku tidak sabar": {
+        "1": "I cannot wait.",
+        "2": "I am looking forward to this.",
+        "3": "I await it with great anticipation."
+      },
+      "ini hari terbaik": {
+        "1": "This is the best day.",
+        "2": "It has been a magnificent day.",
+        "3": "A truly glorious day."
+      },
+      "sialan": {
+        "1": "Bother.",
+        "2": "Bloody hell.",
+        "3": "For heaven's sake."
+      },
+      "aku sangat kecewa": {
+        "1": "I am severely disappointed.",
+        "2": "I am terribly let down.",
+        "3": "I am absolutely gutted."
+      },
+      "ini membuang waktu": {
+        "1": "This is a waste of time.",
+        "2": "A complete waste of time.",
+        "3": "We are merely dallying."
+      },
+      "semuanya hancur": {
+        "1": "Everything is ruined.",
+        "2": "It has all gone wrong.",
+        "3": "It has all gone to pot."
+      },
+      "ini sangat menyebalkan": {
+        "1": "This is very annoying.",
+        "2": "This is frightfully tiresome.",
+        "3": "This is immensely aggravating."
+      },
+      "tolong aku": {
+        "1": "Please help me.",
+        "2": "Could you lend a hand?",
+        "3": "I require your assistance."
+      },
+      "aku mohon": {
+        "1": "I beseech you.",
+        "2": "I beg of you.",
+        "3": "I humbly implore you."
+      },
+      "berikan itu padaku": {
+        "1": "Give that to me.",
+        "2": "Pass that over, please.",
+        "3": "Kindly hand that over."
+      },
+      "bantu aku": {
+        "1": "Assist me.",
+        "2": "I require your support.",
+        "3": "I am in need of your backing."
+      },
+      "beri aku satu kesempatan lagi": {
+        "1": "Give me one more chance.",
+        "2": "Allow me another attempt.",
+        "3": "I request one final opportunity."
+      },
+      "ikut aku": {
+        "1": "Follow me.",
+        "2": "Come along.",
+        "3": "If you would just follow me."
+      },
+      "tunggu di sini": {
+        "1": "Wait here.",
+        "2": "Wait right here.",
+        "3": "Kindly remain here."
+      },
+      "cepatlah": {
+        "1": "Hurry up.",
+        "2": "Make haste.",
+        "3": "I suggest you hurry."
+      },
+      "lakukan sekarang": {
+        "1": "Do it now.",
+        "2": "See to it immediately.",
+        "3": "I want it done this instant."
+      },
+      "dengarkan aku": {
+        "1": "Listen to me.",
+        "2": "Listen here.",
+        "3": "I need you to pay close attention."
+      },
+      "apa kau mau ikut?": {
+        "1": "Would you like to come?",
+        "2": "Care to join us?",
+        "3": "Do you fancy tagging along?"
+      },
+      "biar aku yang urus": {
+        "1": "Let me handle this.",
+        "2": "I shall take care of it.",
+        "3": "Leave this matter entirely to me."
+      },
+      "bagaimana menurutmu?": {
+        "1": "What do you think?",
+        "2": "How does that sound?",
+        "3": "What are your thoughts on the matter?"
+      },
+      "ayo pergi": {
+        "1": "Let us go.",
+        "2": "We should leave now.",
+        "3": "Shall we make a move?"
+      },
+      "ambil ini": {
+        "1": "Take this.",
+        "2": "Please accept this.",
+        "3": "I insist you have this."
+      },
+      "kerja bagus": {
+        "1": "Good job.",
+        "2": "Well done.",
+        "3": "Sterling work."
+      },
+      "kau hebat": {
+        "1": "You are great.",
+        "2": "You are quite brilliant.",
+        "3": "You are absolutely splendid."
+      },
+      "aku menghargainya": {
+        "1": "I appreciate it.",
+        "2": "I am much obliged.",
+        "3": "I am deeply indebted to you."
+      },
+      "terima kasih banyak": {
+        "1": "Thank you very much.",
+        "2": "Many thanks.",
+        "3": "Thank you ever so much."
+      },
+      "ini sempurna": {
+        "1": "This is perfect.",
+        "2": "This is spot on.",
+        "3": "This is absolutely immaculate."
+      },
+      "aku minta maaf": {
+        "1": "I am sorry.",
+        "2": "I do apologize.",
+        "3": "I am awfully sorry."
+      },
+      "itu salahku": {
+        "1": "That is my fault.",
+        "2": "The fault is entirely mine.",
+        "3": "I hold my hands up to that."
+      },
+      "aku menyesal": {
+        "1": "I regret it.",
+        "2": "I rue the day.",
+        "3": "I am filled with remorse."
+      },
+      "maafkan aku": {
+        "1": "Please forgive me.",
+        "2": "I beg your forgiveness.",
+        "3": "I implore you to forgive me."
+      },
+      "aku tidak sengaja": {
+        "1": "I did not mean to.",
+        "2": "It was entirely accidental.",
+        "3": "I assure you, it was unintentional."
+      },
+      "sedang apa?": {
+        "1": "What are you doing?",
+        "2": "What are you up to?",
+        "3": "How are you keeping yourself busy?"
+      },
+      "cuacanya bagus": {
+        "1": "The weather is nice.",
+        "2": "It is a lovely day.",
+        "3": "Marvellous weather we are having."
+      },
+      "dari mana saja?": {
+        "1": "Where have you been?",
+        "2": "Where did you get to?",
+        "3": "Wherever have you been hiding?"
+      },
+      "bagaimana harimu?": {
+        "1": "How is your day?",
+        "2": "How is your day going?",
+        "3": "I trust your day is going well?"
+      },
+      "sampai jumpa nanti": {
+        "1": "See you later.",
+        "2": "Catch you later.",
+        "3": "Cheerio for now."
+      },
+      "kau temanku": {
+        "1": "You are my friend.",
+        "2": "You are a dear friend.",
+        "3": "I hold our friendship in high regard."
+      },
+      "aku percaya padamu": {
+        "1": "I trust you.",
+        "2": "I place my trust in you.",
+        "3": "You have my utmost confidence."
+      },
+      "kita ini saudara": {
+        "1": "We are brethren.",
+        "2": "We are like brothers.",
+        "3": "I look upon you as family."
+      },
+      "aku akan melindungimu": {
+        "1": "I will protect you.",
+        "2": "I have your back.",
+        "3": "I shall ensure no harm comes to you."
+      },
+      "jaga dirimu": {
+        "1": "Take care.",
+        "2": "Mind how you go.",
+        "3": "Do take good care of yourself."
+      },
+      "berapa harganya?": {
+        "1": "How much is it?",
+        "2": "What is the price for this?",
+        "3": "What damage are we looking at?"
+      },
+      "aku akan membayarnya": {
+        "1": "I will pay for it.",
+        "2": "Allow me to settle this.",
+        "3": "I shall foot the bill."
+      },
+      "ini uangnya": {
+        "1": "Here is the money.",
+        "2": "Please accept this payment.",
+        "3": "Here are the funds as agreed."
+      },
+      "terlalu mahal": {
+        "1": "It is too expensive.",
+        "2": "That is rather steep.",
+        "3": "That is daylight robbery."
+      },
+      "aku tidak punya uang": {
+        "1": "I do not have any money.",
+        "2": "I am a bit short at the moment.",
+        "3": "I am utterly penniless."
+      },
+      "aku sedang bekerja": {
+        "1": "I am working.",
+        "2": "I am at work.",
+        "3": "I am engaged in my duties."
+      },
+      "apa pekerjaanmu?": {
+        "1": "What is your job?",
+        "2": "What do you do for work?",
+        "3": "What is your line of work?"
+      },
+      "aku sibuk": {
+        "1": "I am busy.",
+        "2": "I am rather tied up.",
+        "3": "I am thoroughly occupied."
+      },
+      "ini tugasmu": {
+        "1": "This is your task.",
+        "2": "This is your duty.",
+        "3": "This matter is your responsibility."
+      },
+      "pekerjaan selesai": {
+        "1": "The job is done.",
+        "2": "The work is concluded.",
+        "3": "The task has been accomplished."
+      },
+      "masuk ke mobil": {
+        "1": "Get in the car.",
+        "2": "Step into the vehicle.",
+        "3": "Be so kind as to enter the car."
+      },
+      "nyalakan mesinnya": {
+        "1": "Start the engine.",
+        "2": "Start the motor, please.",
+        "3": "Get the engine running."
+      },
+      "ikuti mobil itu": {
+        "1": "Follow that car.",
+        "2": "Keep pace with that vehicle.",
+        "3": "Do not let that car out of your sight."
+      },
+      "injak gasnya": {
+        "1": "Speed up.",
+        "2": "Put your foot down.",
+        "3": "I suggest you accelerate post-haste."
+      },
+      "menepi sekarang": {
+        "1": "Pull over now.",
+        "2": "Pull over to the side.",
+        "3": "Bring the vehicle to a halt on the verge."
+      },
+      "angkat tanganmu": {
+        "1": "Raise your hands.",
+        "2": "Put your hands in the air.",
+        "3": "Show me your hands, immediately."
+      },
+      "aku tidak bersalah": {
+        "1": "I am innocent.",
+        "2": "I have done nothing wrong.",
+        "3": "I am completely without fault here."
+      },
+      "turunkan senjatamu": {
+        "1": "Put the weapon down.",
+        "2": "Drop your weapon.",
+        "3": "Lower your firearm at once."
+      },
+      "ada polisi": {
+        "1": "The police are here.",
+        "2": "The authorities have arrived.",
+        "3": "The constabulary is present."
+      },
+      "aku minta pengacara": {
+        "1": "I want a lawyer.",
+        "2": "I require legal representation.",
+        "3": "I demand to speak with my solicitor."
+      },
+      "maju sini": {
+        "1": "Come here.",
+        "2": "Step forward, then.",
+        "3": "Step to me, then."
+      },
+      "aku akan menghajarmu": {
+        "1": "I will strike you.",
+        "2": "I shall give you a thrashing.",
+        "3": "I will batter you."
+      },
+      "jangan lari": {
+        "1": "Do not run.",
+        "2": "Cease running.",
+        "3": "Stand your ground."
+      },
+      "habisi dia": {
+        "1": "Deal with him.",
+        "2": "Take him down.",
+        "3": "Finish the job."
+      },
+      "berdiri": {
+        "1": "Stand up.",
+        "2": "On your feet.",
+        "3": "Get up at once."
+      },
+      "ini perampokan": {
+        "1": "This is a robbery.",
+        "2": "You are being robbed.",
+        "3": "Hand over your valuables, this is a hold-up."
+      },
+      "serahkan semua uangmu": {
+        "1": "Hand over all your money.",
+        "2": "Give me the cash.",
+        "3": "Empty the till, if you please."
+      },
+      "sembunyikan barang buktinya": {
+        "1": "Hide the evidence.",
+        "2": "Conceal the items.",
+        "3": "Ensure there is no trace left behind."
+      },
+      "kita ketahuan": {
+        "1": "We have been discovered.",
+        "2": "Our cover is blown.",
+        "3": "We have been compromised."
+      },
+      "jangan beri tahu polisi": {
+        "1": "Do not inform the police.",
+        "2": "I strongly advise against calling the authorities.",
+        "3": "Keep the constabulary out of our affairs."
+      },
+      "ayo minum": {
+        "1": "Let us have a drink.",
+        "2": "Shall we go for a pint?",
+        "3": "Care to join me for a tipple?"
+      },
+      "aku mabuk": {
+        "1": "I am inebriated.",
+        "2": "I am a bit tipsy.",
+        "3": "I am absolutely plastered."
+      },
+      "tuangkan aku minuman": {
+        "1": "Pour me a drink, please.",
+        "2": "Could you top up my glass?",
+        "3": "Be a good chap and pour me another."
+      },
+      "pestanya luar biasa": {
+        "1": "The party is splendid.",
+        "2": "This is a smashing party.",
+        "3": "This gathering is absolutely cracking."
+      },
+      "bersulang": {
+        "1": "Cheers.",
+        "2": "A toast to you.",
+        "3": "To our good health."
+      },
+      "kamu sangat cantik/tampan": {
+        "1": "You look quite lovely.",
+        "2": "You are exceedingly ravishing.",
+        "3": "You are utterly breathtaking."
+      },
+      "aku menyukaimu": {
+        "1": "I like you.",
+        "2": "I am quite partial to you.",
+        "3": "I find myself deeply infatuated with you."
+      },
+      "maukah kau pergi denganku?": {
+        "1": "Would you like to go out?",
+        "2": "Shall we go on a date?",
+        "3": "Would you do me the honor of accompanying me this evening?"
+      },
+      "kau milikku": {
+        "1": "You are mine.",
+        "2": "You belong to me.",
+        "3": "You are entirely mine to claim."
+      },
+      "aku merindukanmu": {
+        "1": "I miss you.",
+        "2": "I have missed your company.",
+        "3": "I find myself longing for you."
+      },
+      "aku terluka": {
+        "1": "I am hurt.",
+        "2": "I am injured.",
+        "3": "I have been wounded."
+      },
+      "panggil ambulans": {
+        "1": "Call an ambulance.",
+        "2": "Please ring for an ambulance.",
+        "3": "Summon medical assistance post-haste."
+      },
+      "aku butuh dokter": {
+        "1": "I need a doctor.",
+        "2": "I require a medical practitioner.",
+        "3": "I am in urgent need of a doctor."
+      },
+      "bertahanlah": {
+        "1": "Hold on.",
+        "2": "Stay with us.",
+        "3": "Please hold on, help is arriving."
+      },
+      "dia tidak bernapas": {
+        "1": "He is not breathing.",
+        "2": "He has stopped breathing.",
+        "3": "The patient is unresponsive and not breathing."
+      },
+      "aku sangat sedih": {
+        "1": "I am quite sorrowful.",
+        "2": "I am deeply distressed.",
+        "3": "I am absolutely heartbroken."
+      },
+      "dia sudah tiada": {
+        "1": "He has passed.",
+        "2": "He is no longer among the living.",
+        "3": "They have sadly departed this life."
+      },
+      "aku tidak bisa tanpa dia": {
+        "1": "I cannot cope without them.",
+        "2": "I am utterly bereft without them.",
+        "3": "I simply cannot go on without their presence."
+      },
+      "ini semua salahku": {
+        "1": "This is my fault.",
+        "2": "I am solely responsible for this.",
+        "3": "The blame lies entirely with me."
+      },
+      "aku kehilangan segalanya": {
+        "1": "I have lost everything.",
+        "2": "I am left with nothing.",
+        "3": "I have lost absolutely everything of value."
+      },
+      "siapa yang menyuruhmu?": {
+        "1": "Who sent you?",
+        "2": "Under whose instruction are you operating?",
+        "3": "I demand to know who orchestrated this."
+      },
+      "katakan yang sebenarnya": {
+        "1": "Tell the truth.",
+        "2": "Kindly be truthful with me.",
+        "3": "I expect nothing less than the absolute truth."
+      },
+      "aku tidak akan bicara": {
+        "1": "I will not speak.",
+        "2": "I choose to remain silent.",
+        "3": "I shall not utter a single word regarding this matter."
+      },
+      "lepaskan ikatannya": {
+        "1": "Untie him.",
+        "2": "Unbind the gentleman.",
+        "3": "Remove his restraints at once."
+      },
+      "kau akan menyesal": {
+        "1": "You will regret this.",
+        "2": "You shall live to rue this day.",
+        "3": "You will face severe repercussions for your actions."
+      },
+      "matikan kameranya": {
+        "1": "Turn off the cameras.",
+        "2": "Disable the CCTV.",
+        "3": "Deactivate the visual surveillance."
+      },
+      "buka brankasnya": {
+        "1": "Open the safe.",
+        "2": "Crack the vault.",
+        "3": "Unseal the strongroom."
+      },
+      "sistem berhasil diretas": {
+        "1": "The system has been hacked.",
+        "2": "I have breached the mainframe.",
+        "3": "The cyber security has been entirely bypassed."
+      },
+      "waktu kita hampir habis": {
+        "1": "We are running out of time.",
+        "2": "Time is of the essence.",
+        "3": "The clock is ticking against us."
+      },
+      "kita harus keluar dari sini": {
+        "1": "We must leave this place.",
+        "2": "We need to make our exit.",
+        "3": "We ought to vacate the premises immediately."
+      },
+      "aku tahu rahasiamu": {
+        "1": "I know your secret.",
+        "2": "I am privy to your little secret.",
+        "3": "I know precisely what skeletons you keep in your closet."
+      },
+      "bayar utangmu": {
+        "1": "Pay your debt.",
+        "2": "Settle your account.",
+        "3": "I expect you to clear your arrears post-haste."
+      },
+      "jangan bertingkah": {
+        "1": "Do not act up.",
+        "2": "No funny business.",
+        "3": "I suggest you refrain from any foolish antics."
+      },
+      "kau tidak punya pilihan": {
+        "1": "You have no choice.",
+        "2": "You are out of options.",
+        "3": "I am afraid you have absolutely no alternative."
+      },
+      "ini peringatan terakhir": {
+        "1": "This is your final warning.",
+        "2": "Consider this your absolute final warning.",
+        "3": "I shall not issue another warning."
+      },
+      "jangan bersuara": {
+        "1": "Do not make a sound.",
+        "2": "Keep your voice down.",
+        "3": "Maintain strict silence."
+      },
+      "menunduklah": {
+        "1": "Get down.",
+        "2": "Keep your head down.",
+        "3": "Remain completely out of sight."
+      },
+      "tetap dalam penyamaran": {
+        "1": "Maintain your cover.",
+        "2": "Keep up the charade.",
+        "3": "Do not compromise our disguise."
+      },
+      "apakah jalannya aman?": {
+        "1": "Is it clear?",
+        "2": "Is the way clear?",
+        "3": "Has the perimeter been secured?"
+      },
+      "aku akan mengalihkan perhatian mereka": {
+        "1": "I will distract them.",
+        "2": "I shall create a diversion.",
+        "3": "I will draw their focus away."
+      },
+      "pegangan yang erat": {
+        "1": "Hold on.",
+        "2": "Hold on tight.",
+        "3": "I advise you to brace yourself."
+      },
+      "aku akan menyalipnya": {
+        "1": "I shall pass him.",
+        "2": "I intend to overtake.",
+        "3": "I am executing an overtaking maneuver."
+      },
+      "awas di depan": {
+        "1": "Watch out ahead.",
+        "2": "Mind the front.",
+        "3": "Caution, hazard straight ahead."
+      },
+      "kita kehilangan dia": {
+        "1": "We are losing him.",
+        "2": "We are falling behind.",
+        "3": "We have completely lost trace of him."
+      },
+      "aku menang": {
+        "1": "I won.",
+        "2": "I have won the race.",
+        "3": "Victory is mine."
+      },
+      "mari kita mulai rapatnya": {
+        "1": "Let us commence the meeting.",
+        "2": "Shall we begin?",
+        "3": "I declare this meeting open."
+      },
+      "apa laporanmu?": {
+        "1": "What is your report?",
+        "2": "What have you to report?",
+        "3": "Kindly provide your comprehensive update."
+      },
+      "keuntungannya menurun": {
+        "1": "Profits are falling.",
+        "2": "Profits have diminished.",
+        "3": "Our financial returns have taken a severe downturn."
+      },
+      "kita butuh wilayah baru": {
+        "1": "We need new territory.",
+        "2": "We must acquire new ground.",
+        "3": "It is imperative we expand our territorial footprint."
+      },
+      "rapat dibubarkan": {
+        "1": "The meeting is dismissed.",
+        "2": "This meeting is adjourned.",
+        "3": "I hereby declare this meeting closed."
+      },
+      "maju sekarang": {
+        "1": "Move out.",
+        "2": "Advance your position.",
+        "3": "Proceed with the tactical advance."
+      },
+      "lindungi aku": {
+        "1": "Cover me.",
+        "2": "Provide covering fire.",
+        "3": "Lay down suppressing fire on my mark."
+      },
+      "target terlihat": {
+        "1": "Target sighted.",
+        "2": "Visual on the objective.",
+        "3": "Positive identification on the target."
+      },
+      "tahan tembakan": {
+        "1": "Hold fire.",
+        "2": "Hold your fire.",
+        "3": "Maintain trigger discipline, hold fire."
+      },
+      "mundur": {
+        "1": "Fall back.",
+        "2": "Tactical retreat.",
+        "3": "Execute a tactical withdrawal."
+      },
+      "brengsek": {
+        "1": "Scoundrel.",
+        "2": "Bastard.",
+        "3": "Insolent bastard."
+      },
+      "bajingan": {
+        "1": "Swine.",
+        "2": "Son of a bitch.",
+        "3": "Miserable prick."
+      },
+      "persetan denganmu": {
+        "1": "Get stuffed.",
+        "2": "Sod off.",
+        "3": "Damn you to hell."
+      },
+      "pergi ke neraka": {
+        "1": "Go to hell.",
+        "2": "Burn in hell.",
+        "3": "May you rot in hell."
+      },
+      "omong kosong": {
+        "1": "Rubbish.",
+        "2": "Absolute tosh.",
+        "3": "Utter bollocks."
+      },
+      "kau jelek sekali": {
+        "1": "You are unsightly.",
+        "2": "You are dreadfully ugly.",
+        "3": "You are a grotesque sight."
+      },
+      "dasar babi gemuk": {
+        "1": "You glutton.",
+        "2": "You stout swine.",
+        "3": "You fat, greedy pig."
+      },
+      "kau sangat lemah": {
+        "1": "You are weak.",
+        "2": "You are terribly feeble.",
+        "3": "You are a pathetic specimen."
+      },
+      "tutup mulut baumu": {
+        "1": "Be quiet.",
+        "2": "Shut your foul trap.",
+        "3": "Keep your putrid mouth shut."
+      },
+      "kau tidak berguna": {
+        "1": "You are useless.",
+        "2": "You are of no use to anyone.",
+        "3": "You are an utter waste of space."
+      },
+      "serahkan dompetmu": {
+        "1": "Hand over your wallet.",
+        "2": "I'll take your wallet, if you please.",
+        "3": "Relinquish your wallet at once."
+      },
+      "apa kau mau berkelahi?": {
+        "1": "Do you wish to fight?",
+        "2": "Are you seeking a scuffle?",
+        "3": "Are you spoiling for a brawl?"
+      },
+      "aku akan membunuhmu": {
+        "1": "I will kill you.",
+        "2": "I shall end you.",
+        "3": "I will see you dead."
+      },
+      "tutup mulutmu atau kau mati": {
+        "1": "Be quiet or face death.",
+        "2": "Hold your tongue or I shall end you.",
+        "3": "Keep your mouth shut, or it will be your last."
+      },
+      "kau cari masalah dengan orang yang salah": {
+        "1": "You are meddling with the wrong person.",
+        "2": "You have crossed the wrong gentleman.",
+        "3": "You are toying with a very dangerous individual."
+      },
+      "warna bajumu salah": {
+        "1": "You are sporting the wrong colours.",
+        "2": "Those colours are most unwelcome here.",
+        "3": "You are displaying the wrong affiliation in this postcode."
+      },
+      "kembali ke wilayahmu": {
+        "1": "Return to your own area.",
+        "2": "Go back to your own estate.",
+        "3": "I strongly suggest you scurry back to your own territory."
+      },
+      "kelompokmu adalah sampah": {
+        "1": "Your group is rubbish.",
+        "2": "Your firm is an absolute disgrace.",
+        "3": "Your entire lot is nothing but utter refuse."
+      },
+      "pengkhianat": {
+        "1": "Traitor.",
+        "2": "You are a deceitful turncoat.",
+        "3": "You are a treacherous snake."
+      },
+      "aku membenci orang-orang sepertimu": {
+        "1": "I loathe your sort.",
+        "2": "I despise people of your ilk.",
+        "3": "I harbour a deep hatred for your entire kind."
+      },
+      "jatuhkan senjatamu": {
+        "1": "Drop your weapon.",
+        "2": "Lower your firearm.",
+        "3": "Place your weapon on the ground at once."
+      },
+      "aku akan menembakmu": {
+        "1": "I will shoot you.",
+        "2": "I shall open fire.",
+        "3": "I will not hesitate to put a bullet in you."
+      },
+      "jangan bergerak atau kutembak": {
+        "1": "Do not move or I shall shoot.",
+        "2": "Remain perfectly still or I will fire.",
+        "3": "Stay exactly where you are, or I shall pull the trigger."
+      },
+      "bidik kepalanya": {
+        "1": "Aim for the head.",
+        "2": "Target the cranium.",
+        "3": "Keep your sights squarely on his head."
+      },
+      "tarik pelatuknya": {
+        "1": "Pull the trigger.",
+        "2": "Engage the trigger.",
+        "3": "Fire at will."
+      },
+      "apakah barangnya aman?": {
+        "1": "Is the product safe?",
+        "2": "Do you have the merchandise?",
+        "3": "Is the contraband secure at this moment?"
+      },
+      "jangan coba menipuku": {
+        "1": "Do not cheat me.",
+        "2": "Do not attempt to swindle me.",
+        "3": "It would be most unwise to try and shortchange me."
+      },
+      "ini kualitas terbaik": {
+        "1": "This is of high quality.",
+        "2": "This is top-shelf product.",
+        "3": "This merchandise is of the most superior calibre."
+      },
+      "transaksi selesai": {
+        "1": "Transaction complete.",
+        "2": "The exchange is finalised.",
+        "3": "Our business here has been successfully concluded."
+      },
+      "polisi sedang berpatroli": {
+        "1": "The police are patrolling.",
+        "2": "The authorities are circulating.",
+        "3": "The constabulary is maintaining a heavy presence in the area."
+      }
+    },
+    "Cartel Mexico": {
+      "halo": {
+        "1": "Hello.",
+        "2": "Hola.",
+        "3": "Que pasa."
+      },
+      "apa kabar?": {
+        "1": "How are you?",
+        "2": "How are things?",
+        "3": "Everything good?"
+      },
+      "ada apa?": {
+        "1": "What is it?",
+        "2": "What's the problem?",
+        "3": "What do we have here?"
+      },
+      "lama tidak berjumpa": {
+        "1": "It's been a while.",
+        "2": "Long time.",
+        "3": "Been a long time."
+      },
+      "selamat pagi": {
+        "1": "Good morning.",
+        "2": "Buenos dias.",
+        "3": "Morning."
+      },
+      "iya / oke": {
+        "1": "Yes.",
+        "2": "Si.",
+        "3": "Bueno."
+      },
+      "aku setuju": {
+        "1": "I agree.",
+        "2": "We are good.",
+        "3": "I am with you on that."
+      },
+      "tentu saja": {
+        "1": "Of course.",
+        "2": "Claro.",
+        "3": "Seguro."
+      },
+      "baiklah": {
+        "1": "Alright.",
+        "2": "Fine.",
+        "3": "It is settled."
+      },
+      "aku mengerti": {
+        "1": "I understand.",
+        "2": "Got it.",
+        "3": "Entendido."
+      },
+      "tidak": {
+        "1": "No.",
+        "2": "Nah.",
+        "3": "Not happening."
+      },
+      "aku tidak setuju": {
+        "1": "I don't agree.",
+        "2": "Not good for me.",
+        "3": "We don't have a deal."
+      },
+      "tidak mungkin": {
+        "1": "Impossible.",
+        "2": "No way.",
+        "3": "Not a chance."
+      },
+      "aku tidak mau": {
+        "1": "I don't want to.",
+        "2": "I pass.",
+        "3": "Not doing it."
+      },
+      "itu salah": {
+        "1": "That's wrong.",
+        "2": "You are wrong.",
+        "3": "Mentira."
+      },
+      "apa maksudmu?": {
+        "1": "What do you mean?",
+        "2": "What are you saying?",
+        "3": "Explain yourself."
+      },
+      "aku tidak mengerti": {
+        "1": "I don't understand.",
+        "2": "No entiendo.",
+        "3": "You are not making sense."
+      },
+      "apa?": {
+        "1": "What?",
+        "2": "Que?",
+        "3": "What was that?"
+      },
+      "aku bingung": {
+        "1": "I am confused.",
+        "2": "This makes no sense.",
+        "3": "You are losing me."
+      },
+      "coba ulangi": {
+        "1": "Repeat that.",
+        "2": "Say it again.",
+        "3": "Otra vez."
+      },
+      "astaga": {
+        "1": "Oh my.",
+        "2": "Dios mio.",
+        "3": "Santa Maria."
+      },
+      "yang benar saja?": {
+        "1": "Are you serious?",
+        "2": "For real?",
+        "3": "En serio?"
+      },
+      "aku tidak percaya ini": {
+        "1": "I don't believe this.",
+        "2": "Unbelievable.",
+        "3": "No lo creo."
+      },
+      "apa-apaan ini?": {
+        "1": "What is this?",
+        "2": "What the hell?",
+        "3": "Que carajo?"
+      },
+      "ini gila": {
+        "1": "This is crazy.",
+        "2": "Loco.",
+        "3": "Esto es una locura."
+      },
+      "tutup mulutmu": {
+        "1": "Quiet.",
+        "2": "Shut up.",
+        "3": "Cállate."
+      },
+      "aku sudah muak": {
+        "1": "I have had enough.",
+        "2": "I am sick of you.",
+        "3": "Estoy harto."
+      },
+      "jangan main-main denganku": {
+        "1": "Don't mess with me.",
+        "2": "Don't play games with me.",
+        "3": "No juegues conmigo."
+      },
+      "pergi dari sini": {
+        "1": "Leave.",
+        "2": "Get out.",
+        "3": "Lárgate."
+      },
+      "kau cari mati?": {
+        "1": "You want trouble?",
+        "2": "You want to die?",
+        "3": "Buscas la muerte?"
+      },
+      "pecundang": {
+        "1": "Loser.",
+        "2": "Nobody.",
+        "3": "Perdedor."
+      },
+      "kau bodoh": {
+        "1": "You're stupid.",
+        "2": "Idiota.",
+        "3": "Estupido."
+      },
+      "pengecut": {
+        "1": "Coward.",
+        "2": "Cobarde.",
+        "3": "Gallina."
+      },
+      "kau payah": {
+        "1": "You are pathetic.",
+        "2": "You are useless.",
+        "3": "Inútil."
+      },
+      "bukan levelku": {
+        "1": "Not my level.",
+        "2": "Out of your league.",
+        "3": "No eres nada."
+      },
+      "aku yang berkuasa di sini": {
+        "1": "I am in charge.",
+        "2": "I am the boss here.",
+        "3": "Yo mando aquí."
+      },
+      "kau tidak bisa mengalahkanku": {
+        "1": "You can't beat me.",
+        "2": "You cannot win against me.",
+        "3": "No puedes conmigo."
+      },
+      "aku yang terbaik": {
+        "1": "I am the best.",
+        "2": "I am number one.",
+        "3": "Soy el mejor."
+      },
+      "lihat saja nanti": {
+        "1": "We will see.",
+        "2": "Just wait.",
+        "3": "Ya veremos."
+      },
+      "jangan remehkan aku": {
+        "1": "Don't underestimate me.",
+        "2": "Do not take me for a fool.",
+        "3": "No me subestimes."
+      },
+      "aku takut": {
+        "1": "I am scared.",
+        "2": "I'm frightened.",
+        "3": "Tengo miedo."
+      },
+      "tolong jangan sakiti aku": {
+        "1": "Please don't hurt me.",
+        "2": "Don't hurt me, please.",
+        "3": "Por favor, no me hagas daño."
+      },
+      "aku menyerah": {
+        "1": "I surrender.",
+        "2": "I give up.",
+        "3": "Me rindo."
+      },
+      "aku tidak tahu apa-apa": {
+        "1": "I don't know anything.",
+        "2": "I know nothing.",
+        "3": "No sé nada."
+      },
+      "biarkan aku pergi": {
+        "1": "Let me go.",
+        "2": "Let me walk.",
+        "3": "Déjame ir."
+      },
+      "ini luar biasa": {
+        "1": "This is great.",
+        "2": "This is amazing.",
+        "3": "Increíble."
+      },
+      "aku sangat senang": {
+        "1": "I am very happy.",
+        "2": "I'm glad.",
+        "3": "Me alegro."
+      },
+      "bagus sekali": {
+        "1": "Very good.",
+        "2": "Good job.",
+        "3": "Muy bien."
+      },
+      "aku tidak sabar": {
+        "1": "I can't wait.",
+        "2": "Let's do this.",
+        "3": "Ya quiero que pase."
+      },
+      "ini hari terbaik": {
+        "1": "This is the best day.",
+        "2": "Great day.",
+        "3": "El mejor día."
+      },
+      "sialan": {
+        "1": "Damn it.",
+        "2": "Maldita sea.",
+        "3": "Mierda."
+      },
+      "aku sangat kecewa": {
+        "1": "I am disappointed.",
+        "2": "This is a letdown.",
+        "3": "Me decepcionas."
+      },
+      "ini membuang waktu": {
+        "1": "This is a waste of time.",
+        "2": "Wasting my time.",
+        "3": "Pérdida de tiempo."
+      },
+      "semuanya hancur": {
+        "1": "Everything is ruined.",
+        "2": "It's all messed up.",
+        "3": "Todo está arruinado."
+      },
+      "ini sangat menyebalkan": {
+        "1": "This is annoying.",
+        "2": "This is frustrating.",
+        "3": "Qué molestia."
+      },
+      "tolong aku": {
+        "1": "Help me.",
+        "2": "I need your help.",
+        "3": "Ayúdame."
+      },
+      "aku mohon": {
+        "1": "I am begging you.",
+        "2": "Please, man.",
+        "3": "Te lo ruego."
+      },
+      "berikan itu padaku": {
+        "1": "Give it to me.",
+        "2": "Hand it over.",
+        "3": "Dámelo."
+      },
+      "bantu aku": {
+        "1": "Back me up.",
+        "2": "I need support.",
+        "3": "Apóyame."
+      },
+      "beri aku satu kesempatan lagi": {
+        "1": "Give me another chance.",
+        "2": "One more chance.",
+        "3": "Una oportunidad más."
+      },
+      "ikut aku": {
+        "1": "Follow me.",
+        "2": "Come with me.",
+        "3": "Sígueme."
+      },
+      "tunggu di sini": {
+        "1": "Wait here.",
+        "2": "Stay here.",
+        "3": "Quédate aquí."
+      },
+      "cepatlah": {
+        "1": "Hurry up.",
+        "2": "Make it quick.",
+        "3": "Rápido."
+      },
+      "lakukan sekarang": {
+        "1": "Do it now.",
+        "2": "Get it done now.",
+        "3": "Hazlo ahora."
+      },
+      "dengarkan aku": {
+        "1": "Listen to me.",
+        "2": "Listen up.",
+        "3": "Escúchame."
+      },
+      "apa kau mau ikut?": {
+        "1": "Are you coming?",
+        "2": "You coming with us?",
+        "3": "¿Vienes o qué?"
+      },
+      "biar aku yang urus": {
+        "1": "Let me handle it.",
+        "2": "I will take care of it.",
+        "3": "Déjamelo a mí."
+      },
+      "bagaimana menurutmu?": {
+        "1": "What do you think?",
+        "2": "How does that sound?",
+        "3": "¿Qué te parece?"
+      },
+      "ayo pergi": {
+        "1": "Let's go.",
+        "2": "Let's move.",
+        "3": "Vámonos."
+      },
+      "ambil ini": {
+        "1": "Take this.",
+        "2": "Here, take it.",
+        "3": "Toma."
+      },
+      "kerja bagus": {
+        "1": "Good job.",
+        "2": "Buen trabajo.",
+        "3": "Excelente."
+      },
+      "kau hebat": {
+        "1": "You are good.",
+        "2": "You are the best.",
+        "3": "Eres grande."
+      },
+      "aku menghargainya": {
+        "1": "I appreciate it.",
+        "2": "I appreciate you.",
+        "3": "Te lo agradezco."
+      },
+      "terima kasih banyak": {
+        "1": "Thank you very much.",
+        "2": "Thanks.",
+        "3": "Muchas gracias."
+      },
+      "ini sempurna": {
+        "1": "This is perfect.",
+        "2": "Perfecto.",
+        "3": "Esto es perfecto."
+      },
+      "aku minta maaf": {
+        "1": "I am sorry.",
+        "2": "My apologies.",
+        "3": "Lo siento."
+      },
+      "itu salahku": {
+        "1": "That is my fault.",
+        "2": "It's on me.",
+        "3": "Culpa mía."
+      },
+      "aku menyesal": {
+        "1": "I regret it.",
+        "2": "I messed up.",
+        "3": "Me arrepiento."
+      },
+      "maafkan aku": {
+        "1": "Forgive me.",
+        "2": "Pardon me.",
+        "3": "Perdóname."
+      },
+      "aku tidak sengaja": {
+        "1": "I didn't mean it.",
+        "2": "It was an accident.",
+        "3": "Fue un accidente."
+      },
+      "sedang apa?": {
+        "1": "What are you doing?",
+        "2": "What are you up to?",
+        "3": "Qué haces?"
+      },
+      "cuacanya bagus": {
+        "1": "The weather is nice.",
+        "2": "Beautiful day.",
+        "3": "Buen clima."
+      },
+      "dari mana saja?": {
+        "1": "Where have you been?",
+        "2": "Where were you?",
+        "3": "De dónde vienes?"
+      },
+      "bagaimana harimu?": {
+        "1": "How is your day?",
+        "2": "Good day so far?",
+        "3": "Qué tal tu día?"
+      },
+      "sampai jumpa nanti": {
+        "1": "See you later.",
+        "2": "See you around.",
+        "3": "Hasta luego."
+      },
+      "kau temanku": {
+        "1": "You are my friend.",
+        "2": "You are my brother.",
+        "3": "Eres mi hermano."
+      },
+      "aku percaya padamu": {
+        "1": "I trust you.",
+        "2": "I put my trust in you.",
+        "3": "Confío en ti."
+      },
+      "kita ini saudara": {
+        "1": "We are family.",
+        "2": "We bleed the same.",
+        "3": "Somos familia."
+      },
+      "aku akan melindungimu": {
+        "1": "I got you.",
+        "2": "I watch your back.",
+        "3": "Yo te cuido."
+      },
+      "jaga dirimu": {
+        "1": "Take care of yourself.",
+        "2": "Stay safe out there.",
+        "3": "Stammi bene."
+      },
+      "berapa harganya?": {
+        "1": "How much is it?",
+        "2": "How much?",
+        "3": "Cuánto cuesta?"
+      },
+      "aku akan membayarnya": {
+        "1": "I will pay.",
+        "2": "It's on me.",
+        "3": "Yo pago."
+      },
+      "ini uangnya": {
+        "1": "Here is the money.",
+        "2": "Here is the cash.",
+        "3": "Aquí está el dinero."
+      },
+      "terlalu mahal": {
+        "1": "Too expensive.",
+        "2": "That's too much money.",
+        "3": "Muy caro."
+      },
+      "aku tidak punya uang": {
+        "1": "I have no money.",
+        "2": "I'm out of cash.",
+        "3": "No tengo dinero."
+      },
+      "aku sedang bekerja": {
+        "1": "I am working.",
+        "2": "I'm on the job.",
+        "3": "Estoy trabajando."
+      },
+      "apa pekerjaanmu?": {
+        "1": "What is your job?",
+        "2": "What do you do?",
+        "3": "¿De qué trabajas?"
+      },
+      "aku sibuk": {
+        "1": "I am busy.",
+        "2": "I have things to do.",
+        "3": "Estoy ocupado."
+      },
+      "ini tugasmu": {
+        "1": "This is your job.",
+        "2": "You handle this.",
+        "3": "Este es tu trabajo."
+      },
+      "pekerjaan selesai": {
+        "1": "The job is done.",
+        "2": "It is finished.",
+        "3": "El trabajo está hecho."
+      },
+      "masuk ke mobil": {
+        "1": "Get in the car.",
+        "2": "Get in the ride.",
+        "3": "Sube al auto."
+      },
+      "nyalakan mesinnya": {
+        "1": "Start the car.",
+        "2": "Turn it on.",
+        "3": "Enciende el motor."
+      },
+      "ikuti mobil itu": {
+        "1": "Follow that car.",
+        "2": "Don't lose that car.",
+        "3": "Sigue a ese auto."
+      },
+      "injak gasnya": {
+        "1": "Drive faster.",
+        "2": "Hit the gas.",
+        "3": "Písale."
+      },
+      "menepi sekarang": {
+        "1": "Pull over.",
+        "2": "Stop the car here.",
+        "3": "Detén el auto ahora."
+      },
+      "angkat tanganmu": {
+        "1": "Hands up.",
+        "2": "Manos arriba.",
+        "3": "Las manos donde pueda verlas."
+      },
+      "aku tidak bersalah": {
+        "1": "I am innocent.",
+        "2": "I didn't do anything.",
+        "3": "Soy inocente."
+      },
+      "turunkan senjatamu": {
+        "1": "Put the gun down.",
+        "2": "Drop it.",
+        "3": "Baja el arma."
+      },
+      "ada polisi": {
+        "1": "The police are here.",
+        "2": "Cops.",
+        "3": "La policía."
+      },
+      "aku minta pengacara": {
+        "1": "I want a lawyer.",
+        "2": "Get me a lawyer.",
+        "3": "Quiero un abogado."
+      },
+      "maju sini": {
+        "1": "Come here.",
+        "2": "Come at me.",
+        "3": "Ven aquí."
+      },
+      "aku akan menghajarmu": {
+        "1": "I will beat you.",
+        "2": "I'm going to break you.",
+        "3": "Te voy a romper la cara."
+      },
+      "jangan lari": {
+        "1": "Don't run.",
+        "2": "Stop right there.",
+        "3": "No corras."
+      },
+      "habisi dia": {
+        "1": "Take him out.",
+        "2": "Finish him.",
+        "3": "Acábalo."
+      },
+      "berdiri": {
+        "1": "Get up.",
+        "2": "Stand up.",
+        "3": "Levántate."
+      },
+      "ini perampokan": {
+        "1": "This is a robbery.",
+        "2": "This is a heist.",
+        "3": "Esto es un asalto."
+      },
+      "serahkan semua uangmu": {
+        "1": "Give me all your money.",
+        "2": "Hand over the cash.",
+        "3": "Dame todo tu dinero."
+      },
+      "sembunyikan barang buktinya": {
+        "1": "Hide the evidence.",
+        "2": "Stash the stuff.",
+        "3": "Esconde la mercancía."
+      },
+      "kita ketahuan": {
+        "1": "We are spotted.",
+        "2": "They see us.",
+        "3": "Nos descubrieron."
+      },
+      "jangan beri tahu polisi": {
+        "1": "Don't tell the police.",
+        "2": "No cops.",
+        "3": "Ni una palabra a la policía."
+      },
+      "ayo minum": {
+        "1": "Let's drink.",
+        "2": "Let's have a drink.",
+        "3": "Vamos a beber."
+      },
+      "aku mabuk": {
+        "1": "I am drunk.",
+        "2": "I've had too much.",
+        "3": "Estoy borracho."
+      },
+      "tuangkan aku minuman": {
+        "1": "Pour me a drink.",
+        "2": "Give me another drink.",
+        "3": "Sírveme otro trago."
+      },
+      "pestanya luar biasa": {
+        "1": "The party is great.",
+        "2": "Good party.",
+        "3": "Qué buena fiesta."
+      },
+      "bersulang": {
+        "1": "Cheers.",
+        "2": "Drink up.",
+        "3": "Salud."
+      },
+      "kamu sangat cantik/tampan": {
+        "1": "You look good.",
+        "2": "You are beautiful.",
+        "3": "Qué hermosa te ves."
+      },
+      "aku menyukaimu": {
+        "1": "I like you.",
+        "2": "I really like you.",
+        "3": "Me gustas mucho."
+      },
+      "maukah kau pergi denganku?": {
+        "1": "You want to go out?",
+        "2": "Come with me.",
+        "3": "¿Quieres salir conmigo?"
+      },
+      "kau milikku": {
+        "1": "You are mine.",
+        "2": "You belong to me.",
+        "3": "Eres mía."
+      },
+      "aku merindukanmu": {
+        "1": "I miss you.",
+        "2": "I've been thinking about you.",
+        "3": "Te extraño."
+      },
+      "aku terluka": {
+        "1": "I'm hurt.",
+        "2": "Estoy herido.",
+        "3": "Me dieron!"
+      },
+      "panggil ambulans": {
+        "1": "Call an ambulance.",
+        "2": "Llama a una ambulancia.",
+        "3": "Pide una ambulancia, rápido!"
+      },
+      "aku butuh dokter": {
+        "1": "I need a doctor.",
+        "2": "Necesito un doctor.",
+        "3": "Llama al médico ahora mismo."
+      },
+      "bertahanlah": {
+        "1": "Hold on.",
+        "2": "Quédate conmigo.",
+        "3": "Aguanta, no te mueras!"
+      },
+      "dia tidak bernapas": {
+        "1": "He's not breathing.",
+        "2": "No respira.",
+        "3": "No está respirando, maldita sea!"
+      },
+      "aku sangat sedih": {
+        "1": "I am sad.",
+        "2": "Estoy triste.",
+        "3": "Tengo el corazón destrozado."
+      },
+      "dia sudah tiada": {
+        "1": "He is gone.",
+        "2": "Se ha ido.",
+        "3": "Ya no está con nosotros."
+      },
+      "aku tidak bisa tanpa dia": {
+        "1": "I can't be without him.",
+        "2": "No puedo sin él.",
+        "3": "No soy nada sin él."
+      },
+      "ini semua salahku": {
+        "1": "This is my fault.",
+        "2": "Todo es mi culpa.",
+        "3": "Es culpa mía, lo arruiné todo."
+      },
+      "aku kehilangan segalanya": {
+        "1": "I lost everything.",
+        "2": "Lo perdí todo.",
+        "3": "Me he quedado sin nada."
+      },
+      "siapa yang menyuruhmu?": {
+        "1": "Who sent you?",
+        "2": "¿Quién te manda?",
+        "3": "¿Para quién trabajas?"
+      },
+      "katakan yang sebenarnya": {
+        "1": "Tell the truth.",
+        "2": "Dime la verdad.",
+        "3": "Dime la pura verdad."
+      },
+      "aku tidak akan bicara": {
+        "1": "I won't talk.",
+        "2": "No diré nada.",
+        "3": "No voy a decir ni una palabra."
+      },
+      "lepaskan ikatannya": {
+        "1": "Untie him.",
+        "2": "Desátalo.",
+        "3": "Quítale las cuerdas ahora."
+      },
+      "kau akan menyesal": {
+        "1": "You will regret this.",
+        "2": "Te vas a arrepentir.",
+        "3": "Te vas a arrepentir de esto, te lo juro."
+      },
+      "matikan kameranya": {
+        "1": "Turn off the cameras.",
+        "2": "Apaga las cámaras.",
+        "3": "Corta las cámaras de seguridad."
+      },
+      "buka brankasnya": {
+        "1": "Open the safe.",
+        "2": "Abre la caja fuerte.",
+        "3": "Revienta la bóveda."
+      },
+      "sistem berhasil diretas": {
+        "1": "System hacked.",
+        "2": "Estoy en el sistema.",
+        "3": "Hackeé la seguridad, estamos dentro."
+      },
+      "waktu kita hampir habis": {
+        "1": "We are running out of time.",
+        "2": "Se nos acaba el tiempo.",
+        "3": "El reloj no se detiene, apúrense."
+      },
+      "kita harus keluar dari sini": {
+        "1": "We need to leave.",
+        "2": "Tenemos que salir de aquí.",
+        "3": "Vámonos de aquí ya."
+      },
+      "aku tahu rahasiamu": {
+        "1": "I know your secret.",
+        "2": "Conozco tu secreto.",
+        "3": "Sé muy bien lo que escondes."
+      },
+      "bayar utangmu": {
+        "1": "Pay your debt.",
+        "2": "Paga lo que debes.",
+        "3": "Más vale que me pagues tu deuda."
+      },
+      "jangan bertingkah": {
+        "1": "Don't play games.",
+        "2": "No juegues conmigo.",
+        "3": "No te hagas el listo."
+      },
+      "kau tidak punya pilihan": {
+        "1": "You have no choice.",
+        "2": "No tienes opción.",
+        "3": "No tienes otra alternativa."
+      },
+      "ini peringatan terakhir": {
+        "1": "This is your last warning.",
+        "2": "Esta es tu última advertencia.",
+        "3": "No te lo voy a repetir."
+      },
+      "jangan bersuara": {
+        "1": "Be quiet.",
+        "2": "Silencio.",
+        "3": "Ni un ruido."
+      },
+      "menunduklah": {
+        "1": "Get down.",
+        "2": "Agáchate.",
+        "3": "Mantén la cabeza baja."
+      },
+      "tetap dalam penyamaran": {
+        "1": "Keep your cover.",
+        "2": "Actúa normal.",
+        "3": "No arruines la tapadera."
+      },
+      "apakah jalannya aman?": {
+        "1": "Is it clear?",
+        "2": "¿Está despejado?",
+        "3": "¿El camino está libre?"
+      },
+      "aku akan mengalihkan perhatian mereka": {
+        "1": "I'll distract them.",
+        "2": "Yo los distraigo.",
+        "3": "Voy a crear una distracción."
+      },
+      "pegangan yang erat": {
+        "1": "Hold on.",
+        "2": "Agárrate.",
+        "3": "Agárrate fuerte."
+      },
+      "aku akan menyalipnya": {
+        "1": "I'll pass him.",
+        "2": "Lo voy a pasar.",
+        "3": "Voy a rebasar a este idiota."
+      },
+      "awas di depan": {
+        "1": "Watch out.",
+        "2": "Cuidado adelante.",
+        "3": "¡Cuidado al frente!"
+      },
+      "kita kehilangan dia": {
+        "1": "We lost him.",
+        "2": "Lo estamos perdiendo.",
+        "3": "Se nos escapa."
+      },
+      "aku menang": {
+        "1": "I won.",
+        "2": "Gané.",
+        "3": "Soy el ganador."
+      },
+      "mari kita mulai rapatnya": {
+        "1": "Let's start.",
+        "2": "Vamos a empezar.",
+        "3": "Comencemos la reunión."
+      },
+      "apa laporanmu?": {
+        "1": "What is the report?",
+        "2": "¿Cuál es tu reporte?",
+        "3": "Dime tu reporte ahora."
+      },
+      "keuntungannya menurun": {
+        "1": "Profits are down.",
+        "2": "Las ganancias han bajado.",
+        "3": "Las ganancias están cayendo."
+      },
+      "kita butuh wilayah baru": {
+        "1": "We need new territory.",
+        "2": "Necesitamos nuevo territorio.",
+        "3": "Necesitamos expandir nuestra plaza."
+      },
+      "rapat dibubarkan": {
+        "1": "Meeting over.",
+        "2": "La reunión ha terminado.",
+        "3": "Se levanta la sesión."
+      },
+      "maju sekarang": {
+        "1": "Move out.",
+        "2": "Avancen.",
+        "3": "¡Muévanse ahora!"
+      },
+      "lindungi aku": {
+        "1": "Cover me.",
+        "2": "Cúbreme.",
+        "3": "¡Cúbreme la espalda!"
+      },
+      "target terlihat": {
+        "1": "Target spotted.",
+        "2": "Objetivo a la vista.",
+        "3": "Tengo visual del objetivo."
+      },
+      "tahan tembakan": {
+        "1": "Hold fire.",
+        "2": "No disparen.",
+        "3": "¡Alto el fuego!"
+      },
+      "mundur": {
+        "1": "Fall back.",
+        "2": "Retirada.",
+        "3": "¡Atrás, retrocedan!"
+      },
+      "brengsek": {
+        "1": "Pendejo.",
+        "2": "Cabrón.",
+        "3": "Pinche cabrón."
+      },
+      "bajingan": {
+        "1": "Hijo de puta.",
+        "2": "Maldito hijo de puta.",
+        "3": "Hijo de tu puta madre."
+      },
+      "persetan denganmu": {
+        "1": "Jódete.",
+        "2": "Vete a la mierda.",
+        "3": "Chinga tu madre."
+      },
+      "pergi ke neraka": {
+        "1": "Vete al infierno.",
+        "2": "Que te pudras en el infierno.",
+        "3": "Vete mucho a la chingada."
+      },
+      "omong kosong": {
+        "1": "Basura.",
+        "2": "Pura mierda.",
+        "3": "Son puras pendejadas."
+      },
+      "kau jelek sekali": {
+        "1": "You are ugly.",
+        "2": "Qué feo eres.",
+        "3": "Eres feo como la mierda."
+      },
+      "dasar babi gemuk": {
+        "1": "Fat pig.",
+        "2": "Cerdo gordo.",
+        "3": "Maldito cerdo gordo."
+      },
+      "kau sangat lemah": {
+        "1": "You are weak.",
+        "2": "Eres muy débil.",
+        "3": "Eres un debilucho de mierda."
+      },
+      "tutup mulut baumu": {
+        "1": "Shut your mouth.",
+        "2": "Cierra la boca.",
+        "3": "Cierra tu apestosa boca."
+      },
+      "kau tidak berguna": {
+        "1": "You are useless.",
+        "2": "No sirves para nada.",
+        "3": "Eres un inútil, no vales nada."
+      },
+      "serahkan dompetmu": {
+        "1": "Hand over your wallet.",
+        "2": "Dame tu cartera.",
+        "3": "Pasa la cartera o te mato."
+      },
+      "apa kau mau berkelahi?": {
+        "1": "You want to fight?",
+        "2": "¿Quieres pelear?",
+        "3": "¿Buscas bronca, pendejo?"
+      },
+      "aku akan membunuhmu": {
+        "1": "I will kill you.",
+        "2": "Te voy a matar.",
+        "3": "Te voy a quebrar, cabrón."
+      },
+      "tutup mulutmu atau kau mati": {
+        "1": "Shut up or you die.",
+        "2": "Cállate o te mueres.",
+        "3": "Cierra el hocico o te vuelo los sesos."
+      },
+      "kau cari masalah dengan orang yang salah": {
+        "1": "You're messing with the wrong person.",
+        "2": "Te metiste con la persona equivocada.",
+        "3": "Te metiste con el cartel equivocado, pendejo."
+      },
+      "warna bajumu salah": {
+        "1": "Wrong colors.",
+        "2": "Traes los colores equivocados.",
+        "3": "Te vas a morir por esos colores."
+      },
+      "kembali ke wilayahmu": {
+        "1": "Go back to your turf.",
+        "2": "Regresa a tu barrio.",
+        "3": "Lárgate a tu maldito territorio."
+      },
+      "kelompokmu adalah sampah": {
+        "1": "Your group is trash.",
+        "2": "Tu cartel es basura.",
+        "3": "Toda tu gente no vale madre."
+      },
+      "pengkhianat": {
+        "1": "Traitor.",
+        "2": "Traidor.",
+        "3": "Eres un maldito soplón y traidor."
+      },
+      "aku membenci orang-orang sepertimu": {
+        "1": "I hate your kind.",
+        "2": "Odio a los de tu clase.",
+        "3": "Odio a toda tu maldita gente."
+      },
+      "jatuhkan senjatamu": {
+        "1": "Drop the weapon.",
+        "2": "Suelta el arma.",
+        "3": "Tira la fusca ahora mismo."
+      },
+      "aku akan menembakmu": {
+        "1": "I will shoot you.",
+        "2": "Te voy a disparar.",
+        "3": "Te voy a llenar de plomo."
+      },
+      "jangan bergerak atau kutembak": {
+        "1": "Don't move or I'll shoot.",
+        "2": "No te muevas o disparo.",
+        "3": "Ni un movimiento o te quemo."
+      },
+      "bidik kepalanya": {
+        "1": "Aim for the head.",
+        "2": "Apunta a la cabeza.",
+        "3": "Apúntale a la cabeza."
+      },
+      "tarik pelatuknya": {
+        "1": "Pull the trigger.",
+        "2": "Jala el gatillo.",
+        "3": "Jálale al gatillo."
+      },
+      "apakah barangnya aman?": {
+        "1": "Is the stuff safe?",
+        "2": "¿La mercancía está segura?",
+        "3": "¿Tienes la carga asegurada?"
+      },
+      "jangan coba menipuku": {
+        "1": "Don't try to cheat me.",
+        "2": "No intentes engañarme.",
+        "3": "No me quieras ver la cara de pendejo."
+      },
+      "ini kualitas terbaik": {
+        "1": "This is the best.",
+        "2": "Es de la mejor calidad.",
+        "3": "Es pura mercancía de primera."
+      },
+      "transaksi selesai": {
+        "1": "Deal done.",
+        "2": "El trato está hecho.",
+        "3": "Negocio concluido."
+      },
+      "polisi sedang berpatroli": {
+        "1": "Police are patrolling.",
+        "2": "La policía está patrullando.",
+        "3": "Los federales andan rondando por aquí."
+      }
+    },
+    "Mafia Italy": {
+      "halo": {
+        "1": "Hello.",
+        "2": "Good to see you.",
+        "3": "Saluti."
+      },
+      "apa kabar?": {
+        "1": "How are you?",
+        "2": "How is everything?",
+        "3": "You doing well?"
+      },
+      "ada apa?": {
+        "1": "What is it?",
+        "2": "What's on your mind?",
+        "3": "Speak."
+      },
+      "lama tidak berjumpa": {
+        "1": "It has been too long.",
+        "2": "Look who it is.",
+        "3": "It's been a long time."
+      },
+      "selamat pagi": {
+        "1": "Good morning.",
+        "2": "Morning to you.",
+        "3": "Buongiorno."
+      },
+      "iya / oke": {
+        "1": "Yes.",
+        "2": "Yeah, fine.",
+        "3": "Va bene."
+      },
+      "aku setuju": {
+        "1": "I agree.",
+        "2": "Makes sense to me.",
+        "3": "We have an understanding."
+      },
+      "tentu saja": {
+        "1": "Of course.",
+        "2": "Sure thing.",
+        "3": "Certamente."
+      },
+      "baiklah": {
+        "1": "Alright.",
+        "2": "Very well.",
+        "3": "Consider it done."
+      },
+      "aku mengerti": {
+        "1": "I understand.",
+        "2": "I hear you.",
+        "3": "Capito."
+      },
+      "tidak": {
+        "1": "No.",
+        "2": "Not happening.",
+        "3": "Out of the question."
+      },
+      "aku tidak setuju": {
+        "1": "I disagree.",
+        "2": "I don't see it that way.",
+        "3": "That doesn't work for me."
+      },
+      "tidak mungkin": {
+        "1": "Impossible.",
+        "2": "Not a chance.",
+        "3": "Forget about it."
+      },
+      "aku tidak mau": {
+        "1": "I don't want to.",
+        "2": "I'm passing on this.",
+        "3": "I am not interested."
+      },
+      "itu salah": {
+        "1": "That's wrong.",
+        "2": "You're mistaken.",
+        "3": "You are out of line."
+      },
+      "apa maksudmu?": {
+        "1": "What do you mean?",
+        "2": "What are you getting at?",
+        "3": "Make yourself clear."
+      },
+      "aku tidak mengerti": {
+        "1": "I don't understand.",
+        "2": "You lost me there.",
+        "3": "Non capisco."
+      },
+      "apa?": {
+        "1": "What?",
+        "2": "Come again?",
+        "3": "What did you just say?"
+      },
+      "aku bingung": {
+        "1": "I am confused.",
+        "2": "This is not making sense.",
+        "3": "You are talking in riddles."
+      },
+      "coba ulangi": {
+        "1": "Repeat that.",
+        "2": "Run that by me again.",
+        "3": "Say that one more time."
+      },
+      "astaga": {
+        "1": "My god.",
+        "2": "Mamma mia.",
+        "3": "Gesù Cristo."
+      },
+      "yang benar saja?": {
+        "1": "Are you serious?",
+        "2": "You gotta be kidding me.",
+        "3": "Is this a joke?"
+      },
+      "aku tidak percaya ini": {
+        "1": "I cannot believe it.",
+        "2": "Unbelievable.",
+        "3": "I don't buy this for a second."
+      },
+      "apa-apaan ini?": {
+        "1": "What is this?",
+        "2": "What the hell is going on here?",
+        "3": "What kind of sick joke is this?"
+      },
+      "ini gila": {
+        "1": "This is crazy.",
+        "2": "This is nuts.",
+        "3": "Absolute madness."
+      },
+      "tutup mulutmu": {
+        "1": "Quiet.",
+        "2": "Shut your trap.",
+        "3": "Stai zitto."
+      },
+      "aku sudah muak": {
+        "1": "I have had enough.",
+        "2": "I'm losing my patience.",
+        "3": "I've had it with you."
+      },
+      "jangan main-main denganku": {
+        "1": "Do not mess with me.",
+        "2": "Don't push your luck.",
+        "3": "Don't cross me."
+      },
+      "pergi dari sini": {
+        "1": "Leave.",
+        "2": "Get out of here.",
+        "3": "Get lost."
+      },
+      "kau cari mati?": {
+        "1": "You looking for trouble?",
+        "2": "You got a death wish?",
+        "3": "You digging your own grave?"
+      },
+      "pecundang": {
+        "1": "Loser.",
+        "2": "Nobody.",
+        "3": "Nullità."
+      },
+      "kau bodoh": {
+        "1": "You are foolish.",
+        "2": "Stupido.",
+        "3": "Imbecille."
+      },
+      "pengecut": {
+        "1": "Coward.",
+        "2": "Gutless.",
+        "3": "Codardo."
+      },
+      "kau payah": {
+        "1": "You are pathetic.",
+        "2": "You are a joke.",
+        "3": "Sei patetico."
+      },
+      "bukan levelku": {
+        "1": "Not on my level.",
+        "2": "Out of your league.",
+        "3": "You don't belong in this room."
+      },
+      "aku yang berkuasa di sini": {
+        "1": "I am in charge here.",
+        "2": "I run this operation.",
+        "3": "I make the rules around here."
+      },
+      "kau tidak bisa mengalahkanku": {
+        "1": "You cannot beat me.",
+        "2": "You can't win this.",
+        "3": "You are out of your depth, friend."
+      },
+      "aku yang terbaik": {
+        "1": "I am the best.",
+        "2": "Nobody does it better than me.",
+        "3": "I am the top of the food chain."
+      },
+      "lihat saja nanti": {
+        "1": "We will see.",
+        "2": "Just watch.",
+        "3": "Wait and see."
+      },
+      "jangan remehkan aku": {
+        "1": "Do not underestimate me.",
+        "2": "Never underestimate me.",
+        "3": "You'd be a fool to underestimate me."
+      },
+      "aku takut": {
+        "1": "I am afraid.",
+        "2": "I'm scared.",
+        "3": "I am terrified here."
+      },
+      "tolong jangan sakiti aku": {
+        "1": "Please do not hurt me.",
+        "2": "Please, no violence.",
+        "3": "Have mercy, I beg you."
+      },
+      "aku menyerah": {
+        "1": "I surrender.",
+        "2": "I throw in the towel.",
+        "3": "I give up, you win."
+      },
+      "aku tidak tahu apa-apa": {
+        "1": "I don't know anything.",
+        "2": "I saw nothing, I know nothing.",
+        "3": "I'm completely blind to this."
+      },
+      "biarkan aku pergi": {
+        "1": "Let me go.",
+        "2": "Let me walk away.",
+        "3": "Let me walk out that door."
+      },
+      "ini luar biasa": {
+        "1": "This is excellent.",
+        "2": "Beautiful.",
+        "3": "Magnifico."
+      },
+      "aku sangat senang": {
+        "1": "I am very pleased.",
+        "2": "This makes me happy.",
+        "3": "Molto bene."
+      },
+      "bagus sekali": {
+        "1": "Very good.",
+        "2": "Beautiful work.",
+        "3": "Perfetto."
+      },
+      "aku tidak sabar": {
+        "1": "I cannot wait.",
+        "2": "I am looking forward to it.",
+        "3": "Non vedo l'ora."
+      },
+      "ini hari terbaik": {
+        "1": "This is the best day.",
+        "2": "It's a beautiful day.",
+        "3": "Che bella giornata."
+      },
+      "sialan": {
+        "1": "Damn.",
+        "2": "Son of a bitch.",
+        "3": "Porca miseria."
+      },
+      "aku sangat kecewa": {
+        "1": "I am disappointed.",
+        "2": "You let me down.",
+        "3": "Che delusione."
+      },
+      "ini membuang waktu": {
+        "1": "This is a waste of time.",
+        "2": "You're wasting my time.",
+        "3": "Tempo perso."
+      },
+      "semuanya hancur": {
+        "1": "Everything is ruined.",
+        "2": "It's a disaster.",
+        "3": "È un disastro."
+      },
+      "ini sangat menyebalkan": {
+        "1": "This is annoying.",
+        "2": "This is a headache.",
+        "3": "Che seccatura."
+      },
+      "tolong aku": {
+        "1": "Help me out.",
+        "2": "I need a favor.",
+        "3": "Aiutami."
+      },
+      "aku mohon": {
+        "1": "I ask you, please.",
+        "2": "I'm asking you as a friend.",
+        "3": "Ti prego."
+      },
+      "berikan itu padaku": {
+        "1": "Give that to me.",
+        "2": "Hand it here.",
+        "3": "Dammelo."
+      },
+      "bantu aku": {
+        "1": "Assist me.",
+        "2": "Back my play.",
+        "3": "I need you in my corner."
+      },
+      "beri aku satu kesempatan lagi": {
+        "1": "Give me one more chance.",
+        "2": "Let me make it right.",
+        "3": "Give me a chance to fix this."
+      },
+      "ikut aku": {
+        "1": "Follow me.",
+        "2": "Come with me.",
+        "3": "Walk with me."
+      },
+      "tunggu di sini": {
+        "1": "Wait here.",
+        "2": "Wait here for me.",
+        "3": "Don't move from this spot."
+      },
+      "cepatlah": {
+        "1": "Hurry up.",
+        "2": "Make it quick.",
+        "3": "Sbrigati."
+      },
+      "lakukan sekarang": {
+        "1": "Do it now.",
+        "2": "Handle it immediately.",
+        "3": "Get it done, no excuses."
+      },
+      "dengarkan aku": {
+        "1": "Listen to me.",
+        "2": "Listen closely.",
+        "3": "Ascoltami bene."
+      },
+      "apa kau mau ikut?": {
+        "1": "Are you coming?",
+        "2": "You joining us?",
+        "3": "You riding with us?"
+      },
+      "biar aku yang urus": {
+        "1": "Let me handle this.",
+        "2": "I'll take care of it.",
+        "3": "Leave it in my hands."
+      },
+      "bagaimana menurutmu?": {
+        "1": "What do you think?",
+        "2": "How does that sound to you?",
+        "3": "Che ne pensi?"
+      },
+      "ayo pergi": {
+        "1": "Let's go.",
+        "2": "Let's take a ride.",
+        "3": "Andiamo."
+      },
+      "ambil ini": {
+        "1": "Take this.",
+        "2": "Here, take it.",
+        "3": "Prendi."
+      },
+      "kerja bagus": {
+        "1": "Good job.",
+        "2": "Well done.",
+        "3": "Ben fatto."
+      },
+      "kau hebat": {
+        "1": "You are great.",
+        "2": "You did good.",
+        "3": "Sei un grande."
+      },
+      "aku menghargainya": {
+        "1": "I appreciate it.",
+        "2": "I won't forget this.",
+        "3": "Lo apprezzo molto."
+      },
+      "terima kasih banyak": {
+        "1": "Thank you very much.",
+        "2": "My thanks.",
+        "3": "Grazie mille."
+      },
+      "ini sempurna": {
+        "1": "This is perfect.",
+        "2": "Just what I wanted.",
+        "3": "Perfetto."
+      },
+      "aku minta maaf": {
+        "1": "I am sorry.",
+        "2": "I apologize.",
+        "3": "Mi dispiace."
+      },
+      "itu salahku": {
+        "1": "That is my fault.",
+        "2": "I take the blame.",
+        "3": "Colpa mia."
+      },
+      "aku menyesal": {
+        "1": "I regret it.",
+        "2": "I made a mistake.",
+        "3": "I shouldn't have crossed that line."
+      },
+      "maafkan aku": {
+        "1": "Forgive me.",
+        "2": "Pardon me.",
+        "3": "Perdonami."
+      },
+      "aku tidak sengaja": {
+        "1": "I didn't mean to.",
+        "2": "It wasn't on purpose.",
+        "3": "Non era mia intenzione."
+      },
+      "sedang apa?": {
+        "1": "What are you doing?",
+        "2": "What are you working on?",
+        "3": "Che fai?"
+      },
+      "cuacanya bagus": {
+        "1": "The weather is nice.",
+        "2": "It's a beautiful day out.",
+        "3": "Bel tempo, eh?"
+      },
+      "dari mana saja?": {
+        "1": "Where have you been?",
+        "2": "Where were you?",
+        "3": "Dove sei stato?"
+      },
+      "bagaimana harimu?": {
+        "1": "How is your day?",
+        "2": "Day going well?",
+        "3": "Com'è andata la giornata?"
+      },
+      "sampai jumpa nanti": {
+        "1": "See you later.",
+        "2": "See you around.",
+        "3": "Ci vediamo."
+      },
+      "kau temanku": {
+        "1": "You are my friend.",
+        "2": "You are a good friend to me.",
+        "3": "Sei un amico."
+      },
+      "aku percaya padamu": {
+        "1": "I trust you.",
+        "2": "I know you won't betray me.",
+        "3": "Mi fido di te."
+      },
+      "kita ini saudara": {
+        "1": "We are family.",
+        "2": "You are blood to me.",
+        "3": "Siamo famiglia."
+      },
+      "aku akan melindungimu": {
+        "1": "I got you.",
+        "2": "I watch your back.",
+        "3": "Ti copro io."
+      },
+      "jaga dirimu": {
+        "1": "Take care of yourself.",
+        "2": "Stay safe out there.",
+        "3": "Stammi bene."
+      },
+      "berapa harganya?": {
+        "1": "How much is it?",
+        "2": "What's the price?",
+        "3": "Quanto costa?"
+      },
+      "aku akan membayarnya": {
+        "1": "I will pay.",
+        "2": "It's on me.",
+        "3": "Pago io."
+      },
+      "ini uangnya": {
+        "1": "Here is the money.",
+        "2": "Here is the cash.",
+        "3": "Qui ci sono i soldi."
+      },
+      "terlalu mahal": {
+        "1": "Too expensive.",
+        "2": "That's a high price.",
+        "3": "Troppo caro."
+      },
+      "aku tidak punya uang": {
+        "1": "I have no money.",
+        "2": "I'm a little light right now.",
+        "3": "Non ho soldi."
+      },
+      "aku sedang bekerja": {
+        "1": "I am working.",
+        "2": "I'm taking care of business.",
+        "3": "Sto lavorando."
+      },
+      "apa pekerjaanmu?": {
+        "1": "What is your job?",
+        "2": "What business are you in?",
+        "3": "Di che cosa ti occupi?"
+      },
+      "aku sibuk": {
+        "1": "I am busy.",
+        "2": "I got my hands full.",
+        "3": "Sono occupato."
+      },
+      "ini tugasmu": {
+        "1": "This is your job.",
+        "2": "Take care of this.",
+        "3": "Questo è il tuo compito."
+      },
+      "pekerjaan selesai": {
+        "1": "The job is done.",
+        "2": "It's taken care of.",
+        "3": "Il lavoro è finito."
+      },
+      "masuk ke mobil": {
+        "1": "Get in the car.",
+        "2": "Get in the back.",
+        "3": "Sali in macchina."
+      },
+      "nyalakan mesinnya": {
+        "1": "Start the car.",
+        "2": "Get it running.",
+        "3": "Accendi il motore."
+      },
+      "ikuti mobil itu": {
+        "1": "Follow that car.",
+        "2": "Don't lose that car.",
+        "3": "Sigue a quella macchina."
+      },
+      "injak gasnya": {
+        "1": "Drive faster.",
+        "2": "Hit the gas.",
+        "3": "Accelera."
+      },
+      "menepi sekarang": {
+        "1": "Pull over.",
+        "2": "Stop the car here.",
+        "3": "Accosta subito."
+      },
+      "angkat tanganmu": {
+        "1": "Hands up.",
+        "2": "Put your hands where I can see them.",
+        "3": "Mani in alto."
+      },
+      "aku tidak bersalah": {
+        "1": "I am innocent.",
+        "2": "I had nothing to do with it.",
+        "3": "Sono innocente."
+      },
+      "turunkan senjatamu": {
+        "1": "Put the gun down.",
+        "2": "Drop the piece.",
+        "3": "Metti giù la pistola."
+      },
+      "ada polisi": {
+        "1": "The police are here.",
+        "2": "The cops are outside.",
+        "3": "La polizia."
+      },
+      "aku minta pengacara": {
+        "1": "I want my lawyer.",
+        "2": "Call my attorney.",
+        "3": "Voglio il mio avvocato."
+      },
+      "maju sini": {
+        "1": "Come here.",
+        "2": "Step up.",
+        "3": "Fatti avanti."
+      },
+      "aku akan menghajarmu": {
+        "1": "I will hurt you.",
+        "2": "I'm going to break your legs.",
+        "3": "Ti spacco la faccia."
+      },
+      "jangan lari": {
+        "1": "Don't run.",
+        "2": "You can't run.",
+        "3": "Non scappare."
+      },
+      "habisi dia": {
+        "1": "Take him out.",
+        "2": "Get rid of him.",
+        "3": "Fallo fuori."
+      },
+      "berdiri": {
+        "1": "Get up.",
+        "2": "On your feet.",
+        "3": "Alzati."
+      },
+      "ini perampokan": {
+        "1": "This is a robbery.",
+        "2": "We are taking your money.",
+        "3": "Questa è una rapina."
+      },
+      "serahkan semua uangmu": {
+        "1": "Give me your money.",
+        "2": "Hand over the envelope.",
+        "3": "Dammi i soldi."
+      },
+      "sembunyikan barang buktinya": {
+        "1": "Hide the evidence.",
+        "2": "Get rid of the proof.",
+        "3": "Fai sparire tutto."
+      },
+      "kita ketahuan": {
+        "1": "We are compromised.",
+        "2": "They know about us.",
+        "3": "Ci hanno scoperti."
+      },
+      "jangan beri tahu polisi": {
+        "1": "Do not tell the police.",
+        "2": "Don't talk to the cops.",
+        "3": "Niente sbirri, capito?"
+      },
+      "ayo minum": {
+        "1": "Let's have a drink.",
+        "2": "Let's get a drink.",
+        "3": "Andiamo a bere."
+      },
+      "aku mabuk": {
+        "1": "I am drunk.",
+        "2": "I had too much wine.",
+        "3": "Sono ubriaco."
+      },
+      "tuangkan aku minuman": {
+        "1": "Pour me a drink, please.",
+        "2": "Could you top up my glass?",
+        "3": "Versami da bere."
+      },
+      "pestanya luar biasa": {
+        "1": "The party is very good.",
+        "2": "This is a beautiful party.",
+        "3": "Che bella festa."
+      },
+      "bersulang": {
+        "1": "Cheers.",
+        "2": "A toast to us.",
+        "3": "Salute."
+      },
+      "kamu sangat cantik/tampan": {
+        "1": "You look nice.",
+        "2": "You are beautiful.",
+        "3": "Sei bellissima."
+      },
+      "aku menyukaimu": {
+        "1": "I like you.",
+        "2": "I care for you.",
+        "3": "Mi piaci davvero."
+      },
+      "maukah kau pergi denganku?": {
+        "1": "You want to go out?",
+        "2": "Let me take you to dinner.",
+        "3": "Vuoi uscire con me?"
+      },
+      "kau milikku": {
+        "1": "You are mine.",
+        "2": "You belong to me.",
+        "3": "Tu sei mia."
+      },
+      "aku merindukanmu": {
+        "1": "I miss you.",
+        "2": "I wish you were here.",
+        "3": "Mi manchi."
+      },
+      "aku terluka": {
+        "1": "I'm hurt.",
+        "2": "Sono ferito.",
+        "3": "Mi hanno colpito!"
+      },
+      "panggil ambulans": {
+        "1": "Call an ambulance.",
+        "2": "Chiama un'ambulanza.",
+        "3": "Chiama i soccorsi, subito!"
+      },
+      "aku butuh dokter": {
+        "1": "I need a doctor.",
+        "2": "Ho bisogno di un medico.",
+        "3": "Portatemi un dottore, in fretta."
+      },
+      "bertahanlah": {
+        "1": "Hold on.",
+        "2": "Resta con me.",
+        "3": "Tieni duro, non mollare!"
+      },
+      "dia tidak bernapas": {
+        "1": "He's not breathing.",
+        "2": "Non respira.",
+        "3": "Non respira più."
+      },
+      "aku sangat sedih": {
+        "1": "I am sad.",
+        "2": "Mi dispiace tanto.",
+        "3": "Ho il cuore a pezzi."
+      },
+      "dia sudah tiada": {
+        "1": "He is gone.",
+        "2": "Se n'è andato.",
+        "3": "Non c'è più."
+      },
+      "aku tidak bisa tanpa dia": {
+        "1": "I can't do this without him.",
+        "2": "Non ce la faccio senza di lui.",
+        "3": "Senza di lei non sono niente."
+      },
+      "ini semua salahku": {
+        "1": "It's my fault.",
+        "2": "È tutta colpa mia.",
+        "3": "È solo colpa mia."
+      },
+      "aku kehilangan segalanya": {
+        "1": "I lost everything.",
+        "2": "Ho perso tutto.",
+        "3": "Non mi è rimasto più niente."
+      },
+      "siapa yang menyuruhmu?": {
+        "1": "Who sent you?",
+        "2": "Chi ti ha mandato?",
+        "3": "Per chi lavori, dimmelo."
+      },
+      "katakan yang sebenarnya": {
+        "1": "Tell the truth.",
+        "2": "Dimmi la verità.",
+        "3": "Non mentirmi, dimmi la verità."
+      },
+      "aku non akan bicara": {
+        "1": "I won't talk.",
+        "2": "Non dirò niente.",
+        "3": "Non aprirò bocca, scordatelo."
+      },
+      "lepaskan ikatannya": {
+        "1": "Untie him.",
+        "2": "Slegatelo.",
+        "3": "Toglietegli quelle corde."
+      },
+      "kau akan menyesal": {
+        "1": "You will regret this.",
+        "2": "Te ne pentirai.",
+        "3": "Pagherai caro per questo."
+      },
+      "matikan kameranya": {
+        "1": "Turn off the cameras.",
+        "2": "Spegni le telecamere.",
+        "3": "Disattiva la sorveglianza."
+      },
+      "buka brankasnya": {
+        "1": "Open the safe.",
+        "2": "Apri la cassaforte.",
+        "3": "Forza il caveau."
+      },
+      "sistem berhasil diretas": {
+        "1": "System hacked.",
+        "2": "Sono dentro il sistema.",
+        "3": "Ho violato la sicurezza."
+      },
+      "waktu kita hampir habis": {
+        "1": "We are out of time.",
+        "2": "Il tempo stringe.",
+        "3": "Non abbiamo più tempo, muovetevi."
+      },
+      "kita harus keluar dari sini": {
+        "1": "We need to get out.",
+        "2": "Dobbiamo uscire di qui.",
+        "3": "Andiamocene subito."
+      },
+      "aku tahu rahasiamu": {
+        "1": "I know your secret.",
+        "2": "Conosco il tuo segreto.",
+        "3": "So esattamente cosa nascondi."
+      },
+      "bayar utangmu": {
+        "1": "Pay your debt.",
+        "2": "Paga il tuo debito.",
+        "3": "Restituisci i soldi che devi."
+      },
+      "jangan bertingkah": {
+        "1": "Don't play games.",
+        "2": "Non fare scherzi.",
+        "3": "Non fare il furbo con me."
+      },
+      "kau tidak punya pilihan": {
+        "1": "You have no choice.",
+        "2": "Non hai scelta.",
+        "3": "Non hai altre opzioni, capisci?"
+      },
+      "ini peringatan terakhir": {
+        "1": "This is your last warning.",
+        "2": "Questo è il tuo ultimo avvertimento.",
+        "3": "Non te lo dirò una seconda volta."
+      },
+      "jangan bersuara": {
+        "1": "Be quiet.",
+        "2": "Fai silenzio.",
+        "3": "Non fiatare."
+      },
+      "menunduklah": {
+        "1": "Get down.",
+        "2": "Abbassati.",
+        "3": "Tieni la testa bassa."
+      },
+      "tetap dalam penyamaran": {
+        "1": "Keep your cover.",
+        "2": "Comportati in modo naturale.",
+        "3": "Non far saltare la nostra copertura."
+      },
+      "apakah jalannya aman?": {
+        "1": "Is it clear?",
+        "2": "È libero?",
+        "3": "La via è libera?"
+      },
+      "aku akan mengalihkan perhatian mereka": {
+        "1": "I'll distract them.",
+        "2": "Li distraggo io.",
+        "3": "Creerò un diversivo."
+      },
+      "pegangan yang erat": {
+        "1": "Hold on.",
+        "2": "Tieniti forte.",
+        "3": "Reggiti forte, andiamo."
+      },
+      "aku akan menyalipnya": {
+        "1": "I will pass him.",
+        "2": "Lo sorpasso.",
+        "3": "Ora lo supero."
+      },
+      "awas di depan": {
+        "1": "Watch out.",
+        "2": "Attento davanti.",
+        "3": "Guarda avanti, attento!"
+      },
+      "kita kehilangan dia": {
+        "1": "We lost him.",
+        "2": "Lo stiamo perdendo.",
+        "3": "Ce lo stiamo facendo scappare."
+      },
+      "aku menang": {
+        "1": "I won.",
+        "2": "Ho vinto.",
+        "3": "La vittoria è mia."
+      },
+      "mari kita mulai rapatnya": {
+        "1": "Let's start.",
+        "2": "Cominciamo la riunione.",
+        "3": "Diamo inizio a questa riunione."
+      },
+      "apa laporanmu?": {
+        "1": "What is your report?",
+        "2": "Qual è il tuo rapporto?",
+        "3": "Fammi il tuo rapporto."
+      },
+      "keuntungannya menurun": {
+        "1": "Profits are down.",
+        "2": "I profitti sono in calo.",
+        "3": "I nostri guadagni stanno crollando."
+      },
+      "kita butuh wilayah baru": {
+        "1": "We need new territory.",
+        "2": "Abbiamo bisogno di nuovo territorio.",
+        "3": "Dobbiamo espandere il nostro territorio."
+      },
+      "rapat dibubarkan": {
+        "1": "Meeting over.",
+        "2": "La riunione è finita.",
+        "3": "La seduta è tolta."
+      },
+      "maju sekarang": {
+        "1": "Move out.",
+        "2": "Avanzate.",
+        "3": "Muovetevi, andiamo!"
+      },
+      "lindungi aku": {
+        "1": "Cover me.",
+        "2": "Coprimi.",
+        "3": "Datemi copertura!"
+      },
+      "target terlihat": {
+        "1": "Target spotted.",
+        "2": "Bersaglio individuato.",
+        "3": "Ho il bersaglio nel mirino."
+      },
+      "tahan tembakan": {
+        "1": "Hold fire.",
+        "2": "Non sparate.",
+        "3": "Trattenete il fuoco!"
+      },
+      "mundur": {
+        "1": "Fall back.",
+        "2": "Ritirata.",
+        "3": "Indietro, ritirata!"
+      },
+      "brengsek": {
+        "1": "Stronzo.",
+        "2": "Bastardo.",
+        "3": "Pezzo di merda."
+      },
+      "bajingan": {
+        "1": "Figlio di puttana.",
+        "2": "Brutto figlio di puttana.",
+        "3": "Figlio di una cagna."
+      },
+      "persetan denganmu": {
+        "1": "Fottiti.",
+        "2": "Vaffanculo.",
+        "3": "Vai a farti fottere."
+      },
+      "pergi ke neraka": {
+        "1": "Vai all'inferno.",
+        "2": "Brucia all'inferno.",
+        "3": "Che tu possa marcire all'inferno."
+      },
+      "omong kosong": {
+        "1": "Sciocchezze.",
+        "2": "Stronzate.",
+        "3": "Sono tutte cazzate."
+      },
+      "kau jelek sekali": {
+        "1": "You are ugly.",
+        "2": "Sei brutto.",
+        "3": "Sei orrendo."
+      },
+      "dasar babi gemuk": {
+        "1": "Fat pig.",
+        "2": "Maiale grasso.",
+        "3": "Brutto porco schifoso."
+      },
+      "kau sangat lemah": {
+        "1": "You are weak.",
+        "2": "Sei debole.",
+        "3": "Sei un rammollito."
+      },
+      "tutup mulut baumu": {
+        "1": "Shut your mouth.",
+        "2": "Chiudi la bocca.",
+        "3": "Chiudi quella fogna."
+      },
+      "kau tidak berguna": {
+        "1": "You are useless.",
+        "2": "Sei inutile.",
+        "3": "Non servi a un cazzo."
+      },
+      "serahkan dompetmu": {
+        "1": "Give me the wallet.",
+        "2": "Dammi il portafoglio.",
+        "3": "Fuori il portafoglio, muoviti."
+      },
+      "apa kau mau berkelahi?": {
+        "1": "You want to fight?",
+        "2": "Vuoi fare a pugni?",
+        "3": "Cerchi guai? Ti accontento."
+      },
+      "aku akan membunuhmu": {
+        "1": "I will kill you.",
+        "2": "Ti ammazzo.",
+        "3": "Ti farò fuori, giuro su Dio."
+      },
+      "tutup mulutmu atau kau mati": {
+        "1": "Shut up or die.",
+        "2": "Chiudi la bocca o ti ammazzo.",
+        "3": "Taci o ti faccio un buco in testa."
+      },
+      "kau cari masalah dengan orang yang salah": {
+        "1": "You're messing with the wrong person.",
+        "2": "Hai fatto incazzare la persona sbagliata.",
+        "3": "Ti sei messo contro la famiglia sbagliata."
+      },
+      "warna bajumu salah": {
+        "1": "Wrong colors.",
+        "2": "Indossi i colori sbagliati.",
+        "3": "Quei colori ti faranno uccidere qui."
+      },
+      "kembali ke wilayahmu": {
+        "1": "Go back to your turf.",
+        "2": "Torna nel tuo quartiere.",
+        "3": "Tornatene nel tuo fottuto territorio."
+      },
+      "kelompokmu adalah sampah": {
+        "1": "Your group is trash.",
+        "2": "La tua banda è spazzatura.",
+        "3": "La tua famiglia è una vergogna."
+      },
+      "pengkhianat": {
+        "1": "Traitor.",
+        "2": "Traditore.",
+        "3": "Sei un fottuto traditore."
+      },
+      "aku membenci orang-orang sepertimu": {
+        "1": "I hate people like you.",
+        "2": "Odio quelli come te.",
+        "3": "Odio la tua fottuta razza."
+      },
+      "jatuhkan senjatamu": {
+        "1": "Drop the weapon.",
+        "2": "Metti giù l'arma.",
+        "3": "Getta a terra la pistola."
+      },
+      "aku akan menembakmu": {
+        "1": "I will shoot you.",
+        "2": "Ti sparo.",
+        "3": "Ti pianto una pallottola in testa."
+      },
+      "jangan bergerak atau kutembak": {
+        "1": "Don't move or I'll shoot.",
+        "2": "Fermo o sparo.",
+        "3": "Non muoverti o ti faccio secco."
+      },
+      "bidik kepalanya": {
+        "1": "Aim for the head.",
+        "2": "Mira alla testa.",
+        "3": "Punta dritto alla testa."
+      },
+      "tarik pelatuknya": {
+        "1": "Pull the trigger.",
+        "2": "Premi il grilletto.",
+        "3": "Spara e facciamola finita."
+      },
+      "apakah barangnya aman?": {
+        "1": "Is the stuff safe?",
+        "2": "La merce è al sicuro?",
+        "3": "Il carico è al sicuro, dimmelo."
+      },
+      "jangan coba menipuku": {
+        "1": "Don't try to cheat me.",
+        "2": "Non cercare di fregarmi.",
+        "3": "Non provare a fottermi con la roba."
+      },
+      "ini kualitas terbaik": {
+        "1": "This is the best.",
+        "2": "È di prima qualità.",
+        "3": "Questa è roba purissima, fidati."
+      },
+      "transaksi selesai": {
+        "1": "Deal done.",
+        "2": "L'affare è concluso.",
+        "3": "Lo scambio è fatto, andiamo."
+      },
+      "polisi sedang berpatroli": {
+        "1": "Police are patrolling.",
+        "2": "La polizia sta pattugliando.",
+        "3": "Gli sbirri stanno girando nel quartiere."
+      }
+    }
+  }
+}

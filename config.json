@@ -1,0 +1,102 @@
+{
+  "ai_model": "qwen/qwen3.8-27b",
+  "api_key": "",
+  "api_base_url": "https://api.groq.com/openai/v1",
+  "bbox": {
+    "left": 11,
+    "top": 557,
+    "width": 671,
+    "height": 53
+  },
+  "input_bbox": {
+    "left": 11,
+    "top": 557,
+    "width": 671,
+    "height": 53
+  },
+  "chatlog_bbox": {
+    "left": 15,
+    "top": 420,
+    "width": 664,
+    "height": 136
+  },
+  "eula_accepted": true,
+  "hotkey_ans1": "<ctrl>+1",
+  "hotkey_ans2": "<ctrl>+2",
+  "hotkey_ans3": "<ctrl>+3",
+  "hotkey_clipboard": "<f5>",
+  "hotkey_ocr": "<f4>",
+  "hotkey_ocr_input": "<f4>",
+  "hotkey_ocr_chatlog": "<f3>",
+  "hotkey_scroll_down": "<page_down>",
+  "hotkey_scroll_up": "<page_up>",
+  "hotkey_toggle_window": "<home>",
+  "last_style": "Mafia Italy",
+  "osd_bbox": {
+    "height": 220,
+    "left": 11,
+    "top": 620,
+    "width": 671
+  },
+  "osd_duration": 10,
+  "osd_enabled": true,
+  "osd_font_color": "#F7F8F8",
+  "osd_font_size": 12,
+  "show_bbox_overlay": true,
+  "smart_reply_enabled": true,
+  "styles": {
+    "American Formal": {
+      "intensity": "natural and moderate",
+      "rule": "Natural contemporary American English suitable for everyday GTA RP dialogue.",
+      "tone": "casual, natural, straightforward, conversational"
+    },
+    "British Formal": {
+      "intensity": "none",
+      "rule": "Formal and polite British English.",
+      "tone": "formal, polite, respectful"
+    },
+    "Cartel Mexico": {
+      "intensity": "moderate",
+      "rule": "Mexican Cartel RP English with slight Spanish influence.",
+      "tone": "aggressive, commanding, slightly accented"
+    },
+    "LA Street": {
+      "intensity": "light to moderate street influence",
+      "rule": "Contemporary informal Los Angeles street-style American English with a subtle street influence.",
+      "tone": "casual, confident, relaxed, street-aware"
+    },
+    "Mafia Italy": {
+      "intensity": "moderate",
+      "rule": "Italian Mafia RP English, New York/Chicago mob style.",
+      "tone": "confident, slightly aggressive, mob-style"
+    }
+  },
+  "tesseract_path": "C:\\Program Files (x86)\\PRORP Translator\\tesseract\\tesseract.exe",
+  "model": "qwen/qwen3.8-27b",
+  "base_url": "https://api.groq.com/openai/v1",
+  "ignore_words": [],
+  "hotkeys": {
+    "ocr_capture": "F4",
+    "clipboard_capture": "F5",
+    "copy_answer_1": "ctrl+1",
+    "copy_answer_2": "ctrl+2",
+    "copy_answer_3": "ctrl+3",
+    "toggle_window": "insert",
+    "scroll_up": "page_up",
+    "scroll_down": "page_down"
+  },
+  "ocr_bbox": {
+    "left": 11,
+    "top": 557,
+    "width": 671,
+    "height": 53
+  },
+  "show_ocr_bbox": true,
+  "current_style": "Mafia Italy",
+  "theme": {
+    "preset": "Linear Classic",
+    "accent_1": "#5E6AD2",
+    "accent_2": "#F91880",
+    "accent_3": "#00BA7C"
+  }
+}
