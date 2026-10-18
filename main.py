@@ -49,7 +49,7 @@ def main():
     # Set Windows AppUserModelID for crisp taskbar icon grouping
     try:
         import ctypes
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("rpplus.translator.app.1.0.1")
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("rpplus.translator.app.1.0.2")
     except Exception:
         pass
 

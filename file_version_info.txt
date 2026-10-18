@@ -1,8 +1,8 @@
 # UTF-8
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(1, 0, 1, 0),
-    prodvers=(1, 0, 1, 0),
+    filevers=(1, 0, 2, 0),
+    prodvers=(1, 0, 2, 0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -17,12 +17,12 @@ VSVersionInfo(
         '040904B0',
         [StringStruct('CompanyName', 'RP Plus Community'),
         StringStruct('FileDescription', 'RP+ Translator for GTA RP'),
-        StringStruct('FileVersion', '1.0.1.0'),
+        StringStruct('FileVersion', '1.0.2.0'),
         StringStruct('InternalName', 'RPPlus'),
         StringStruct('LegalCopyright', 'Copyright (C) 2026 RP Plus. All rights reserved.'),
         StringStruct('OriginalFilename', 'RPPlus.exe'),
         StringStruct('ProductName', 'RP+ Translator'),
-        StringStruct('ProductVersion', '1.0.1.0')])
+        StringStruct('ProductVersion', '1.0.2.0')])
       ]), 
     VarFileInfo([VarStruct('Translation', [1033, 1200])])
   ]

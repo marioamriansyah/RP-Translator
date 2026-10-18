@@ -2,7 +2,7 @@
 ; RP+ Translator Installer Setup Script
 
 #define MyAppName "RP+ Translator"
-#define MyAppVersion "1.0.1"
+#define MyAppVersion "1.0.2"
 #define MyAppPublisher "RP Plus"
 #define MyAppExeName "RPPlus.exe"
 
@@ -23,13 +23,13 @@ SolidCompression=yes
 WizardStyle=modern
 PrivilegesRequiredOverridesAllowed=dialog
 DisableProgramGroupPage=yes
-VersionInfoVersion=1.0.1.0
+VersionInfoVersion=1.0.2.0
 VersionInfoCompany=RP Plus Community
 VersionInfoDescription=RP+ Translator Setup
-VersionInfoTextVersion=1.0.1
+VersionInfoTextVersion=1.0.2
 VersionInfoCopyright=Copyright (C) 2026 RP Plus
 VersionInfoProductName=RP+ Translator
-VersionInfoProductVersion=1.0.1.0
+VersionInfoProductVersion=1.0.2.0
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
