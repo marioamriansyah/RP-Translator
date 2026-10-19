@@ -254,10 +254,27 @@ class AppController(QObject):
         """Capture text typed by the player in the chat input bar (F4) and translate."""
         try:
             self._window.set_status("Scanning input typing bar (F4)...")
-            self._osd.show_translation("[Input F4] Memindai apa yang Anda ketik...")
+
+            # Temporarily hide visual guide overlays so they don't corrupt the OCR capture
+            guide_input_was_visible = False
+            guide_chat_was_visible = False
+            if hasattr(self._window, "_bbox_input_overlay") and self._window._bbox_input_overlay.isVisible():
+                guide_input_was_visible = True
+                self._window._bbox_input_overlay.hide()
+            if hasattr(self._window, "_bbox_chatlog_overlay") and self._window._bbox_chatlog_overlay.isVisible():
+                guide_chat_was_visible = True
+                self._window._bbox_chatlog_overlay.hide()
+
             QApplication.processEvents()
 
-            text = self._ocr.capture_input() if hasattr(self._ocr, "capture_input") else self._ocr.capture()
+            try:
+                text = self._ocr.capture_input() if hasattr(self._ocr, "capture_input") else self._ocr.capture()
+            finally:
+                if guide_input_was_visible and hasattr(self._window, "_bbox_input_overlay"):
+                    self._window._bbox_input_overlay.show()
+                if guide_chat_was_visible and hasattr(self._window, "_bbox_chatlog_overlay"):
+                    self._window._bbox_chatlog_overlay.show()
+
             if text and text.strip():
                 clean = text.strip()
                 self._window.set_input_text(clean)
@@ -279,13 +296,30 @@ class AppController(QObject):
 
     @pyqtSlot()
     def _on_ocr_chatlog_capture(self):
-        """Capture the latest incoming message from chatlog (F5) and translate."""
+        """Capture the incoming chatlog according to snip box (F5) and translate."""
         try:
             self._window.set_status("Scanning incoming chatlog (F5)...")
-            self._osd.show_translation("[Chatlog F5] Memindai pesan chat terbaru...")
+
+            # Temporarily hide visual guide overlays
+            guide_input_was_visible = False
+            guide_chat_was_visible = False
+            if hasattr(self._window, "_bbox_input_overlay") and self._window._bbox_input_overlay.isVisible():
+                guide_input_was_visible = True
+                self._window._bbox_input_overlay.hide()
+            if hasattr(self._window, "_bbox_chatlog_overlay") and self._window._bbox_chatlog_overlay.isVisible():
+                guide_chat_was_visible = True
+                self._window._bbox_chatlog_overlay.hide()
+
             QApplication.processEvents()
 
-            text = self._ocr.capture_chatlog() if hasattr(self._ocr, "capture_chatlog") else self._ocr.capture()
+            try:
+                text = self._ocr.capture_chatlog() if hasattr(self._ocr, "capture_chatlog") else self._ocr.capture()
+            finally:
+                if guide_input_was_visible and hasattr(self._window, "_bbox_input_overlay"):
+                    self._window._bbox_input_overlay.show()
+                if guide_chat_was_visible and hasattr(self._window, "_bbox_chatlog_overlay"):
+                    self._window._bbox_chatlog_overlay.show()
+
             if text and text.strip():
                 clean = text.strip()
                 self._window.set_input_text(clean)
@@ -294,11 +328,11 @@ class AppController(QObject):
                 self._on_translate(clean)
             else:
                 msg = (
-                    "[Chatlog F5] Tidak ada chat masuk terdeteksi.\n\n"
+                    "[Chatlog F5] Tidak ada chat masuk terdeteksi di area snip box.\n\n"
                     "Gunakan tombol 'Snip Chat' di RP+ Translator "
                     "untuk menandai posisi area chatlog history Anda."
                 )
-                self._window.set_status("No text detected in chatlog")
+                self._window.set_status("No text detected in chatlog snip box")
                 self._osd.show_translation(msg)
         except Exception as e:
             err = f"OCR Chatlog Error: {str(e)}"
@@ -318,10 +352,27 @@ class AppController(QObject):
         try:
             self._window.set_status("Scanning incoming RP chat (F1)...")
             self._window.set_meaning_loading()
-            self._osd.show_translation("[F1 - Arti RP] Memindai chat lawan RP...")
+
+            # Temporarily hide visual guide overlays so they don't appear in the screenshot
+            guide_input_was_visible = False
+            guide_chat_was_visible = False
+            if hasattr(self._window, "_bbox_input_overlay") and self._window._bbox_input_overlay.isVisible():
+                guide_input_was_visible = True
+                self._window._bbox_input_overlay.hide()
+            if hasattr(self._window, "_bbox_chatlog_overlay") and self._window._bbox_chatlog_overlay.isVisible():
+                guide_chat_was_visible = True
+                self._window._bbox_chatlog_overlay.hide()
+
             QApplication.processEvents()
 
-            text = self._ocr.capture_chatlog() if hasattr(self._ocr, "capture_chatlog") else self._ocr.capture()
+            try:
+                text = self._ocr.capture_chatlog() if hasattr(self._ocr, "capture_chatlog") else self._ocr.capture()
+            finally:
+                if guide_input_was_visible and hasattr(self._window, "_bbox_input_overlay"):
+                    self._window._bbox_input_overlay.show()
+                if guide_chat_was_visible and hasattr(self._window, "_bbox_chatlog_overlay"):
+                    self._window._bbox_chatlog_overlay.show()
+
             if text and text.strip():
                 clean = text.strip()
                 self._window.set_meaning_loading(clean)
@@ -342,9 +393,9 @@ class AppController(QObject):
                 self._meaning_worker.start()
             else:
                 msg = (
-                    "[F1 - Arti RP] Tidak ada chat masuk terdeteksi.\n\n"
+                    "[F1 - Arti RP] Tidak ada chat masuk terdeteksi di area snip box.\n\n"
                     "• Pastikan ada pesan chat dari lawan main di layar Anda.\n"
-                    "• Gunakan tombol 'Snip Chat' di RP+ Translator untuk menyesuaikan area chatlog."
+                    "• Gunakan tombol 'Snip Chat' di RP+ Translator untuk menyesuaikan posisi snip box chatlog."
                 )
                 self._window.set_status("No chat detected for F1 meaning")
                 self._window.clear_meaning()

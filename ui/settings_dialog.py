@@ -560,8 +560,8 @@ class SettingsDialog(QDialog):
                 "width": self._chat_width.value(),
                 "height": self._chat_height.value(),
             }
-            res = engine.extract_latest_chat_line(engine.capture_and_recognize(bbox, lang="ind+eng"))
-            title = "Chatlog Latest Line (F3)"
+            res = engine.clean_chatlog_text(engine.capture_and_recognize(bbox, lang="ind+eng"))
+            title = "Chatlog Snip Box (F5 / F1)"
 
         self._test_output_lbl.show()
         if res:

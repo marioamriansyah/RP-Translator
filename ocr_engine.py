@@ -220,32 +220,39 @@ class OCREngine:
         return t
 
     @staticmethod
-    def extract_latest_chat_line(text: str) -> str:
+    def clean_chatlog_text(text: str) -> str:
         """
-        Extracts only the newest/latest message from a multi-line chatlog (F3)
-        so that older chat history is not translated.
+        Cleans OCR output from chatlog snip box while PRESERVING ALL LINES
+        inside the snip box so the translation matches the entire selected area.
+        - Strips timestamps like [18:32:05] or (21:10) from line starts
+        - Strips noise characters
+        - Joins wrapped lines into full coherent dialogue
         """
         if not text:
             return ""
+
         lines = [line.strip() for line in text.splitlines() if line.strip()]
         if not lines:
             return ""
 
         cleaned_lines = []
         for line in lines:
-            # Strip timestamps [HH:MM:SS] or (HH:MM:SS)
+            # Strip timestamps [HH:MM:SS] or (HH:MM:SS) or (HH:MM)
             l = re.sub(r"^[\[\(]\d{1,2}:\d{2}(?::\d{2})?[\]\)]\s*", "", line)
-            # Strip speaker prefix, e.g. "John_Doe says:" or "Officer_1:"
-            l = re.sub(r"^(\([^\)]+\)\s*)?[A-Za-z0-9_]+(?:\s+says|\s+berkata|\s+shouts)?\s*:\s*", "", l)
+            # Strip outer quotation marks
             l = re.sub(r'^["\']|["\']$', "", l).strip()
-            # Ignore short noise lines
-            if len(l) >= 2:
+            # Ignore single stray noise characters like '_', '|', '~', '-'
+            if len(l) >= 2 or (len(l) == 1 and l.isalnum()):
                 cleaned_lines.append(l)
 
         if cleaned_lines:
-            # Return ONLY the last line (the newest incoming chat message)
-            return cleaned_lines[-1]
+            return " ".join(cleaned_lines)
         return text.strip()
+
+    @staticmethod
+    def extract_latest_chat_line(text: str) -> str:
+        """Alias to clean_chatlog_text for backward compatibility."""
+        return OCREngine.clean_chatlog_text(text)
 
     # ── Capture ────────────────────────────────────────────────────────
 
@@ -293,8 +300,8 @@ class OCREngine:
 
     def capture_chatlog(self, lang: str = "ind+eng") -> str:
         """
-        Capture the incoming chatlog (F3) and extract ONLY the newest line,
-        preventing older chat history from being translated.
+        Capture the incoming chatlog according to the configured snip box (chatlog_bbox).
+        Reads ALL text inside the snip box so the translation matches the user's selection.
         """
         if not self.is_available():
             raise FileNotFoundError(
@@ -312,19 +319,26 @@ class OCREngine:
         variants = self.preprocess_image(image)
 
         # Multi-line chat history modes
-        for psm in ["--psm 6", "--psm 11", "--psm 3"]:
+        best_candidate = ""
+        for psm in ["--psm 6", "--psm 4", "--psm 11", "--psm 3"]:
             for variant in variants:
                 try:
                     raw = pytesseract.image_to_string(variant, lang=lang, config=psm).strip()
-                    latest = self.extract_latest_chat_line(raw)
-                    if latest and len(re.findall(r"[A-Za-z0-9]", latest)) >= 2:
-                        return latest
+                    cleaned = self.clean_chatlog_text(raw)
+                    if cleaned and len(re.findall(r"[A-Za-z0-9]", cleaned)) >= 2:
+                        if len(cleaned) > len(best_candidate):
+                            best_candidate = cleaned
+                            if len(re.findall(r"[A-Za-z0-9]", best_candidate)) >= 6:
+                                return best_candidate
                 except Exception as e:
                     print(f"[OCREngine] Chatlog OCR error ({psm}): {e}")
 
+        if best_candidate:
+            return best_candidate
+
         # Fallback to general recognize
         raw = self.recognize(image, lang=lang)
-        return self.extract_latest_chat_line(raw)
+        return self.clean_chatlog_text(raw)
 
     def capture(self, lang: str = "ind+eng") -> str:
         """
@@ -338,14 +352,14 @@ class OCREngine:
         """
         Take a screenshot of a screen region defined by *bbox*.
         Uses PyQt6 QScreen grabWindow for robust Windows DirectX and High-DPI support,
-        with ImageGrab as fallback.
+        with multi-monitor geometry compensation and ImageGrab fallback.
         """
         left = int(bbox.get("left", 0))
         top = int(bbox.get("top", 0))
         width = max(10, int(bbox.get("width", 500)))
         height = max(10, int(bbox.get("height", 100)))
 
-        # 1. Primary: PyQt6 QScreen grabWindow (100% reliable on Windows)
+        # 1. Primary: PyQt6 QScreen grabWindow
         try:
             from PyQt6.QtGui import QGuiApplication, QImage
             app = QGuiApplication.instance()
@@ -357,7 +371,11 @@ class OCREngine:
                         break
 
                 if target_screen:
-                    pixmap = target_screen.grabWindow(0, left, top, width, height)
+                    # In Qt, grabWindow(0, x, y, w, h) coordinates are relative
+                    # to the screen's own coordinate origin.
+                    local_x = left - target_screen.geometry().x()
+                    local_y = top - target_screen.geometry().y()
+                    pixmap = target_screen.grabWindow(0, local_x, local_y, width, height)
                     if not pixmap.isNull():
                         qimg = pixmap.toImage().convertToFormat(QImage.Format.Format_RGBA8888)
                         w = qimg.width()
