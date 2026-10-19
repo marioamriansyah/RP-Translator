@@ -41,6 +41,26 @@ class TranslationWorker(QThread):
             self.error.emit(f"Translation error: {str(e)}")
 
 
+class MeaningWorker(QThread):
+    """Background worker for F1 incoming RP chat meaning translation."""
+
+    finished = pyqtSignal(str, str)  # (source_text, meaning_text)
+    error = pyqtSignal(str)          # error message
+
+    def __init__(self, translator, text: str, parent=None):
+        super().__init__(parent)
+        self._translator = translator
+        self._text = text
+
+    def run(self):
+        """Execute English -> Indonesian RP meaning translation in background."""
+        try:
+            meaning = self._translator.translate_to_indonesian(self._text)
+            self.finished.emit(self._text, meaning)
+        except Exception as e:
+            self.error.emit(f"Meaning translation error: {str(e)}")
+
+
 class AppController(QObject):
     """Main application controller that wires all components together."""
 
@@ -102,7 +122,8 @@ class AppController(QObject):
                 self._hotkeys.ocr_capture.connect(self._on_ocr_capture)
             if hasattr(self._hotkeys, "ocr_chatlog"):
                 self._hotkeys.ocr_chatlog.connect(self._on_ocr_chatlog_capture)
-            self._hotkeys.clipboard_capture.connect(self._on_clipboard_capture)
+            if hasattr(self._hotkeys, "ocr_meaning"):
+                self._hotkeys.ocr_meaning.connect(self._on_ocr_meaning_capture)
             self._hotkeys.copy_answer_1.connect(lambda: self._on_copy_answer(0))
             self._hotkeys.copy_answer_2.connect(lambda: self._on_copy_answer(1))
             self._hotkeys.copy_answer_3.connect(lambda: self._on_copy_answer(2))
@@ -258,22 +279,22 @@ class AppController(QObject):
 
     @pyqtSlot()
     def _on_ocr_chatlog_capture(self):
-        """Capture the latest incoming message from chatlog (F3) and translate."""
+        """Capture the latest incoming message from chatlog (F5) and translate."""
         try:
-            self._window.set_status("Scanning incoming chatlog (F3)...")
-            self._osd.show_translation("[Chatlog F3] Memindai pesan chat terbaru...")
+            self._window.set_status("Scanning incoming chatlog (F5)...")
+            self._osd.show_translation("[Chatlog F5] Memindai pesan chat terbaru...")
             QApplication.processEvents()
 
             text = self._ocr.capture_chatlog() if hasattr(self._ocr, "capture_chatlog") else self._ocr.capture()
             if text and text.strip():
                 clean = text.strip()
                 self._window.set_input_text(clean)
-                self._osd.show_translation(f"[Chat F3]\n\"{clean}\"\n\nMenerjemahkan...")
+                self._osd.show_translation(f"[Chat F5]\n\"{clean}\"\n\nMenerjemahkan...")
                 QApplication.processEvents()
                 self._on_translate(clean)
             else:
                 msg = (
-                    "[Chatlog F3] Tidak ada chat masuk terdeteksi.\n\n"
+                    "[Chatlog F5] Tidak ada chat masuk terdeteksi.\n\n"
                     "Gunakan tombol 'Snip Chat' di RP+ Translator "
                     "untuk menandai posisi area chatlog history Anda."
                 )
@@ -289,25 +310,75 @@ class AppController(QObject):
         """Legacy alias: redirects to input capture."""
         self._on_ocr_input_capture()
 
-    # ── Clipboard ───────────────────────────────────────
+    # ── RP Chat Meaning (F1) ────────────────────────────
 
     @pyqtSlot()
-    def _on_clipboard_capture(self):
-        """Get text from clipboard and translate with in-game feedback."""
+    def _on_ocr_meaning_capture(self):
+        """Capture incoming RP chat from chatlog and translate its meaning to Indonesian (F1)."""
         try:
-            clipboard = QApplication.clipboard()
-            text = clipboard.text()
+            self._window.set_status("Scanning incoming RP chat (F1)...")
+            self._window.set_meaning_loading()
+            self._osd.show_translation("[F1 - Arti RP] Memindai chat lawan RP...")
+            QApplication.processEvents()
+
+            text = self._ocr.capture_chatlog() if hasattr(self._ocr, "capture_chatlog") else self._ocr.capture()
             if text and text.strip():
                 clean = text.strip()
-                self._window.set_input_text(clean)
-                self._osd.show_translation(f"[Clipboard]\n\"{clean}\"\n\nMenerjemahkan...")
-                self._on_translate(clean)
-                self._window.set_status("Captured from clipboard")
+                self._window.set_meaning_loading(clean)
+                self._osd.show_translation(f"[F1 - Arti RP]\n\"{clean}\"\n\nMenerjemahkan maksud roleplay...")
+                QApplication.processEvents()
+
+                # Start worker for AI meaning translation
+                if hasattr(self, "_meaning_worker") and self._meaning_worker and self._meaning_worker.isRunning():
+                    try:
+                        self._meaning_worker.terminate()
+                        self._meaning_worker.wait(500)
+                    except Exception:
+                        pass
+
+                self._meaning_worker = MeaningWorker(self._translator, clean, parent=self)
+                self._meaning_worker.finished.connect(self._on_meaning_done)
+                self._meaning_worker.error.connect(self._on_meaning_error)
+                self._meaning_worker.start()
             else:
-                self._window.set_status("Clipboard is empty")
-                self._osd.show_translation("[Clipboard] Clipboard kosong! Salin teks terlebih dahulu.")
+                msg = (
+                    "[F1 - Arti RP] Tidak ada chat masuk terdeteksi.\n\n"
+                    "• Pastikan ada pesan chat dari lawan main di layar Anda.\n"
+                    "• Gunakan tombol 'Snip Chat' di RP+ Translator untuk menyesuaikan area chatlog."
+                )
+                self._window.set_status("No chat detected for F1 meaning")
+                self._window.clear_meaning()
+                self._osd.show_translation(msg)
         except Exception as e:
-            self._window.set_status(f"Clipboard Error: {str(e)}")
+            err = f"OCR Meaning Error: {str(e)}"
+            self._window.set_status(err)
+            self._osd.show_translation(err)
+
+    @pyqtSlot(str, str)
+    def _on_meaning_done(self, source_text: str, meaning_text: str):
+        """Display translated Indonesian meaning on Main Window Card and OSD."""
+        self._window.set_meaning_result(source_text, meaning_text)
+        self._window.set_status("RP Chat meaning translated")
+        osd_msg = (
+            f"[Arti RP]\n{meaning_text}\n\n"
+            f"[Chat Lawan]\n\"{source_text}\""
+        )
+        self._osd.show_translation(osd_msg)
+
+    @pyqtSlot(str)
+    def _on_meaning_error(self, error_msg: str):
+        """Handle error during meaning translation."""
+        self._window.set_status(f"Meaning error: {error_msg}")
+        self._osd.show_translation(f"[F1 Error] {error_msg}")
+        err_lower = error_msg.lower()
+        if (
+            "401" in error_msg
+            or "unauthorized" in err_lower
+            or "api key is missing" in err_lower
+            or "invalid_api_key" in err_lower
+            or "invalid api key" in err_lower
+        ):
+            self.show_api_key_dialog(is_error=True, error_detail=error_msg)
 
     # ── Copy Answer ─────────────────────────────────────
 

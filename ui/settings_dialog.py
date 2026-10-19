@@ -378,11 +378,11 @@ class SettingsDialog(QDialog):
         self._hotkey_ocr_input = QLineEdit("<f4>")
         form.addRow("OCR Input Bar (What You Type):", self._hotkey_ocr_input)
 
-        self._hotkey_ocr_chatlog = QLineEdit("<f3>")
+        self._hotkey_ocr_chatlog = QLineEdit("<f5>")
         form.addRow("OCR Chatlog (Incoming Messages):", self._hotkey_ocr_chatlog)
 
-        self._hotkey_clipboard = QLineEdit("<f5>")
-        form.addRow("Clipboard Capture:", self._hotkey_clipboard)
+        self._hotkey_ocr_meaning = QLineEdit("<f1>")
+        form.addRow("RP Chat Meaning (EN -> ID):", self._hotkey_ocr_meaning)
 
         self._hotkey_copy1 = QLineEdit("<ctrl>+1")
         form.addRow("Copy Option 1:", self._hotkey_copy1)
@@ -460,8 +460,8 @@ class SettingsDialog(QDialog):
 
         layout.addWidget(input_group)
 
-        # 2. Chatlog History Zone (F3)
-        chat_group = QGroupBox("Chatlog History (F3 - Incoming Messages)")
+        # 2. Chatlog History Zone (F5 / F1)
+        chat_group = QGroupBox("Chatlog History (F5 / F1 - Incoming Messages)")
         chat_layout = QFormLayout(chat_group)
         chat_layout.setSpacing(6)
 
@@ -748,8 +748,8 @@ class SettingsDialog(QDialog):
         # Hotkeys
         hk = cfg.get("hotkeys", {})
         self._hotkey_ocr_input.setText(cfg.get("hotkey_ocr_input") or cfg.get("hotkey_ocr") or hk.get("ocr_input", "<f4>"))
-        self._hotkey_ocr_chatlog.setText(cfg.get("hotkey_ocr_chatlog") or hk.get("ocr_chatlog", "<f3>"))
-        self._hotkey_clipboard.setText(cfg.get("hotkey_clipboard") or hk.get("clipboard_capture", "<f5>"))
+        self._hotkey_ocr_chatlog.setText(cfg.get("hotkey_ocr_chatlog") or hk.get("ocr_chatlog", "<f5>"))
+        self._hotkey_ocr_meaning.setText(cfg.get("hotkey_ocr_meaning") or hk.get("ocr_meaning", "<f1>"))
         self._hotkey_copy1.setText(cfg.get("hotkey_ans1") or hk.get("copy_answer_1", "<ctrl>+1"))
         self._hotkey_copy2.setText(cfg.get("hotkey_ans2") or hk.get("copy_answer_2", "<ctrl>+2"))
         self._hotkey_copy3.setText(cfg.get("hotkey_ans3") or hk.get("copy_answer_3", "<ctrl>+3"))
@@ -830,8 +830,8 @@ class SettingsDialog(QDialog):
             "ignore_words": ignore_words,
             "hotkey_ocr": self._hotkey_ocr_input.text().strip() or "<f4>",
             "hotkey_ocr_input": self._hotkey_ocr_input.text().strip() or "<f4>",
-            "hotkey_ocr_chatlog": self._hotkey_ocr_chatlog.text().strip() or "<f3>",
-            "hotkey_clipboard": self._hotkey_clipboard.text().strip() or "<f5>",
+            "hotkey_ocr_chatlog": self._hotkey_ocr_chatlog.text().strip() or "<f5>",
+            "hotkey_ocr_meaning": self._hotkey_ocr_meaning.text().strip() or "<f1>",
             "hotkey_ans1": self._hotkey_copy1.text().strip() or "<ctrl>+1",
             "hotkey_ans2": self._hotkey_copy2.text().strip() or "<ctrl>+2",
             "hotkey_ans3": self._hotkey_copy3.text().strip() or "<ctrl>+3",

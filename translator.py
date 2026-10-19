@@ -262,6 +262,60 @@ class Translator:
             results.append(results[-1] if results else "")
         return results[:3]
 
+    def translate_to_indonesian(self, text: str) -> str:
+        """
+        Translate English GTA RP chatlog / slang dialogue into natural Indonesian
+        so the player understands the roleplay meaning and nuance (Hotkey F1).
+        """
+        text = text.strip()
+        if not text:
+            return ""
+
+        api_key = self._config.get("api_key", "")
+        api_base = self._config.get("api_base_url") or self._config.get("base_url", "https://api.groq.com/openai/v1")
+        model = self._config.get("ai_model") or self._config.get("model", "qwen/qwen3.8-27b")
+
+        if not api_key:
+            raise ValueError("API Key is missing. Please set your Groq API key in Settings.")
+
+        system_prompt = (
+            "You are an expert GTA RP (Grand Theft Auto Roleplay) assistant.\n"
+            "Your task is to translate and explain English in-game roleplay chat/dialogue into clear, natural, and accurate Bahasa Indonesia.\n"
+            "Ensure American/gang/mob/police/street RP slangs and idioms (e.g. 'pack', 'heat', 'cuff', 'ops', 'cuh', 'bogus', '10-4', 'lay low') "
+            "are interpreted correctly according to GTA RP context so the player understands the exact intention of the other player.\n"
+            "Output ONLY the Indonesian translation / meaning directly, in 1-2 concise and natural sentences. Do not include notes, quotes, or conversational preamble."
+        )
+
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": text},
+            ],
+            "temperature": 0.4,
+            "max_tokens": 256,
+        }
+
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
+
+        url = f"{api_base.rstrip('/')}/chat/completions"
+
+        with httpx.Client(timeout=30.0) as client:
+            response = client.post(url, json=payload, headers=headers)
+            response.raise_for_status()
+            data = response.json()
+
+        choices = data.get("choices", [])
+        if not choices:
+            raise ValueError("No response received from AI model.")
+
+        content = choices[0]["message"]["content"].strip()
+        content = re.sub(r'^["\']|["\']$', '', content).strip()
+        return content
+
     def reload_config(self) -> None:
         """Reload configuration and refresh slang library."""
         self._load_slang_library(self._slang_path)

@@ -45,7 +45,7 @@ class HotkeyManager(QObject):
     ocr_input = pyqtSignal()
     ocr_chatlog = pyqtSignal()
     ocr_capture = pyqtSignal()  # Backward-compatible alias for ocr_input
-    clipboard_capture = pyqtSignal()
+    ocr_meaning = pyqtSignal()
     copy_answer_1 = pyqtSignal()
     copy_answer_2 = pyqtSignal()
     copy_answer_3 = pyqtSignal()
@@ -69,7 +69,7 @@ class HotkeyManager(QObject):
             "ocr_input": self.ocr_input,
             "ocr_chatlog": self.ocr_chatlog,
             "ocr_capture": self.ocr_capture,
-            "clipboard_capture": self.clipboard_capture,
+            "ocr_meaning": self.ocr_meaning,
             "copy_answer_1": self.copy_answer_1,
             "copy_answer_2": self.copy_answer_2,
             "copy_answer_3": self.copy_answer_3,
@@ -101,8 +101,8 @@ class HotkeyManager(QObject):
 
         bindings = [
             (1, "ocr_input", get_hk("hotkey_ocr_input", "ocr_input", get_hk("hotkey_ocr", "ocr_capture", "<f4>"))),
-            (2, "ocr_chatlog", get_hk("hotkey_ocr_chatlog", "ocr_chatlog", "<f3>")),
-            (3, "clipboard_capture", get_hk("hotkey_clipboard", "clipboard_capture", "<f5>")),
+            (2, "ocr_chatlog", get_hk("hotkey_ocr_chatlog", "ocr_chatlog", "<f5>")),
+            (3, "ocr_meaning", get_hk("hotkey_ocr_meaning", "ocr_meaning", "<f1>")),
             (4, "copy_answer_1", get_hk("hotkey_ans1", "copy_answer_1", "<ctrl>+1")),
             (5, "copy_answer_2", get_hk("hotkey_ans2", "copy_answer_2", "<ctrl>+2")),
             (6, "copy_answer_3", get_hk("hotkey_ans3", "copy_answer_3", "<ctrl>+3")),

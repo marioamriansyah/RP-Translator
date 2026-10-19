@@ -53,7 +53,7 @@ def main():
             ctypes.windll.shcore.SetProcessDpiAwareness(2)
         except Exception:
             ctypes.windll.user32.SetProcessDPIAware()
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("rpplus.translator.app.1.0.3")
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("rpplus.translator.app.1.0.4")
     except Exception:
         pass
 

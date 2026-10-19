@@ -225,6 +225,144 @@ LinearAnswerCard = RPAnswerCard
 MonochromeAnswerCard = RPAnswerCard
 
 
+class RPChatMeaningCard(QFrame):
+    """
+    Illustrator Linear Card displaying incoming RP chat comprehension (English -> Indonesian).
+    Triggered via in-game Hotkey F1.
+    """
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setObjectName("cardFrame")
+        self.setMinimumHeight(104)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self._source_text = ""
+        self._meaning_text = ""
+
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(18, 12, 18, 12)
+        layout.setSpacing(6)
+
+        # ── Header: F1 Badge, Title, and Action Buttons (Clear, Copy) ──
+        hdr = QHBoxLayout()
+        hdr.setSpacing(8)
+
+        # F1 Hotkey Badge
+        self._f1_badge = QLabel("F1")
+        self._f1_badge.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self._f1_badge.setStyleSheet(
+            "background-color: #26272B; color: #FFFFFF; font-weight: 800; "
+            "font-size: 8pt; font-family: 'Consolas', 'Segoe UI Mono', monospace; "
+            "padding: 2px 8px; border-radius: 6px; border: 1px solid #383A42;"
+        )
+        hdr.addWidget(self._f1_badge)
+
+        self._title_lbl = QLabel("RP CHATLOG MEANING ( EN ➔ ID )")
+        self._title_lbl.setStyleSheet(
+            "font-size: 8.5pt; font-weight: 700; color: #8C8F9A; letter-spacing: 0.8px;"
+        )
+        hdr.addWidget(self._title_lbl)
+
+        hdr.addStretch()
+
+        self._clear_btn = QPushButton("Clear")
+        self._clear_btn.setObjectName("clearPillBtn")
+        self._clear_btn.setIcon(get_vector_icon("clear", color="#FFFFFF", size=10))
+        self._clear_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self._clear_btn.clicked.connect(self.clear)
+        hdr.addWidget(self._clear_btn)
+
+        self._copy_btn = QPushButton("Copy")
+        self._copy_btn.setObjectName("cardCopyBtn")
+        self._copy_btn.setIcon(get_vector_icon("copy", color="#FFFFFF", size=13))
+        self._copy_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self._copy_btn.clicked.connect(self._on_copy_clicked)
+        hdr.addWidget(self._copy_btn)
+
+        layout.addLayout(hdr)
+
+        # ── Source English Text (Muted italic quote) ──────────────────
+        self._source_lbl = QLabel('Chat Lawan: "Menunggu pesan masuk dari pemain lain..."')
+        self._source_lbl.setWordWrap(True)
+        self._source_lbl.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        self._source_lbl.setStyleSheet(
+            "font-size: 8.5pt; font-style: italic; color: #727580;"
+        )
+        layout.addWidget(self._source_lbl)
+
+        # ── Indonesian Meaning Translation (Clear, legible) ───────────
+        self._meaning_lbl = QLabel("Tekan F1 in-game untuk membaca & menerjemahkan chat lawan RP ke Bahasa Indonesia...")
+        self._meaning_lbl.setWordWrap(True)
+        self._meaning_lbl.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        self._meaning_lbl.setStyleSheet(
+            "font-size: 10pt; font-weight: 500; color: #6D707B; line-height: 1.45;"
+        )
+        layout.addWidget(self._meaning_lbl)
+
+    def set_meaning(self, source_en: str, meaning_id: str):
+        self._source_text = source_en.strip()
+        self._meaning_text = meaning_id.strip()
+
+        if self._source_text:
+            self._source_lbl.setText(f'Chat Lawan: "{self._source_text}"')
+            self._source_lbl.setStyleSheet("font-size: 8.5pt; font-style: italic; color: #9A9DA8;")
+        else:
+            self._source_lbl.setText('Chat Lawan: "-"')
+
+        if self._meaning_text:
+            self._meaning_lbl.setText(self._meaning_text)
+            self._meaning_lbl.setStyleSheet(
+                "font-size: 10.5pt; font-weight: 600; color: #FFFFFF; line-height: 1.45;"
+            )
+            self.fade_in()
+        else:
+            self._meaning_lbl.setText("Tekan F1 in-game untuk membaca & menerjemahkan chat lawan RP ke Bahasa Indonesia...")
+            self._meaning_lbl.setStyleSheet("font-size: 10pt; color: #6D707B;")
+
+    def set_status_loading(self, source_en: str = ""):
+        if source_en:
+            self._source_lbl.setText(f'Chat Lawan: "{source_en}"')
+        self._meaning_lbl.setText("Menerjemahkan arti roleplay ke Bahasa Indonesia...")
+        self._meaning_lbl.setStyleSheet("font-size: 10pt; font-style: italic; color: #FFCC00;")
+
+    def clear(self):
+        self._source_text = ""
+        self._meaning_text = ""
+        self._source_lbl.setText('Chat Lawan: "Menunggu pesan masuk dari pemain lain..."')
+        self._source_lbl.setStyleSheet("font-size: 8.5pt; font-style: italic; color: #727580;")
+        self._meaning_lbl.setText("Tekan F1 in-game untuk membaca & menerjemahkan chat lawan RP ke Bahasa Indonesia...")
+        self._meaning_lbl.setStyleSheet("font-size: 10pt; color: #6D707B;")
+
+    def _on_copy_clicked(self):
+        if self._meaning_text:
+            clipboard = QApplication.clipboard()
+            clipboard.setText(self._meaning_text)
+            self._copy_btn.setText("Copied!")
+            self._copy_btn.setIcon(get_vector_icon("check", color="#FFFFFF", size=13))
+            self._copy_btn.setStyleSheet(
+                "background-color: #5E6AD2; color: #FFFFFF; font-weight: 700; border-radius: 8px;"
+            )
+            QTimer.singleShot(1100, self._reset_copy_feedback)
+
+    def _reset_copy_feedback(self):
+        self._copy_btn.setText("Copy")
+        self._copy_btn.setIcon(get_vector_icon("copy", color="#FFFFFF", size=13))
+        self._copy_btn.setStyleSheet("")
+
+    def fade_in(self):
+        if not hasattr(self, "_opacity_effect") or self._opacity_effect is None:
+            self._opacity_effect = QGraphicsOpacityEffect(self)
+            self.setGraphicsEffect(self._opacity_effect)
+        self._opacity_effect.setOpacity(0.2)
+        self._anim = QPropertyAnimation(self._opacity_effect, b"opacity")
+        self._anim.setDuration(220)
+        self._anim.setStartValue(0.2)
+        self._anim.setEndValue(1.0)
+        self._anim.setEasingCurve(QEasingCurve.Type.OutCubic)
+        self._anim.start()
+
+
 class MainWindow(QMainWindow):
     """
     Main Window for PRORP Translator matching user's Illustrator RP+ design.
@@ -247,8 +385,8 @@ class MainWindow(QMainWindow):
         self._current_style = "LA Street"
 
         self.setWindowTitle("RP+ Translator")
-        self.resize(680, 740)
-        self.setMinimumSize(640, 680)
+        self.resize(680, 830)
+        self.setMinimumSize(640, 720)
         self.setStyleSheet(self._theme_manager.get_main_window_qss())
         self.setWindowIcon(get_app_qicon())
 
@@ -266,7 +404,7 @@ class MainWindow(QMainWindow):
         self._bbox_chatlog_overlay = BBoxOverlay(
             config_manager=self._config,
             bbox_key="chatlog_bbox",
-            title="Chatlog History (F3)",
+            title="Chatlog History (F5 / F1)",
             accent_color=self._theme_manager.accent_2,
         )
         self._bbox_overlay = self._bbox_input_overlay
@@ -337,7 +475,7 @@ class MainWindow(QMainWindow):
         self._snip_chat_btn = QPushButton("Snip Chat")
         self._snip_chat_btn.setObjectName("toolbarBtn")
         self._snip_chat_btn.setIcon(get_vector_icon("snip_chat", color="#FFFFFF", size=15))
-        self._snip_chat_btn.setToolTip("Set screen area for incoming chat history (F3)")
+        self._snip_chat_btn.setToolTip("Set screen area for incoming chat history (F5 / F1)")
         self._snip_chat_btn.setCursor(Qt.CursorShape.PointingHandCursor)
         self._snip_chat_btn.clicked.connect(self._start_snip_chatlog)
         top_pill_layout.addWidget(self._snip_chat_btn)
@@ -447,9 +585,13 @@ class MainWindow(QMainWindow):
             self._cards.append(card)
             main_layout.addWidget(card)
 
+        # ── 6. RP Chatlog Meaning Card (F1) ───────────────────────────
+        self._meaning_card = RPChatMeaningCard()
+        main_layout.addWidget(self._meaning_card)
+
         main_layout.addStretch()
 
-        # ── 6. Bottom Footer ───────────────────────────────────────────
+        # ── 7. Bottom Footer ───────────────────────────────────────────
         footer = QFrame()
         footer.setObjectName("footerFrame")
         footer.setFixedHeight(28)
@@ -477,7 +619,7 @@ class MainWindow(QMainWindow):
         footer_layout.addStretch()
 
         # Right copyright
-        copy_lbl = QLabel("RP Plus 1.0.3  •  © Copyrights 2026")
+        copy_lbl = QLabel("RP Plus 1.0.4  •  © Copyrights 2026")
         copy_lbl.setStyleSheet("color: #555862; font-size: 8pt;")
         footer_layout.addWidget(copy_lbl)
 
@@ -559,6 +701,18 @@ class MainWindow(QMainWindow):
         if 0 <= index < len(self._cards):
             return self._cards[index].get_text()
         return ""
+
+    def set_meaning_result(self, source_en: str, meaning_id: str):
+        """Set incoming RP chat English text and its translated Indonesian meaning."""
+        self._meaning_card.set_meaning(source_en, meaning_id)
+
+    def set_meaning_loading(self, source_en: str = ""):
+        """Indicate that F1 chat meaning translation is in progress."""
+        self._meaning_card.set_status_loading(source_en)
+
+    def clear_meaning(self):
+        """Reset RP chat meaning card."""
+        self._meaning_card.clear()
 
     def set_input_text(self, text: str):
         self._input_text.setPlainText(text)

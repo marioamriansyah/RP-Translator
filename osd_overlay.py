@@ -232,6 +232,15 @@ class OSDOverlay(QWidget):
             elif line.startswith("[3]"):
                 badge_bg = b3
                 badge_fg = fg3
+            elif line.startswith("[F1") or "[Arti" in line[:15]:
+                badge_bg = b1
+                badge_fg = fg1
+            elif line.startswith("[Chat") or line.startswith("[F5"):
+                badge_bg = b2
+                badge_fg = fg2
+            elif line.startswith("[Input") or line.startswith("[F4"):
+                badge_bg = b3
+                badge_fg = fg3
             else:
                 badge_bg = b_base
                 badge_fg = getattr(t, "text_primary", "#FFFFFF") if t else "#FFFFFF"
