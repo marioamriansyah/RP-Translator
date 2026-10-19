@@ -246,8 +246,8 @@ class AppController(QObject):
             else:
                 msg = (
                     "[Input F4] Tidak ada teks terdeteksi di kotak ketik.\n\n"
-                    "Buka chat game (tekan T) dan ketik kalimat Anda, "
-                    "lalu tekan F4 untuk menerjemahkan."
+                    "• Pastikan chat game (tekan T) sudah terbuka & ada teks.\n"
+                    "• Jika resolusi/posisi chat berbeda, gunakan tombol 'Snip Input' di RP+ Translator."
                 )
                 self._window.set_status("No text detected in input bar")
                 self._osd.show_translation(msg)
@@ -274,8 +274,8 @@ class AppController(QObject):
             else:
                 msg = (
                     "[Chatlog F3] Tidak ada chat masuk terdeteksi.\n\n"
-                    "Gunakan tombol 'Snip Chat (F3)' di PRORP Translator "
-                    "untuk menandai posisi chatlog history Anda."
+                    "Gunakan tombol 'Snip Chat' di RP+ Translator "
+                    "untuk menandai posisi area chatlog history Anda."
                 )
                 self._window.set_status("No text detected in chatlog")
                 self._osd.show_translation(msg)

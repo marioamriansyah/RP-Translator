@@ -46,10 +46,14 @@ def main():
     # High DPI support
     os.environ.setdefault("QT_ENABLE_HIGHDPI_SCALING", "1")
 
-    # Set Windows AppUserModelID for crisp taskbar icon grouping
+    # Set Windows Per-Monitor DPI Awareness (ensures accurate screen capture on Windows 10/11)
     try:
         import ctypes
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("rpplus.translator.app.1.0.2")
+        try:
+            ctypes.windll.shcore.SetProcessDpiAwareness(2)
+        except Exception:
+            ctypes.windll.user32.SetProcessDPIAware()
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("rpplus.translator.app.1.0.3")
     except Exception:
         pass
 

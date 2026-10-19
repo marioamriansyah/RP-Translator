@@ -477,7 +477,7 @@ class MainWindow(QMainWindow):
         footer_layout.addStretch()
 
         # Right copyright
-        copy_lbl = QLabel("RP Plus 1.0.2  •  © Copyrights 2026")
+        copy_lbl = QLabel("RP Plus 1.0.3  •  © Copyrights 2026")
         copy_lbl.setStyleSheet("color: #555862; font-size: 8pt;")
         footer_layout.addWidget(copy_lbl)
 

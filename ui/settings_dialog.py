@@ -515,13 +515,13 @@ class SettingsDialog(QDialog):
         return widget
 
     def _auto_detect_tesseract(self):
-        fallback = r"C:\Program Files (x86)\PRORP Translator\tesseract\tesseract.exe"
-        import os
-        if os.path.exists(fallback):
-            self._tesseract_path.setText(fallback)
-            QMessageBox.information(self, "Tesseract Detected", f"Found Tesseract at:\n{fallback}")
+        from ocr_engine import find_tesseract
+        exe_path, _ = find_tesseract()
+        if exe_path:
+            self._tesseract_path.setText(exe_path)
+            QMessageBox.information(self, "Tesseract Ditemukan", f"Tesseract OCR berhasil terdeteksi:\n{exe_path}")
         else:
-            QMessageBox.warning(self, "Not Found", "Could not automatically locate Tesseract.")
+            QMessageBox.warning(self, "Tidak Ditemukan", "Tesseract OCR tidak ditemukan secara otomatis.\nSilakan arahkan secara manual ke file tesseract.exe.")
 
     def _start_snip(self, mode: str):
         self._snip_mode = mode

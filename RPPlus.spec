@@ -1,7 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
 from PyInstaller.utils.hooks import collect_all
 
-datas = [('assets', 'assets'), ('config.json', '.'), ('slang_library.json', '.'), ('qt.conf', '.')]
+datas = [('assets', 'assets'), ('tesseract', 'tesseract'), ('config.json', '.'), ('slang_library.json', '.'), ('qt.conf', '.')]
 binaries = []
 hiddenimports = ['pynput.keyboard._win32', 'pynput.mouse._win32', 'httpx', 'PIL']
 tmp_ret = collect_all('PyQt6')

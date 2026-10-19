@@ -20,11 +20,74 @@ from PIL import ImageGrab, Image, ImageEnhance, ImageOps, ImageFilter
 
 
 
+def find_tesseract(custom_path: str = "") -> tuple[str, str]:
+    """
+    Locates tesseract.exe and tessdata directory across all standard and bundled locations.
+    Returns (tesseract_exe_path, tessdata_dir_path).
+    """
+    candidates = []
+
+    # 1. User custom path if provided
+    if custom_path:
+        candidates.append(custom_path)
+
+    # 2. Application root and _internal directories
+    app_root = os.path.dirname(os.path.abspath(__file__))
+    candidates.append(os.path.join(app_root, "tesseract", "tesseract.exe"))
+    candidates.append(os.path.join(app_root, "tesseract.exe"))
+
+    if getattr(sys, "frozen", False):
+        exe_dir = os.path.dirname(sys.executable)
+        candidates.append(os.path.join(exe_dir, "tesseract", "tesseract.exe"))
+        candidates.append(os.path.join(exe_dir, "_internal", "tesseract", "tesseract.exe"))
+        candidates.append(os.path.join(exe_dir, "tesseract.exe"))
+
+    if hasattr(sys, "_MEIPASS"):
+        candidates.append(os.path.join(sys._MEIPASS, "tesseract", "tesseract.exe"))
+
+    # 3. Standard Program Files installation paths
+    candidates.extend([
+        r"C:\Program Files (x86)\RP+ Translator\tesseract\tesseract.exe",
+        r"C:\Program Files\RP+ Translator\tesseract\tesseract.exe",
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files (x86)\PRORP Translator\tesseract\tesseract.exe",
+        r"C:\Program Files\PRORP Translator\tesseract\tesseract.exe",
+    ])
+
+    # 4. System PATH
+    import shutil
+    which_path = shutil.which("tesseract")
+    if which_path:
+        candidates.append(which_path)
+
+    found_exe = ""
+    for c in candidates:
+        if c and os.path.exists(c) and os.path.isfile(c):
+            found_exe = os.path.abspath(c)
+            break
+
+    found_tessdata = ""
+    if found_exe:
+        td1 = os.path.join(os.path.dirname(found_exe), "tessdata")
+        if os.path.exists(td1):
+            found_tessdata = td1
+        else:
+            for td in [
+                os.path.join(app_root, "tesseract", "tessdata"),
+                r"C:\Program Files (x86)\RP+ Translator\tesseract\tessdata",
+                r"C:\Program Files\Tesseract-OCR\tessdata",
+                r"C:\Program Files (x86)\PRORP Translator\tesseract\tessdata",
+            ]:
+                if os.path.exists(td):
+                    found_tessdata = td
+                    break
+
+    return found_exe, found_tessdata
+
+
 class OCREngine:
     """Wrapper around Tesseract OCR for screen-region text capture."""
-
-    FALLBACK_TESSERACT = r"C:\Program Files (x86)\PRORP Translator\tesseract\tesseract.exe"
-    FALLBACK_TESSDATA = r"C:\Program Files (x86)\PRORP Translator\tesseract\tessdata"
 
     def __init__(self, config_or_path: Any = None) -> None:
         """
@@ -33,37 +96,38 @@ class OCREngine:
         """
         self._config = None
         self._tesseract_path = ""
+        self._tessdata_path = ""
 
+        custom = ""
         if hasattr(config_or_path, "get"):
             self._config = config_or_path
-            path = self._config.get("tesseract_path", "tesseract/tesseract.exe")
+            custom = self._config.get("tesseract_path", "")
         elif isinstance(config_or_path, str):
-            path = config_or_path
-        else:
-            path = "tesseract/tesseract.exe"
+            custom = config_or_path
 
-        self.set_tesseract_path(path)
+        self.set_tesseract_path(custom)
 
-    def set_tesseract_path(self, path: str) -> None:
+    def is_available(self) -> bool:
+        """Check if Tesseract binary exists and is executable."""
+        return bool(self._tesseract_path and os.path.exists(self._tesseract_path))
+
+    def set_tesseract_path(self, path: str = "") -> None:
         """Update the Tesseract executable path and set TESSDATA_PREFIX."""
-        if not os.path.exists(path):
-            if os.path.exists(self.FALLBACK_TESSERACT):
-                path = self.FALLBACK_TESSERACT
+        exe_path, tessdata_path = find_tesseract(path)
+        self._tesseract_path = exe_path
+        self._tessdata_path = tessdata_path
 
-        self._tesseract_path = path
-        pytesseract.pytesseract.tesseract_cmd = path
-
-        # Auto-configure TESSDATA_PREFIX
-        candidate_tessdata = os.path.join(os.path.dirname(path), "tessdata")
-        if os.path.exists(candidate_tessdata):
-            os.environ["TESSDATA_PREFIX"] = candidate_tessdata
-        elif os.path.exists(self.FALLBACK_TESSDATA):
-            os.environ["TESSDATA_PREFIX"] = self.FALLBACK_TESSDATA
+        if exe_path:
+            pytesseract.pytesseract.tesseract_cmd = exe_path
+            if tessdata_path:
+                os.environ["TESSDATA_PREFIX"] = tessdata_path
+        else:
+            pytesseract.pytesseract.tesseract_cmd = path or "tesseract.exe"
 
     def reload_config(self) -> None:
         """Reload configuration settings for OCR."""
         if self._config:
-            path = self._config.get("tesseract_path", "tesseract/tesseract.exe")
+            path = self._config.get("tesseract_path", "")
             self.set_tesseract_path(path)
 
     # ── Preprocessing Pipeline ─────────────────────────────────────────
@@ -72,28 +136,32 @@ class OCREngine:
     def preprocess_image(image: Image.Image) -> list[Image.Image]:
         """
         Generate preprocessed variants of the captured image for optimal OCR:
-        1. Upscaled 2.5x + Grayscale + Contrast enhanced
-        2. Upscaled + Inverted (for light text on dark backgrounds, typical in GTA RP chat)
-        3. Upscaled + Binarized threshold
+        1. Inverted (black text on white, Tesseract's optimal format for GTA white chat)
+        2. High-contrast thresholded / binarized
+        3. Enhanced grayscale with autocontrast
+        4. Sharpened inverted
         """
         w, h = image.size
-        # Tesseract needs text characters to be ~30-35px tall for high accuracy
-        scale = max(2.0, min(3.0, 100.0 / max(10, h)))
-        scaled = image.resize((int(w * scale), int(h * scale)), Image.Resampling.BICUBIC)
+        # Tesseract needs text characters to be ~35-40px tall for high accuracy
+        scale = max(2.5, min(4.0, 120.0 / max(10, h)))
+        scaled = image.resize((int(w * scale), int(h * scale)), Image.Resampling.LANCZOS)
 
         gray = scaled.convert("L")
+        auto_contrasted = ImageOps.autocontrast(gray, cutoff=2)
 
-        # Variant 1: Enhanced contrast
-        enhancer = ImageEnhance.Contrast(gray)
-        enhanced = enhancer.enhance(2.2)
+        # Variant 1: Inverted (white text on dark background -> black text on light)
+        inverted = ImageOps.invert(auto_contrasted)
 
-        # Variant 2: Inverted (white text on dark background -> black text on light)
-        inverted = ImageOps.invert(enhanced)
+        # Variant 2: Binary threshold (isolates white/colored GTA text from scenery)
+        # Threshold at pixel level 130
+        table = [0 if i < 130 else 255 for i in range(256)]
+        binary = gray.point(table, "1").convert("L")
+        binary_inverted = ImageOps.invert(binary)
 
-        # Variant 3: Sharpened
-        sharpened = enhanced.filter(ImageFilter.SHARPEN)
+        # Variant 3: Sharpened inverted
+        sharpened = inverted.filter(ImageFilter.SHARPEN)
 
-        return [enhanced, inverted, sharpened]
+        return [inverted, binary_inverted, auto_contrasted, sharpened]
 
     # ── Text Cleaning & RP Chat Normalization ──────────────────────────
 
@@ -186,6 +254,12 @@ class OCREngine:
         Capture ONLY what the user typed in the input bar (F4).
         Excludes chatlog history.
         """
+        if not self.is_available():
+            raise FileNotFoundError(
+                "Mesin OCR Tesseract tidak ditemukan.\n"
+                "Pastikan folder tesseract terpasang atau periksa Settings > OCR."
+            )
+
         bbox = {"left": 265, "top": 350, "width": 645, "height": 45}
         if self._config:
             cfg_bbox = (
@@ -197,18 +271,23 @@ class OCREngine:
                 bbox.update(cfg_bbox)
 
         image = self.capture_region(bbox)
-        # Recognize using PSM 6 (single uniform block of text)
         variants = self.preprocess_image(image)
-        for variant in variants[:2]:
-            try:
-                raw = pytesseract.image_to_string(variant, lang=lang, config="--psm 6").strip()
-                cleaned = self.clean_input_text(raw)
-                if cleaned and len(re.findall(r"[A-Za-z0-9]", cleaned)) >= 2:
-                    return cleaned
-            except Exception as e:
-                print(f"[OCREngine] Input OCR error: {e}")
 
-        # Fallback to general recognize
+        # For single-line typing input bar:
+        # PSM 7 = Treat image as a single text line (Highest accuracy for GTA chat typing box)
+        # PSM 6 = Single uniform block
+        # PSM 11 = Sparse text
+        for psm in ["--psm 7", "--psm 6", "--psm 11"]:
+            for variant in variants:
+                try:
+                    raw = pytesseract.image_to_string(variant, lang=lang, config=psm).strip()
+                    cleaned = self.clean_input_text(raw)
+                    if cleaned and len(re.findall(r"[A-Za-z0-9]", cleaned)) >= 2:
+                        return cleaned
+                except Exception as e:
+                    print(f"[OCREngine] Input OCR error ({psm}): {e}")
+
+        # Fallback to general multi-pass recognize
         raw = self.recognize(image, lang=lang)
         return self.clean_input_text(raw)
 
@@ -217,6 +296,12 @@ class OCREngine:
         Capture the incoming chatlog (F3) and extract ONLY the newest line,
         preventing older chat history from being translated.
         """
+        if not self.is_available():
+            raise FileNotFoundError(
+                "Mesin OCR Tesseract tidak ditemukan.\n"
+                "Pastikan folder tesseract terpasang atau periksa Settings > OCR."
+            )
+
         bbox = {"left": 265, "top": 200, "width": 645, "height": 140}
         if self._config:
             cfg_bbox = self._config.get("chatlog_bbox")
@@ -225,14 +310,17 @@ class OCREngine:
 
         image = self.capture_region(bbox)
         variants = self.preprocess_image(image)
-        for variant in variants[:2]:
-            try:
-                raw = pytesseract.image_to_string(variant, lang=lang, config="--psm 6").strip()
-                latest = self.extract_latest_chat_line(raw)
-                if latest and len(re.findall(r"[A-Za-z0-9]", latest)) >= 2:
-                    return latest
-            except Exception as e:
-                print(f"[OCREngine] Chatlog OCR error: {e}")
+
+        # Multi-line chat history modes
+        for psm in ["--psm 6", "--psm 11", "--psm 3"]:
+            for variant in variants:
+                try:
+                    raw = pytesseract.image_to_string(variant, lang=lang, config=psm).strip()
+                    latest = self.extract_latest_chat_line(raw)
+                    if latest and len(re.findall(r"[A-Za-z0-9]", latest)) >= 2:
+                        return latest
+                except Exception as e:
+                    print(f"[OCREngine] Chatlog OCR error ({psm}): {e}")
 
         # Fallback to general recognize
         raw = self.recognize(image, lang=lang)

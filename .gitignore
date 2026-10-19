@@ -8,6 +8,7 @@ build/
 dist/
 dist_installer/
 *.spec.bak
+tesseract/
 
 # Logs
 *.log

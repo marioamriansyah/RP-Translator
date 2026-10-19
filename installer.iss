@@ -2,7 +2,7 @@
 ; RP+ Translator Installer Setup Script
 
 #define MyAppName "RP+ Translator"
-#define MyAppVersion "1.0.2"
+#define MyAppVersion "1.0.3"
 #define MyAppPublisher "RP Plus"
 #define MyAppExeName "RPPlus.exe"
 
@@ -23,13 +23,13 @@ SolidCompression=yes
 WizardStyle=modern
 PrivilegesRequiredOverridesAllowed=dialog
 DisableProgramGroupPage=yes
-VersionInfoVersion=1.0.2.0
+VersionInfoVersion=1.0.3.0
 VersionInfoCompany=RP Plus Community
 VersionInfoDescription=RP+ Translator Setup
-VersionInfoTextVersion=1.0.2
+VersionInfoTextVersion=1.0.3
 VersionInfoCopyright=Copyright (C) 2026 RP Plus
 VersionInfoProductName=RP+ Translator
-VersionInfoProductVersion=1.0.2.0
+VersionInfoProductVersion=1.0.3.0
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -42,6 +42,7 @@ Source: "dist\RPPlus\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs c
 Source: "slang_library.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config.json"; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist
 Source: "assets\*"; DestDir: "{app}\assets"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "tesseract\*"; DestDir: "{app}\tesseract"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\assets\app_icon.ico"
